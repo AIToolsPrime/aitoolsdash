@@ -1842,7 +1842,7 @@
     "category": "Audio con IA",
     "category_slug": "audio",
     "rating": 4.2,
-    "price": "$15/mo",
+    "price": "$29/mo",
     "price_type": "freemium",
     "excerpt": "Riverside graba audio y video local de alta calidad para cada participante. Sus herramientas de IA incluyen edición basada en texto, detección de oradores y notas automáticas del programa.",
     "pros": [
@@ -1860,7 +1860,7 @@
     "featured": false,
     "date": "2026-04-18",
     "logo": "riverside.fm",
-    "description": "Riverside es una plataforma profesional de grabación remota que graba audio y video de alta calidad localmente en cada dispositivo. Ofrece herramientas de edición con IA como transcripción automática. Como sugiere su eslogan, Riverside está diseñado para usuarios que necesitan grabación remota de alta calidad con funciones de ia, cumpliendo esta promesa mediante automatización inteligente y diseño cuidado. Esta herramienta es ideal para podcasters que necesitan grabaciones remotas con calidad de estudio. Ya sea que necesites grabación local, pistas separadas de audio/video, o edición basada en texto, Riverside lo maneja todo dentro de una plataforma unificada. Es el estándar de la industria para grabaciones remotas con calidad de estudio. En cuanto a precios, nivel gratuito con 2 hrs; Pro a $24/mes; Business a $34/mes. Esto hace que Riverside sea accesible tanto para quienes recién comienzan como para quienes necesitan capacidades avanzadas. En resumen, Riverside destaca como una de las mejores opciones en su categoría, combinando potentes capacidades de IA con una experiencia de usuario intuitiva que ofrece resultados consistentes y de alta calidad.",
+    "description": "Riverside es una plataforma profesional de grabación remota que graba audio y video de alta calidad localmente en cada dispositivo. Ofrece herramientas de edición con IA como transcripción automática. Como sugiere su eslogan, Riverside está diseñado para usuarios que necesitan grabación remota de alta calidad con funciones de ia, cumpliendo esta promesa mediante automatización inteligente y diseño cuidado. Esta herramienta es ideal para podcasters que necesitan grabaciones remotas con calidad de estudio. Ya sea que necesites grabación local, pistas separadas de audio/video, o edición basada en texto, Riverside lo maneja todo dentro de una plataforma unificada. Es el estándar de la industria para grabaciones remotas con calidad de estudio. En cuanto a precios, nivel gratuito disponible; Pro a $29/mes para 8 hrs; Business a $39/mes para 16 hrs. Esto hace que Riverside sea accesible tanto para quienes recién comienzan como para quienes necesitan capacidades avanzadas. En resumen, Riverside destaca como una de las mejores opciones en su categoría, combinando potentes capacidades de IA con una experiencia de usuario intuitiva que ofrece resultados consistentes y de alta calidad.",
     "features": [
       "Grabación local",
       "Pistas separadas de audio/video",
@@ -1869,7 +1869,7 @@
       "Grabación remota con calidad de estudio"
     ],
     "best_for": "Podcasters que necesitan grabaciones remotas con calidad de estudio",
-    "pricing_note": "Nivel gratuito con 2 hrs; Pro a $24/mes; Business a $34/mes"
+    "pricing_note": "Nivel gratuito disponible; Pro a $29/mes para 8 hrs; Business a $39/mes para 16 hrs"
   },
   {
     "id": "adobe-podcast",
