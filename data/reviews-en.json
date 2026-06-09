@@ -1332,6 +1332,42 @@
     "pricing_note": "Free tier with watermarked exports; Plus at $25/mo for 5 exports; Max at $60/mo for 20 exports"
   },
   {
+    "id": "hedra",
+    "name": "Hedra",
+    "tagline": "AI avatars that speak with lifelike motion",
+    "category": "AI Video",
+    "category_slug": "video",
+    "rating": 4.0,
+    "price": "$15/mo",
+    "price_type": "freemium",
+    "excerpt": "Hedra generates realistic talking avatars with full facial expressions, body motion, and voice synchronization from text or audio input.",
+    "pros": [
+      "Lifelike facial expressions",
+      "Full body motion",
+      "Text and audio input",
+      "Fast generation"
+    ],
+    "cons": [
+      "Limited customization",
+      "Newer platform",
+      "Smaller template library"
+    ],
+    "url": "https://www.hedra.com",
+    "featured": false,
+    "date": "2026-06-09",
+    "logo": "hedra.com",
+    "description": "Hedra is an AI video platform that creates lifelike talking avatars with natural facial expressions, body language, and voice synchronization. It transforms text or audio into professional avatar videos with realistic motion and emotion. As its tagline suggests, Hedra is designed for users who need ai avatars that speak with lifelike motion, delivering on this promise through intelligent automation and thoughtful design. This tool is best suited for content creators and businesses wanting realistic AI avatars for video content at scale. Whether you need talking avatar generation, lifelike facial expressions, or text-to-video avatars, Hedra handles it all within a single, unified platform. It's an ideal alternative to Synthesia and HeyGen for creators looking for more natural avatar motion at competitive pricing. In terms of pricing, free tier with watermarked exports; Pro at $15/mo for HD exports; Business at $75/mo for custom branding and team collaboration. This makes Hedra accessible whether you are just getting started or need advanced capabilities for professional use. Overall, Hedra stands out as a top choice in its category, combining powerful AI capabilities with an intuitive user experience that delivers consistent, high-quality results.",
+    "features": [
+      "Talking avatar generation",
+      "Lifelike facial expressions",
+      "Full body motion",
+      "Text and audio input",
+      "Fast rendering"
+    ],
+    "best_for": "Content creators and businesses wanting realistic AI avatars for video content at scale",
+    "pricing_note": "Free tier with watermarked exports; Pro at $15/mo for HD exports; Business at $75/mo for custom branding and team collaboration"
+  },
+  {
     "id": "veed-io",
     "name": "Veed.io",
     "tagline": "AI video editing platform with auto-subtitles",
@@ -3025,6 +3061,78 @@
     "pricing_note": "Free tier with basic features; Pro at $5/mo for AI features and productivity insights"
   },
   {
+    "id": "superhuman",
+    "name": "Superhuman",
+    "tagline": "AI-powered email for power users",
+    "category": "AI Productivity",
+    "category_slug": "productivity",
+    "rating": 4.6,
+    "price": "$30/mo",
+    "price_type": "paid",
+    "excerpt": "Superhuman is the fastest email experience powered by AI, with smart inbox sorting, scheduling, and AI writing assistance for productivity power users.",
+    "pros": [
+      "Blazing fast interface",
+      "AI email writing",
+      "Smart inbox sorting",
+      "Calendar integration"
+    ],
+    "cons": [
+      "Expensive for individuals",
+      "No free tier",
+      "Invite-only access"
+    ],
+    "url": "https://superhuman.com",
+    "featured": false,
+    "date": "2026-06-09",
+    "logo": "superhuman.com",
+    "description": "Superhuman is a premium email client designed for speed and productivity, now enhanced with AI features for smart composing, inbox prioritization, and scheduling. It combines keyboard-first navigation with AI-powered suggestions to help power users process email faster than ever. As its tagline suggests, Superhuman is designed for users who need ai-powered email for power users, delivering on this promise through intelligent automation and thoughtful design. This tool is best suited for executives and professionals who process high volumes of email daily and need maximum speed. Whether you need ai email writing, smart inbox prioritization, or keyboard-first navigation, Superhuman handles it all within a single, unified platform. It's the go-to choice for busy professionals and executives who value speed and efficiency above all else. In terms of pricing, monthly subscription at $30/mo for full features with no free tier available. This makes Superhuman a premium investment for productivity-focused professionals. Overall, Superhuman stands out as a top choice in its category, combining powerful AI capabilities with an intuitive user experience that delivers consistent, high-quality results.",
+    "features": [
+      "AI email writing",
+      "Smart inbox prioritization",
+      "Keyboard-first navigation",
+      "Calendar integration",
+      "Instant search"
+    ],
+    "best_for": "Executives and professionals who process high volumes of email daily and need maximum speed",
+    "pricing_note": "Monthly subscription at $30/mo for full features with no free tier available"
+  },
+  {
+    "id": "chatbase",
+    "name": "Chatbase",
+    "tagline": "AI chatbots trained on your data",
+    "category": "AI Productivity",
+    "category_slug": "productivity",
+    "rating": 4.3,
+    "price": "$19/mo",
+    "price_type": "freemium",
+    "excerpt": "Chatbase lets you build custom AI chatbots trained on your own documents, websites, or data sources. No coding required.",
+    "pros": [
+      "Train on your data",
+      "No-code setup",
+      "Multiple data sources",
+      "Easy embedding"
+    ],
+    "cons": [
+      "Limited free tier",
+      "Basic analytics",
+      "Can be inaccurate with complex data"
+    ],
+    "url": "https://www.chatbase.co",
+    "featured": false,
+    "date": "2026-06-09",
+    "logo": "chatbase.co",
+    "description": "Chatbase is a no-code platform for building custom AI chatbots powered by your own data. Upload documents, connect websites, or add text sources, and Chatbase creates a chatbot that answers questions based on your content. As its tagline suggests, Chatbase is designed for users who need ai chatbots trained on your data, delivering on this promise through intelligent automation and thoughtful design. This tool is best suited for businesses and creators wanting custom AI chatbots without coding for customer support or knowledge sharing. Whether you need document-trained chatbot, website data integration, or no-code ai bot builder, Chatbase handles it all within a single, unified platform. It's ideal for businesses wanting to provide instant, accurate answers based on their own content. In terms of pricing, free tier with 1 chatbot and 30 messages/mo; Hobby at $19/mo for unlimited chatbots; Standard at $99/mo; Pro at $399/mo. This makes Chatbase accessible whether you are just getting started or need advanced capabilities for professional use. Overall, Chatbase stands out as a top choice in its category, combining powerful AI capabilities with an intuitive user experience that delivers consistent, high-quality results.",
+    "features": [
+      "Document-trained chatbot",
+      "Website data integration",
+      "No-code AI bot builder",
+      "Multiple languages",
+      "Easy website embedding"
+    ],
+    "best_for": "Businesses and creators wanting custom AI chatbots without coding for customer support or knowledge sharing",
+    "pricing_note": "Free tier with 1 chatbot and 30 messages/mo; Hobby at $19/mo; Standard at $99/mo; Pro at $399/mo"
+  },
+  {
     "id": "brevo",
     "name": "Brevo AI",
     "tagline": "AI marketing automation and CRM platform",
@@ -3095,5 +3203,41 @@
     ],
     "best_for": "Solopreneurs and small businesses wanting simple AI-powered social media scheduling",
     "pricing_note": "Free tier with 3 channels; Essentials at $6/mo per channel; Team at $12/mo per channel for collaboration"
+  },
+  {
+    "id": "beehiiv",
+    "name": "Beehiiv",
+    "tagline": "AI-powered newsletter platform for growth",
+    "category": "AI Marketing",
+    "category_slug": "marketing",
+    "rating": 4.4,
+    "price": "$0/mo",
+    "price_type": "freemium",
+    "excerpt": "Beehiiv is an all-in-one newsletter platform with AI writing assistance, audience segmentation, growth tools, and monetization features for creators and publishers.",
+    "pros": [
+      "AI writing assistant",
+      "Built-in growth tools",
+      "Monetization options",
+      "Audience segmentation"
+    ],
+    "cons": [
+      "Limited design customization",
+      "Can get expensive at scale",
+      "Still maturing platform"
+    ],
+    "url": "https://beehiiv.com",
+    "featured": false,
+    "date": "2026-06-09",
+    "logo": "beehiiv.com",
+    "description": "Beehiiv is a comprehensive newsletter platform designed to help creators and publishers grow, manage, and monetize their email audience. Its AI features include smart writing assistance, audience segmentation, and growth optimization tools. As its tagline suggests, Beehiiv is designed for users who need ai-powered newsletter platform for growth, delivering on this promise through intelligent automation and thoughtful design. This tool is best suited for newsletter creators and publishers wanting end-to-end platform with AI tools for writing, growth, and monetization. Whether you need ai writing for newsletters, audience growth tools, or newsletter monetization, Beehiiv handles it all within a single, unified platform. It's the go-to choice for newsletter creators who want everything in one place from writing to monetization. In terms of pricing, free tier with basic features; Grow at $15/mo for growth tools; Scale at $49/mo for monetization and advanced features. This makes Beehiiv accessible whether you are just getting started or need advanced capabilities for professional use. Overall, Beehiiv stands out as a top choice in its category, combining powerful AI capabilities with an intuitive user experience that delivers consistent, high-quality results.",
+    "features": [
+      "AI writing for newsletters",
+      "Audience growth tools",
+      "Newsletter monetization",
+      "Audience segmentation",
+      "Analytics dashboard"
+    ],
+    "best_for": "Newsletter creators and publishers wanting end-to-end platform with AI tools for writing, growth, and monetization",
+    "pricing_note": "Free tier with basic features; Grow at $15/mo for growth tools; Scale at $49/mo for monetization and advanced features"
   }
 ]
