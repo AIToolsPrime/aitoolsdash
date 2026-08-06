@@ -1,0 +1,129 @@
+# AI Tools Dash
+
+> Honest, in-depth reviews and comparisons of the best AI tools for music, writing, images, video, productivity, audio, coding, and marketing.
+
+[AI Tools Dash](https://aitoolsdash.com/)
+
+## Key pages
+
+- [All AI Tool Reviews (English)](https://aitoolsdash.com/en/): Browse every AI tool review
+- [AI Tool Reviews (Spanish)](https://aitoolsdash.com/es/): Todas las reseñas de herramientas IA en español
+- [AI Tool Comparisons](https://aitoolsdash.com/en/comparisons.html): Side-by-side comparisons of popular AI tools
+- [Comparativas de herramientas IA](https://aitoolsdash.com/es/comparaciones.html): Comparativas de herramientas de IA en español
+
+## AI Assistant
+
+- [ChatGPT review](https://aitoolsdash.com/en/chatgpt.html): ChatGPT by OpenAI is the most widely used AI tool for writing, brainstorming, coding, and research. GPT-5 brings enhanced reasoning and multimodal capabilities.
+- [Claude review](https://aitoolsdash.com/en/claude.html): Claude by Anthropic excels at nuanced writing, instruction following, and long-form content. Its large context window and careful reasoning make it ideal for complex documents.
+- [Copy.ai review](https://aitoolsdash.com/en/copy-ai.html): Copy.ai helps marketing teams generate on-brand copy across channels. Its workflow automation and 90+ templates set it apart from simpler AI writing tools.
+- [Jasper AI review](https://aitoolsdash.com/en/jasper-ai.html): Jasper is a powerful AI writing assistant built for marketing teams who need brand-consistent content at scale with built-in SEO tools.
+- [Lindy review](https://aitoolsdash.com/en/lindy.html): Lindy lets you build AI agents that execute complex multi-step marketing tasks — lead nurturing, content repurposing, ad optimization — autonomously.
+- [Mem review](https://aitoolsdash.com/en/mem.html): Mem is an AI-powered knowledge base that automatically connects your notes, documents, and ideas. It surfaces relevant information without manual tagging.
+- [Perplexity AI review](https://aitoolsdash.com/en/perplexity.html): Perplexity is the leading AI answer engine with real-time web search, cited sources, and deep research capabilities. Like ChatGPT with live internet access.
+- [Writesonic review](https://aitoolsdash.com/en/writesonic.html): Writesonic offers budget-friendly AI writing with solid output quality, SEO tools, and a generous word count limit for growing teams.
+
+## AI Audio
+
+- [Adobe Podcast review](https://aitoolsdash.com/en/adobe-podcast.html): Adobe Podcast offers free AI-powered audio enhancement that makes voice recordings sound like they were recorded in a professional studio.
+- [Cleanvoice review](https://aitoolsdash.com/en/cleanvoice.html): Cleanvoice uses AI to automatically remove filler words, silence, and mouth sounds from audio recordings, saving hours of manual editing.
+- [Descript review](https://aitoolsdash.com/en/descript.html): Descript is the most innovative audio/video editor on the market. Edit audio by editing text. Its AI features are game-changing for podcasters and creators.
+- [ElevenLabs review](https://aitoolsdash.com/en/elevenlabs.html): ElevenLabs produces the most realistic AI voices available. Used for audiobooks, voiceovers, dubbing, and content creation with unmatched emotional range.
+- [Murf review](https://aitoolsdash.com/en/murf.html): Murf offers 120+ AI voices in 20+ languages for professional voiceovers. Its studio editor lets you fine-tune pitch, emphasis, and pacing for natural delivery.
+- [Podcastle review](https://aitoolsdash.com/en/podcastle.html): Podcastle is an all-in-one podcast platform with AI recording, editing, magic dust audio enhancement, and distribution all in one place.
+- [Respeecher review](https://aitoolsdash.com/en/respeecher.html): Respeecher provides enterprise-grade voice cloning used in film, gaming, and media production. Its emotional voice conversion maintains natural performance.
+- [Riverside review](https://aitoolsdash.com/en/riverside.html): Riverside records high-quality local audio and video for each participant. Its AI tools include text-based editing, speaker detection, and automatic show notes.
+- [Speechify review](https://aitoolsdash.com/en/speechify.html): Speechify is the leading AI text-to-speech app with natural voices, OCR scanning of physical books, and 30+ languages.
+
+## AI Coding
+
+- [Amazon Q Developer review](https://aitoolsdash.com/en/amazon-q.html): Amazon Q Developer is AWS's AI coding assistant with deep integration for cloud services. It helps with code generation, debugging, and AWS architecture guidance.
+- [Bolt.new review](https://aitoolsdash.com/en/bolt-new.html): Bolt.new lets you build and deploy full-stack web apps directly from your browser using natural language prompts. Perfect for rapid prototyping and MVPs.
+- [Claude Code review](https://aitoolsdash.com/en/claude-code.html): Claude Code by Anthropic is the leading agentic coding tool for senior developers. It understands entire projects, handles multi-file changes, and manages complex workflows.
+- [Cursor review](https://aitoolsdash.com/en/cursor.html): Cursor is the most popular AI-native code editor, forked from VS Code. Its tab completion, multi-file editing, and agentic code generation make it the developer favorite.
+- [Devin review](https://aitoolsdash.com/en/devin.html): Devin by Cognition Labs is an autonomous AI software engineer that can plan, code, test, and deploy entire features end-to-end without human intervention.
+- [GitHub Copilot review](https://aitoolsdash.com/en/github-copilot.html): GitHub Copilot is the most used AI coding assistant with deep GitHub integration for pull requests, code review, and repository-wide context.
+- [Replit Agent review](https://aitoolsdash.com/en/replit-agent.html): Replit Agent is a browser-based AI development platform that lets you build and deploy apps from natural language descriptions without local setup.
+- [Sourcegraph Cody review](https://aitoolsdash.com/en/sourcegraph-cody.html): Cody by Sourcegraph excels at understanding large, complex codebases. It provides context-aware code generation and answers based on your entire repository.
+- [Tabnine review](https://aitoolsdash.com/en/tabnine.html): Tabnine offers privacy-controlled AI code completion with enterprise deployment options. It can run fully on-premises for organizations with strict data requirements.
+- [Windsurf review](https://aitoolsdash.com/en/windsurf.html): Windsurf by Codeium offers a free AI IDE with a Cascade agent that handles multi-file reasoning and pair programming. Best free option for AI-assisted development.
+
+## AI for Music
+
+- [AIVA review](https://aitoolsdash.com/en/aiva.html): AIVA is an award-winning AI composer specializing in classical and cinematic music. Used by filmmakers and game developers for professional-grade orchestral compositions.
+- [Beatoven.ai review](https://aitoolsdash.com/en/beatoven.html): Beatoven.ai creates royalty-free music tailored to your video or podcast. Select mood, genre, and duration to get unique tracks that match your content.
+- [Boomy review](https://aitoolsdash.com/en/boomy.html): Boomy makes instant song creation accessible to anyone. It offers global distribution to streaming platforms, letting you publish AI music to Spotify and Apple Music.
+- [ElevenLabs Music review](https://aitoolsdash.com/en/elevenlabs-music.html): ElevenLabs brings its legendary voice technology to music generation. The result is stunning vocal quality and naturally expressive musical performances.
+- [LANDR review](https://aitoolsdash.com/en/landr.html): LANDR pioneered AI music mastering and now offers a full platform including distribution to all streaming services, samples, and collaboration tools.
+- [Mubert review](https://aitoolsdash.com/en/mubert.html): Mubert generates royalty-free electronic music in real time. Perfect for streamers, content creators, and apps that need adaptive background music.
+- [Riffusion review](https://aitoolsdash.com/en/riffusion.html): Riffusion is a completely free AI music generator that turns text prompts into catchy tunes. Fun for experimenting with weird sounds and unusual genre combinations.
+- [Soundraw review](https://aitoolsdash.com/en/soundraw.html): Soundraw lets you generate and customize original music by selecting mood, genre, and length. Each track is fully editable with a simple interface.
+- [Suno AI review](https://aitoolsdash.com/en/suno-ai.html): Suno AI is the most impressive AI music generator available today. It can create full songs with lyrics, vocals, and instrumentation from simple text descriptions.
+- [Udio review](https://aitoolsdash.com/en/udio.html): Udio rivals Suno with incredible audio fidelity and musical coherence. It excels at instrumental music and complex genre combinations.
+
+## AI Images
+
+- [Adobe Firefly review](https://aitoolsdash.com/en/adobe-firefly.html): Adobe Firefly generates images from licensed content, making it the safest choice for businesses. Deep integration with Photoshop and Creative Cloud.
+- [Canva AI review](https://aitoolsdash.com/en/canva-ai.html): Canva Magic Studio brings AI image generation, editing, and design into an intuitive template-based platform. Create social media graphics and more.
+- [Clipdrop review](https://aitoolsdash.com/en/clipdrop.html): Clipdrop offers a suite of AI image tools including background removal, relighting, upscaling, and clean object removal.
+- [DALL-E 3 / GPT Image review](https://aitoolsdash.com/en/dall-e-3.html): OpenAI's DALL-E 3 excels at rendering text within images and photorealistic scenes. Seamlessly integrated with ChatGPT for iterative creation.
+- [Ideogram review](https://aitoolsdash.com/en/ideogram.html): Ideogram specializes in generating images with accurate, readable text. Perfect for logos, posters, social media graphics requiring typography.
+- [Leonardo AI review](https://aitoolsdash.com/en/leonardo-ai.html): Leonardo AI offers the most model variety for game assets, character design, and stylized artwork. Its fine-tuning capabilities let you train custom models.
+- [Midjourney review](https://aitoolsdash.com/en/midjourney.html): Midjourney continues to lead AI image generation with stunning artistic quality, unmatched style consistency, and a vibrant creative community.
+- [Pixlr AI review](https://aitoolsdash.com/en/pixlr-ai.html): Pixlr brings AI photo editing to your browser with generative fill, AI upscaling, background removal, and one-click enhancements.
+- [Recraft review](https://aitoolsdash.com/en/recraft.html): Recraft specializes in brand-consistent illustrations, vectors, and icons. Maintain your brand style across all AI-generated visuals with style presets.
+- [Stable Diffusion review](https://aitoolsdash.com/en/stable-diffusion.html): Stable Diffusion is the leading open-source image model. Self-host for complete control, or use any of the many web interfaces available.
+
+## AI Marketing
+
+- [ActiveCampaign review](https://aitoolsdash.com/en/activecampaign.html): ActiveCampaign combines email marketing with AI-powered automation, predictive sending, and dynamic content personalization for smarter campaigns.
+- [Beehiiv review](https://aitoolsdash.com/en/beehiiv.html): Beehiiv is an all-in-one newsletter platform with AI writing assistance, audience segmentation, growth tools, and monetization features for creators and publishers.
+- [Brevo AI review](https://aitoolsdash.com/en/brevo.html): Brevo (formerly Sendinblue) combines email marketing, SMS, chat, and CRM with AI-powered tools for campaign optimization and personalization.
+- [Buffer AI review](https://aitoolsdash.com/en/buffer.html): Buffer is a social media management platform with AI features for content suggestions, optimal posting times, and engagement analytics across multiple platforms.
+- [Frase.io review](https://aitoolsdash.com/en/frase.html): Frase combines AI content generation with powerful SEO research. It creates content briefs based on SERP analysis and helps optimize for search intent.
+- [HubSpot AI review](https://aitoolsdash.com/en/hubspot-ai.html): HubSpot AI integrates generative AI across the entire marketing stack — content creation, SEO, social media, email, analytics, and CRM — in one unified platform.
+- [Lately AI review](https://aitoolsdash.com/en/lately-ai.html): Lately uses AI to transform long-form content into dozens of social media posts. It analyzes your brand voice and generates on-brand social content automatically.
+- [Mailchimp AI review](https://aitoolsdash.com/en/mailchimp-ai.html): Mailchimp adds AI features to its popular email platform — content generation, audience insights, send-time optimization, and smart segmentation.
+- [MarketMuse review](https://aitoolsdash.com/en/marketmuse.html): MarketMuse uses AI to analyze content gaps, plan editorial strategies, and optimize existing content. Built for enterprise teams with serious content operations.
+- [Semrush AI review](https://aitoolsdash.com/en/semrush-ai.html): Semrush is the leading AI marketing platform with powerful SEO tools, content marketing, competitor analysis, PPC, and social media management.
+- [Surfer SEO review](https://aitoolsdash.com/en/surfer-seo.html): Surfer SEO uses NLP to analyze top-ranking content and provides data-driven recommendations to optimize your articles for higher search engine rankings.
+
+## AI Productivity
+
+- [Chatbase review](https://aitoolsdash.com/en/chatbase.html): Chatbase lets you build custom AI chatbots trained on your own documents, websites, or data sources. No coding required.
+- [Clockwise review](https://aitoolsdash.com/en/clockwise.html): Clockwise uses AI to optimize your calendar by automatically scheduling deep work blocks, rescheduling non-urgent meetings, and protecting your focus time.
+- [Fireflies.ai review](https://aitoolsdash.com/en/fireflies.html): Fireflies.ai is an AI meeting assistant that automatically records, transcribes, and summarizes your meetings across platforms like Zoom, Google Meet, and Teams.
+- [Gamma review](https://aitoolsdash.com/en/gamma-app.html): Gamma creates stunning presentations, documents, and web pages from a simple prompt. Its AI designs professional layouts instantly.
+- [Krisp review](https://aitoolsdash.com/en/krisp.html): Krisp removes background noise, echo, and speech from your meetings in real time. Works with any communication app without special hardware.
+- [Motion review](https://aitoolsdash.com/en/motion.html): Motion uses AI to automatically schedule your tasks, protect focus time, and reschedule conflicts. It plans your day around priorities and deadlines.
+- [Otter.ai review](https://aitoolsdash.com/en/otter-ai.html): Otter.ai automatically joins your meetings, takes notes, captures slides, and generates searchable summaries with speaker identification.
+- [Reclaim AI review](https://aitoolsdash.com/en/reclaim.html): Reclaim analyzes your calendar and automatically schedules tasks, habits, breaks, and meetings. It protects your focus time and optimizes your week.
+- [Superhuman review](https://aitoolsdash.com/en/superhuman.html): Superhuman is the fastest email experience powered by AI, with smart inbox sorting, scheduling, and AI writing assistance for productivity power users.
+- [Taskade review](https://aitoolsdash.com/en/taskade.html): Taskade is a collaborative task management platform with AI-powered features for project planning, mind maps, and workflow automation.
+- [Todoist AI review](https://aitoolsdash.com/en/todoist.html): Todoist uses AI to help you organize tasks with smart suggestions, natural language input, and intelligent project recommendations.
+- [Tome review](https://aitoolsdash.com/en/tome.html): Tome uses AI to craft narratives for presentations, pitches, and proposals. Generate entire decks from a single prompt with dynamic layouts.
+
+## AI Video
+
+- [CapCut review](https://aitoolsdash.com/en/capcut.html): CapCut is a powerful free video editor with AI features including auto-captions, text-to-speech, background removal, and one-click video enhancement.
+- [Google Veo 3.1 review](https://aitoolsdash.com/en/veo.html): Google Veo 3.1 generates stunning cinematic video with synchronized 48kHz dialogue and sound effects. It leads in video quality and audio alignment.
+- [Hedra review](https://aitoolsdash.com/en/hedra.html): Hedra generates realistic talking avatars with full facial expressions, body motion, and voice synchronization from text or audio input.
+- [HeyGen review](https://aitoolsdash.com/en/hey-gen.html): HeyGen creates stunning AI avatar videos from text. Perfect for corporate training, marketing, and presentations with realistic avatars in 175+ languages.
+- [InVideo review](https://aitoolsdash.com/en/invideo.html): InVideo offers 5000+ templates for quick video creation. Its AI helps generate scripts, add voiceovers, and automatically match scenes to your content.
+- [Kling 3.0 review](https://aitoolsdash.com/en/kling.html): Kling 3.0 leads in motion physics and smooth 60fps video generation. Its multi-prompting feature enables complex multi-scene narratives.
+- [Pika Labs review](https://aitoolsdash.com/en/pika-labs.html): Pika Labs makes AI video generation accessible with a simple interface, quick results, and an active community. Great for short-form social media content.
+- [Runway review](https://aitoolsdash.com/en/runway-ml.html): Runway Gen-4 is the most advanced AI video platform, offering text-to-video, video-to-video, real-time editing, and professional VFX controls.
+- [Synthesia review](https://aitoolsdash.com/en/synthesia.html): Synthesia is the leading enterprise AI video platform with 230+ AI avatars, multi-language support, and compliance features for corporate training.
+- [Veed.io review](https://aitoolsdash.com/en/veed-io.html): Veed.io offers browser-based AI video editing with automatic subtitles, translation, background removal, and screen recording.
+- [Wondershare Filmora review](https://aitoolsdash.com/en/wondershare-filmora.html): Wondershare Filmora brings AI-powered video editing to creators of all levels with features like AI copywriting, auto-reframe, motion tracking, and text-based editing.
+
+## AI Writing
+
+- [Anyword review](https://aitoolsdash.com/en/anyword.html): Anyword uses AI copywriting with data-driven performance predictions. It scores your copy for engagement and conversion before you publish.
+- [Hemingway App review](https://aitoolsdash.com/en/hemingway.html): Hemingway App uses AI to analyze and improve your writing's readability. It highlights complex sentences, passive voice, adverbs, and suggests simpler alternatives.
+- [ProWritingAid review](https://aitoolsdash.com/en/prowritingaid.html): ProWritingAid goes beyond grammar checking with in-depth style suggestions, structure analysis, and readability improvements.
+- [QuillBot review](https://aitoolsdash.com/en/quillbot.html): QuillBot is an AI-powered paraphrasing tool that helps you rewrite sentences, improve clarity, and avoid plagiarism. It offers multiple modes for different writing styles.
+- [Rytr review](https://aitoolsdash.com/en/rytr.html): Rytr is one of the most affordable AI writing assistants with over 6 million users. It offers 40+ use cases and 30+ languages for versatile content creation.
+- [Scalenut review](https://aitoolsdash.com/en/scalenut.html): Scalenut is an AI-powered content marketing platform that helps you research, write, and optimize SEO content. It offers topic clusters, briefs, and NLP analysis.
+- [Shortly AI review](https://aitoolsdash.com/en/shortly-ai.html): Shortly AI is a focused long-form AI writing assistant designed for blog posts, articles, and stories. It lets you write with AI guidance and expand ideas naturally.
+- [Sudowrite review](https://aitoolsdash.com/en/sudowrite.html): Sudowrite is the premier AI writing tool for fiction authors. It helps with plot development, character creation, world-building, and overcoming writer's block.
+- [Wordtune review](https://aitoolsdash.com/en/wordtune.html): Wordtune is an AI writing companion that rephrases sentences in real-time. It offers tone adjustments, shortening, expanding, and translation features.
