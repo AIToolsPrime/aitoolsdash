@@ -31,6 +31,7 @@ const LANG_CONFIG = {
     backToReviews: 'All AI Tool Reviews',
     relatedTitle: 'Related AI Tools',
     relatedCta: 'Read the full review',
+    faqTitle: 'FAQ',
     breadcrumbHome: 'Home',
     breadcrumbHomeUrl: SITE + '/en/',
     ogTitle: (name) => `${name} Review: Prices, Alternatives & Verdict (2026) - AI Tools Dash`,
@@ -63,6 +64,7 @@ const LANG_CONFIG = {
     backToReviews: 'Todas las reseñas de herramientas IA',
     relatedTitle: 'Herramientas IA Relacionadas',
     relatedCta: 'Leer la reseña completa',
+    faqTitle: 'Preguntas Frecuentes',
     breadcrumbHome: 'Inicio',
     breadcrumbHomeUrl: SITE + '/es/',
     ogTitle: (name) => `${name} Reseña: Precios, Alternativas y Veredicto (2026) - AI Tools Dash`,
@@ -239,13 +241,6 @@ function reviewJsonLd(cfg, tool) {
       'applicationCategory': appCategory,
       'url': url,
       'description': tool.excerpt,
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': String(tool.rating),
-        'bestRating': '5',
-        'worstRating': '1',
-        'ratingCount': '1'
-      },
       'offers': {
         '@type': 'AggregateOffer',
         'priceCurrency': 'USD',
@@ -288,6 +283,66 @@ function relatedJsonLd(cfg, related) {
   };
 }
 
+function faqJsonLd(cfg, tool, lang) {
+  const url = tool.url || '';
+  const faqs = [
+    lang === 'en'
+      ? { q: `Is ${tool.name} worth it in 2026?`, a: `${tool.name} rates ${tool.rating} out of 5 in our review. ${tool.excerpt}` }
+      : { q: `¿Vale la pena ${tool.name} en 2026?`, a: `${tool.name} obtiene ${tool.rating} sobre 5 en nuestra reseña. ${tool.excerpt}` },
+    lang === 'en'
+      ? { q: `What is ${tool.name} best for?`, a: (tool.best_for || tool.excerpt) }
+      : { q: `¿Para qué es mejor ${tool.name}?`, a: (tool.best_for || tool.excerpt) },
+    lang === 'en'
+      ? { q: `How much does ${tool.name} cost?`, a: (tool.pricing_note || priceLabel(tool)) }
+      : { q: `¿Cuánto cuesta ${tool.name}?`, a: (tool.pricing_note || priceLabelEs(tool)) },
+    lang === 'en'
+      ? { q: `What are the pros and cons of ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Cons: ${tool.cons.slice(0, 3).join('; ')}.` }
+      : { q: `¿Cuáles son los pros y contras de ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Contras: ${tool.cons.slice(0, 3).join('; ')}.` }
+  ];
+  if (url) {
+    faqs.push(lang === 'en'
+      ? { q: `Where can I try ${tool.name}?`, a: `You can visit the official ${tool.name} website at ${url}.` }
+      : { q: `¿Dónde puedo probar ${tool.name}?`, a: `Puedes visitar el sitio web oficial de ${tool.name} en ${url}.` });
+  }
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(f => ({
+      '@type': 'Question',
+      'name': f.q,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
+    }))
+  };
+}
+
+function faqHTML(cfg, tool, lang) {
+  const url = tool.url || '';
+  const items = [
+    lang === 'en'
+      ? { q: `Is ${tool.name} worth it in 2026?`, a: `${tool.name} rates ${tool.rating} out of 5 in our review. ${tool.excerpt}` }
+      : { q: `¿Vale la pena ${tool.name} en 2026?`, a: `${tool.name} obtiene ${tool.rating} sobre 5 en nuestra reseña. ${tool.excerpt}` },
+    lang === 'en'
+      ? { q: `What is ${tool.name} best for?`, a: (tool.best_for || tool.excerpt) }
+      : { q: `¿Para qué es mejor ${tool.name}?`, a: (tool.best_for || tool.excerpt) },
+    lang === 'en'
+      ? { q: `How much does ${tool.name} cost?`, a: (tool.pricing_note || priceLabel(tool)) }
+      : { q: `¿Cuánto cuesta ${tool.name}?`, a: (tool.pricing_note || priceLabelEs(tool)) },
+    lang === 'en'
+      ? { q: `What are the pros and cons of ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Cons: ${tool.cons.slice(0, 3).join('; ')}.` }
+      : { q: `¿Cuáles son los pros y contras de ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Contras: ${tool.cons.slice(0, 3).join('; ')}.` }
+  ];
+  if (url) {
+    items.push(lang === 'en'
+      ? { q: `Where can I try ${tool.name}?`, a: `You can visit the official ${tool.name} website at ${url}.` }
+      : { q: `¿Dónde puedo probar ${tool.name}?`, a: `Puedes visitar el sitio web oficial de ${tool.name} en ${url}.` });
+  }
+  return items.map(f => `
+        <div class="faq-item">
+          <h3>${escapeHtml(f.q)}</h3>
+          <p>${escapeHtml(f.a)}</p>
+        </div>`).join('');
+}
+
 function relatedHTML(cfg, lang, related) {
   if (!related || related.length === 0) return '';
   const items = related.map(t => `
@@ -324,6 +379,7 @@ function buildPage(cfg, lang, tool, allReviews) {
 
   const jsonLd = [
     JSON.stringify(reviewJsonLd(cfg, tool)),
+    JSON.stringify(faqJsonLd(cfg, tool, lang)),
     JSON.stringify(breadcrumbJsonLd(cfg, tool)),
     JSON.stringify(relatedJsonLd(cfg, related))
   ].map(j => `<script type="application/ld+json">\n${j}\n</script>`).join('\n');
@@ -412,6 +468,9 @@ ${gaHTML()}
 .review-back { margin-top: 40px; text-align: center; }
 .review-back a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 1.05rem; font-weight: 600; padding: 12px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg-card); transition: all var(--transition); }
 .review-back a:hover { border-color: var(--accent); transform: translateY(-2px); }
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+.faq-item p { color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; }
 @media (max-width: 768px) {
   .review-section .pros-cons { grid-template-columns: 1fr; }
   .review-meta-row { font-size: 0.78rem; padding: 6px 12px; }
@@ -471,6 +530,11 @@ ${navHTML(cfg, lang, tool.id + '.html')}
             <ul class="cons">${conItems}</ul>
           </div>
         </div>
+      </div>
+
+      <div class="review-section faq-section">
+        <h2>${cfg.faqTitle}</h2>
+        ${faqHTML(cfg, tool, lang)}
       </div>
 
       <a href="${escapeAttr(tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn} ${escapeHtml(tool.name)}</a>
