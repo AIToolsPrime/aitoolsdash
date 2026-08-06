@@ -64,6 +64,9 @@
 .review-meta-row { display: flex; gap: 8px; align-items: center; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 16px; font-size: 0.85rem; }
 .review-meta-row .meta-label { color: var(--text-muted); }
 .review-meta-row .meta-value { color: var(--text); font-weight: 600; }
+.stars { color: #fbbf24; }
+.related-rating .stars { color: #fbbf24; }
+.card-logo-fallback { display: none; width: 88px; height: 88px; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 700; color: var(--accent); background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-card)); border-radius: 20px; border: 1px solid var(--border); }
 .review-article .modal-btn { display: block; text-align: center; margin: 0 auto 40px; max-width: 320px; }
 .review-section { margin: 40px 0; }
 .review-section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; position: relative; display: inline-block; }
@@ -111,8 +114,8 @@
       </div>
       <div class="nav-right">
         <div class="lang-switch">
-          <a href="../en/">EN</a>
-          <a href="../es/" class="active" aria-current="page">ES</a>
+          <a href="../en/tabnine.html">EN</a>
+          <a href="../es/tabnine.html" class="active" aria-current="page">ES</a>
         </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
       </div>
@@ -137,7 +140,7 @@
   </div>
       <div class="review-hero-meta">
         <div class="review-meta-row"><span class="meta-label">Categoría</span><span class="meta-value">Programación IA</span></div>
-        <div class="review-meta-row"><span class="meta-label">Puntuación</span><span class="meta-value">★★★½☆ 3.9/5</span></div>
+        <div class="review-meta-row"><span class="meta-label">Puntuación</span><span class="meta-value"><span class="stars">★★★½☆</span> 3.9/5</span></div>
         <div class="review-meta-row"><span class="meta-label">Precio</span><span class="meta-value">Gratis / $9/mo</span></div>
       </div>
 
@@ -181,19 +184,19 @@
         <div class="related-grid">
         <a class="related-card" href="cursor.html">
           <span class="related-name">Cursor</span>
-          <span class="related-rating">★★★★½ 4.7</span>
+          <span class="related-rating"><span class="stars">★★★★½</span> 4.7</span>
           <span class="related-price">Gratis / $20/mo</span>
           <span class="related-cta">Leer la reseña completa →</span>
         </a>
         <a class="related-card" href="claude-code.html">
           <span class="related-name">Claude Code</span>
-          <span class="related-rating">★★★★½ 4.6</span>
+          <span class="related-rating"><span class="stars">★★★★½</span> 4.6</span>
           <span class="related-price">$20/mo</span>
           <span class="related-cta">Leer la reseña completa →</span>
         </a>
         <a class="related-card" href="github-copilot.html">
           <span class="related-name">GitHub Copilot</span>
-          <span class="related-rating">★★★★½ 4.5</span>
+          <span class="related-rating"><span class="stars">★★★★½</span> 4.5</span>
           <span class="related-price">Gratis / $10/mo</span>
           <span class="related-cta">Leer la reseña completa →</span>
         </a>

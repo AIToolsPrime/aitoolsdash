@@ -109,7 +109,8 @@ function stars(rating) {
   const full = Math.floor(rating);
   const half = rating % 1 >= 0.5 ? 1 : 0;
   const empty = 5 - full - half;
-  return '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
+  const body = '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(empty);
+  return '<span class="stars">' + body + '</span>';
 }
 
 function priceLabel(tool) {
@@ -132,9 +133,10 @@ function logoBlock(cfg, tool) {
   </div>`;
 }
 
-function navHTML(cfg, lang) {
-  const otherLang = lang === 'en' ? 'es' : 'en';
-  const otherHref = lang === 'en' ? '../es/' : '../en/';
+function navHTML(cfg, lang, currentFile) {
+  const file = currentFile || '';
+  const enHref = file ? '../en/' + file : '../en/';
+  const esHref = file ? '../es/' + file : '../es/';
   return `
   <a href="#main-content" class="skip-link">${cfg.skipLink}</a>
 
@@ -153,8 +155,8 @@ function navHTML(cfg, lang) {
       </div>
       <div class="nav-right">
         <div class="lang-switch">
-          <a href="../en/"${lang === 'en' ? ' class="active" aria-current="page"' : ''}>EN</a>
-          <a href="../es/"${lang === 'es' ? ' class="active" aria-current="page"' : ''}>ES</a>
+          <a href="${enHref}"${lang === 'en' ? ' class="active" aria-current="page"' : ''}>EN</a>
+          <a href="${esHref}"${lang === 'es' ? ' class="active" aria-current="page"' : ''}>ES</a>
         </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
       </div>
@@ -375,6 +377,9 @@ ${gaHTML()}
 .review-meta-row { display: flex; gap: 8px; align-items: center; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 16px; font-size: 0.85rem; }
 .review-meta-row .meta-label { color: var(--text-muted); }
 .review-meta-row .meta-value { color: var(--text); font-weight: 600; }
+.stars { color: #fbbf24; }
+.related-rating .stars { color: #fbbf24; }
+.card-logo-fallback { display: none; width: 88px; height: 88px; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 700; color: var(--accent); background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-card)); border-radius: 20px; border: 1px solid var(--border); }
 .review-article .modal-btn { display: block; text-align: center; margin: 0 auto 40px; max-width: 320px; }
 .review-section { margin: 40px 0; }
 .review-section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; position: relative; display: inline-block; }
@@ -404,7 +409,7 @@ ${gaHTML()}
 </head>
 <body>
 
-${navHTML(cfg, lang)}
+${navHTML(cfg, lang, tool.id + '.html')}
 
   <div class="page-bg" aria-hidden="true"></div>
   <main id="main-content">
