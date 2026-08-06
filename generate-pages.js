@@ -399,6 +399,7 @@ ${gaHTML()}
 .review-section .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .review-section .pros-cons h2 { font-size: 1.15rem; }
 .review-section .pros-cons ul { margin: 0; }
+.review-section .pros, .review-section .cons { background: rgba(128,128,128,0.12); border: 1px solid var(--border); padding: 14px 16px; border-radius: var(--radius-sm); font-size: 0.82rem; }
 .related-section { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .related-section h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
 .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
