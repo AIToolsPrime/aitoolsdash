@@ -295,7 +295,7 @@
       + '<ul class="pros">' + r.pros.map(function (p) { return '<li>✓ ' + p + '</li>'; }).join('') + '</ul>'
       + '<ul class="cons">' + r.cons.map(function (c) { return '<li>✗ ' + c + '</li>'; }).join('') + '</ul>'
       + '</div>'
-      + '<a href="' + r.url + '" class="modal-btn" target="_blank" rel="noopener">' + btnText + '</a>'
+      + '<a href="' + r.url + '" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">' + btnText + '</a>'
       + '</div>';
 
     document.body.appendChild(overlay);

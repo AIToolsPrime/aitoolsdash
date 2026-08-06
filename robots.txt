@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Allow: /es/
+Disallow: /*?*
+Disallow: /*?cat=
+Disallow: /*sort=
+Disallow: /*price=
+Disallow: /node_modules/
+Disallow: /assets/
 
 Sitemap: https://aitoolsdash.com/sitemap.xml

@@ -157,7 +157,7 @@
         + '<ul class="pc-list">' + tool.pros.slice(0, 3).map(function (p) { return '<li class="pc-pro">✓ ' + p + '</li>'; }).join('') + '</ul>'
         + '<ul class="pc-list">' + tool.cons.slice(0, 3).map(function (c) { return '<li class="pc-con">✗ ' + c + '</li>'; }).join('') + '</ul>'
         + '</div>'
-        + '<a href="' + tool.url + '" class="vs-btn" target="_blank" rel="noopener">' + (LANG === 'en' ? 'Visit ' : 'Visitar ') + tool.name + '</a>'
+        + '<a href="' + tool.url + '" class="vs-btn" target="_blank" rel="nofollow noopener noreferrer">' + (LANG === 'en' ? 'Visit ' : 'Visitar ') + tool.name + '</a>'
         + '</div>';
     }
 
