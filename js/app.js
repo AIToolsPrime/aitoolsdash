@@ -87,13 +87,6 @@
       + '</div>';
   }
 
-  function logoModalHTML(domain, name) {
-    return '<div class="modal-logo">'
-      + '<img src="../images/logos/' + domain + '.png" alt="' + name + '" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
-      + '<span class="modal-logo-fallback">' + name.charAt(0).toUpperCase() + '</span>'
-      + '</div>';
-  }
-
   function renderReviews(data) {
     if (!data || data.length === 0) {
       reviewGrid.innerHTML = '<div class="no-results"><h3>' + (LANG === 'en' ? 'No reviews found' : 'No se encontraron reseñas') + '</h3><p>' + (LANG === 'en' ? 'Try adjusting your filters' : 'Ajusta los filtros') + '</p></div>';
@@ -128,7 +121,7 @@
     reviewGrid.querySelectorAll('.review-card').forEach(function (el) {
       el.addEventListener('click', function () {
         var idx = parseInt(this.dataset.index);
-        openModal(data[idx]);
+        window.location.href = './' + data[idx].id + '.html';
       });
     });
   }
@@ -163,7 +156,7 @@
     resultsGrid.querySelectorAll('.review-card').forEach(function (el) {
       el.addEventListener('click', function () {
         var idx = parseInt(this.dataset.resultIndex);
-        openModal(data[idx]);
+        window.location.href = './' + data[idx].id + '.html';
       });
     });
   }
@@ -246,73 +239,6 @@
     resultsCount.textContent = results.length + (LANG === 'en' ? ' tools found' : ' herramientas encontradas');
     renderResults(results);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  function openModal(r) {
-    if (!r) return;
-    var overlay = document.createElement('div');
-    overlay.className = 'modal-overlay';
-
-    var priceTxt = (LANG === 'en' ? priceLabel(r.price, r.price_type) : priceLabelES(r.price, r.price_type));
-    var catName = CATEGORIES[r.category_slug] ? CATEGORIES[r.category_slug][LANG] || CATEGORIES[r.category_slug].en : r.category_en;
-
-    var bestForTitle = LANG === 'en' ? 'Best For' : 'Ideal para';
-    var featuresTitle = LANG === 'en' ? 'Key Features' : 'Características';
-    var pricingTitle = LANG === 'en' ? 'Pricing' : 'Precios';
-    var prosTitle = LANG === 'en' ? 'Pros' : 'Pros';
-    var consTitle = LANG === 'en' ? 'Cons' : 'Contras';
-    var btnText = LANG === 'en' ? 'Visit Website' : 'Visitar Sitio';
-
-    var featuresHtml = r.features && r.features.length
-      ? '<div class="modal-section"><h4 class="modal-section-title">' + featuresTitle + '</h4><ul class="modal-features">' + r.features.map(function (f) { return '<li>' + f + '</li>'; }).join('') + '</ul></div>'
-      : '';
-
-    var bestForHtml = r.best_for
-      ? '<div class="modal-section"><h4 class="modal-section-title">' + bestForTitle + '</h4><p class="modal-best-for">' + r.best_for + '</p></div>'
-      : '';
-
-    var pricingHtml = r.pricing_note
-      ? '<div class="modal-section"><h4 class="modal-section-title">' + pricingTitle + '</h4><p class="modal-pricing-note">' + r.pricing_note + '</p></div>'
-      : '';
-
-    overlay.innerHTML = '<div class="modal-content">'
-      + '<button class="modal-close" aria-label="Close modal">✕</button>'
-      + '<div class="modal-header">'
-      + logoModalHTML(r.logo, r.name)
-      + '<div class="modal-header-right">'
-      + '<span class="modal-category" data-cat="' + r.category_slug + '">' + catName + '</span>'
-      + '<span class="modal-rating">' + starsHTML(r.rating) + ' ' + r.rating + '</span>'
-      + '</div>'
-      + '</div>'
-      + '<h2 class="modal-title">' + r.name + '</h2>'
-      + '<p class="modal-tagline">' + r.tagline + '</p>'
-      + '<div class="modal-price">' + priceTxt + '</div>'
-      + '<p class="modal-desc">' + (r.description || r.excerpt) + '</p>'
-      + bestForHtml
-      + featuresHtml
-      + pricingHtml
-      + '<div class="pros-cons">'
-      + '<ul class="pros">' + r.pros.map(function (p) { return '<li>✓ ' + p + '</li>'; }).join('') + '</ul>'
-      + '<ul class="cons">' + r.cons.map(function (c) { return '<li>✗ ' + c + '</li>'; }).join('') + '</ul>'
-      + '</div>'
-      + '<a href="' + r.url + '" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">' + btnText + '</a>'
-      + '</div>';
-
-    document.body.appendChild(overlay);
-    document.body.style.overflow = 'hidden';
-
-    setTimeout(function () { overlay.classList.add('active'); }, 10);
-
-    overlay.querySelector('.modal-close').addEventListener('click', function () { closeModal(overlay); });
-    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(overlay); });
-  }
-
-  function closeModal(overlay) {
-    overlay.classList.remove('active');
-    setTimeout(function () {
-      overlay.remove();
-      document.body.style.overflow = '';
-    }, 200);
   }
 
   function loadReviews() {
@@ -434,12 +360,6 @@
   loadReviews();
   initCookieBanner();
 
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      var active = document.querySelector('.modal-overlay.active');
-      if (active) closeModal(active);
-    }
-  });
 })();
 
 function initCookieBanner() {
