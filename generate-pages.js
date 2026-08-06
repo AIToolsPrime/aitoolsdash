@@ -369,7 +369,7 @@ ${gaHTML()}
 <link rel="stylesheet" href="../css/style.css?v=20260602">
 <style>
 .review-article { max-width: 760px; margin: 0 auto; }
-.hero-short { min-height: auto; padding: 90px 5vw 20px; }
+.hero-short { min-height: auto; padding: 56px 5vw 20px; }
 .hero-short .hero-content h1 { margin-bottom: 8px; }
 .hero-short .hero-content > p { margin-bottom: 0; }
 .section { padding: 32px 5vw 60px; }
