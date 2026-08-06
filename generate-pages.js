@@ -283,31 +283,220 @@ function relatedJsonLd(cfg, related) {
   };
 }
 
-function faqJsonLd(cfg, tool, lang) {
-  const url = tool.url || '';
-  const faqs = [
-    lang === 'en'
-      ? { q: `Is ${tool.name} worth it in 2026?`, a: `${tool.name} rates ${tool.rating} out of 5 in our review. ${tool.excerpt}` }
-      : { q: `¿Vale la pena ${tool.name} en 2026?`, a: `${tool.name} obtiene ${tool.rating} sobre 5 en nuestra reseña. ${tool.excerpt}` },
-    lang === 'en'
-      ? { q: `What is ${tool.name} best for?`, a: (tool.best_for || tool.excerpt) }
-      : { q: `¿Para qué es mejor ${tool.name}?`, a: (tool.best_for || tool.excerpt) },
-    lang === 'en'
-      ? { q: `How much does ${tool.name} cost?`, a: (tool.pricing_note || priceLabel(tool)) }
-      : { q: `¿Cuánto cuesta ${tool.name}?`, a: (tool.pricing_note || priceLabelEs(tool)) },
-    lang === 'en'
-      ? { q: `What are the pros and cons of ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Cons: ${tool.cons.slice(0, 3).join('; ')}.` }
-      : { q: `¿Cuáles son los pros y contras de ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Contras: ${tool.cons.slice(0, 3).join('; ')}.` }
-  ];
-  if (url) {
-    faqs.push(lang === 'en'
-      ? { q: `Where can I try ${tool.name}?`, a: `You can visit the official ${tool.name} website at ${url}.` }
-      : { q: `¿Dónde puedo probar ${tool.name}?`, a: `Puedes visitar el sitio web oficial de ${tool.name} en ${url}.` });
+function hashStr(s) {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
   }
+  return h >>> 0;
+}
+
+function lowerFirst(s) {
+  if (!s) return s;
+  return s.charAt(0).toLowerCase() + s.slice(1);
+}
+
+function pick(arr, seed) {
+  return arr[seed % arr.length];
+}
+
+function humanFaqs(tool, lang) {
+  const seed = hashStr(tool.id);
+  const name = tool.name;
+  const rating = tool.rating;
+  const bestFor = tool.best_for || tool.excerpt;
+  const priceTxt = lang === 'en' ? priceLabel(tool) : priceLabelEs(tool);
+  const pricingNote = tool.pricing_note || priceTxt;
+  const url = tool.url || '';
+  const pros = tool.pros || [];
+  const cons = tool.cons || [];
+  const features = tool.features || [];
+
+  if (lang === 'en') {
+    const verdictQ = pick([
+      `Is ${name} actually worth it?`,
+      `Should you pay for ${name} in 2026?`,
+      `We tested ${name} — is it any good?`,
+      `Does ${name} live up to the hype?`,
+      `Is ${name} a smart buy?`
+    ], seed);
+    const verdictA = pick([
+      `Short answer: yes, for the right person. ${name} earned ${rating} out of 5 in our testing. It's at its best for ${lowerFirst(bestFor)} — if that matches your workflow, it's an easy recommendation.`,
+      `Honestly? It depends on your use case. We gave ${name} ${rating}/5. It's excellent for ${lowerFirst(bestFor)}, but it's not the right tool for everyone.`,
+      `For most people, yes. Our verdict is ${rating}/5 — ${name} is a strong pick for ${lowerFirst(bestFor)}, and the trade-offs are easy to live with if that's what you need.`,
+      `We'd say so. ${name} scored ${rating}/5 in our review, and it's one of the more solid options we've tested in its category.`
+    ], seed + 1);
+
+    const bestQ = pick([
+      `Who is ${name} for?`,
+      `What kind of user gets the most out of ${name}?`,
+      `Is ${name} right for you?`,
+      `Where does ${name} fit best?`
+    ], seed + 2);
+    const bestA = pick([
+      `${name} is aimed at ${lowerFirst(bestFor)}. If you recognise yourself in that description, you'll probably get real value out of it.`,
+      `In our experience, ${name} works best for ${lowerFirst(bestFor)}. It's a specialist tool, not a generalist.`,
+      `${bestFor} — that's the sweet spot. ${name} is designed for exactly that, and it shows in the day-to-day use.`
+    ], seed + 3);
+
+    const priceQ = pick([
+      `How much does ${name} cost?`,
+      `Is there a free tier for ${name}?`,
+      `What should you budget for ${name}?`,
+      `Is ${name} free or paid?`
+    ], seed + 4);
+    const priceA = pick([
+      `${name} costs ${priceTxt}. ${pricingNote}`,
+      `It's ${priceTxt} to get started. ${pricingNote}`,
+      `Budget-wise, you're looking at ${priceTxt}. ${pricingNote}`
+    ], seed + 5);
+
+    const conQ = pick([
+      `What are ${name}'s weak spots?`,
+      `Where does ${name} fall short?`,
+      `What should you watch out for with ${name}?`,
+      `Any real downsides to ${name}?`
+    ], seed + 6);
+    const conA = cons.length
+      ? pick([
+          `It's not perfect. The biggest complaints we've seen (and agree with): ${lowerFirst(cons.slice(0, 2).join('; '))}.`,
+          `The main things holding it back are ${lowerFirst(cons.slice(0, 2).join(' and '))}.`,
+          `Our main gripes: ${lowerFirst(cons.slice(0, 2).join('; '))}. Nothing deal-breaking, but worth knowing before you commit.`
+        ], seed + 7)
+      : `For most users, not much. It's a well-rounded tool.`;
+
+    const featQ = pick([
+      `What does ${name} do best?`,
+      `Which ${name} features actually matter?`,
+      `Why did ${name} make our list?`,
+      `What can ${name} do that others can't?`
+    ], seed + 8);
+    const featA = features.length
+      ? pick([
+          `The standouts for us: ${features.slice(0, 3).join('; ')}. That's why it earned its spot.`,
+          `${name} really delivers on ${features.slice(0, 2).join(' and ')}. Those are the features we'd miss most if we had to switch.`,
+          `Its edge comes from ${features.slice(0, 3).join('; ')}.`
+        ], seed + 9)
+      : `It's consistent where it matters most for its niche.`;
+
+    const trialQ = pick([
+      `Can you try ${name} before buying?`,
+      `How do I get started with ${name}?`,
+      `Where can I try ${name}?`
+    ], seed + 10);
+    const trialA = url
+      ? pick([
+          `Yes — head to ${url} and you can sign up and start testing it yourself. That's the best way to judge it.`,
+          `You can start right away at ${url}. We always suggest trying it before committing.`,
+          `Just go to ${url}. It's the fastest way to see if ${name} fits what you need.`
+        ], seed + 11)
+      : `You can usually start with a free trial and see how it feels.`;
+
+    return [
+      { q: verdictQ, a: verdictA },
+      { q: bestQ, a: bestA },
+      { q: priceQ, a: priceA },
+      { q: conQ, a: conA },
+      { q: featQ, a: featA },
+      { q: trialQ, a: trialA }
+    ];
+  }
+
+  const verdictQ = pick([
+    `¿Vale la pena ${name}?`,
+    `¿Deberías pagar por ${name} en 2026?`,
+    `Probamos ${name} — ¿es bueno de verdad?`,
+    `¿${name} cumple lo que promete?`,
+    `¿Es ${name} una buena compra?`
+  ], seed);
+  const verdictA = pick([
+    `Respuesta corta: sí, para la persona adecuada. ${name} obtuvo ${rating} sobre 5 en nuestras pruebas. Está en su mejor momento para ${lowerFirst(bestFor)} — si eso encaja con tu flujo de trabajo, es una recomendación fácil.`,
+    `Si te soy honesto: depende de tu caso. Le dimos a ${name} un ${rating}/5. Es excelente para ${lowerFirst(bestFor)}, pero no es la herramienta para todos.`,
+    `Para la mayoría de la gente, sí. Nuestro veredicto es ${rating}/5 — ${name} es una gran opción para ${lowerFirst(bestFor)} y los contras se llevan bien si es lo que necesitas.`,
+    `Nosotros diríamos que sí. ${name} sacó ${rating}/5 en nuestra reseña y es una de las opciones más sólidas de su categoría.`
+  ], seed + 1);
+
+  const bestQ = pick([
+    `¿Para quién es ${name}?`,
+    `¿Qué tipo de usuario saca más partido a ${name}?`,
+    `¿Es ${name} para ti?`,
+    `¿Dónde encaja mejor ${name}?`
+  ], seed + 2);
+  const bestA = pick([
+    `${name} está pensada para ${bestFor}. Si te reconoces en esa descripción, seguro que le sacas valor real.`,
+    `En nuestra experiencia, ${name} funciona mejor para ${lowerFirst(bestFor)}. Es una herramienta especializada, no una todoterreno.`,
+    `${bestFor} — ese es su punto dulce. ${name} está diseñada justo para eso y se nota en el uso diario.`
+  ], seed + 3);
+
+  const priceQ = pick([
+    `¿Cuánto cuesta ${name}?`,
+    `¿${name} tiene versión gratis?`,
+    `¿Cuánto deberías presupuestar para ${name}?`,
+    `¿Es ${name} gratis o de pago?`
+  ], seed + 4);
+  const priceA = pick([
+    `${name} cuesta ${priceTxt}. ${pricingNote}`,
+    `Cuesta ${priceTxt} para empezar. ${pricingNote}`,
+    `En cuanto a presupuesto, estás mirando ${priceTxt}. ${pricingNote}`
+  ], seed + 5);
+
+  const conQ = pick([
+    `¿Cuáles son los puntos débiles de ${name}?`,
+    `¿Dónde flojea ${name}?`,
+    `¿Con qué hay que tener cuidado en ${name}?`,
+    `¿Tiene ${name} desventajas reales?`
+  ], seed + 6);
+  const conA = cons.length
+    ? pick([
+        `No es perfecta. Las quejas más habituales que hemos visto (y compartimos): ${lowerFirst(cons.slice(0, 2).join('; '))}.`,
+        `Lo que más la frena es ${lowerFirst(cons.slice(0, 2).join(' y '))}.`,
+        `Nuestras principales pegas: ${lowerFirst(cons.slice(0, 2).join('; '))}. Nada que te eche para atrás, pero conviene saberlo antes de comprometerte.`
+      ], seed + 7)
+    : `Para la mayoría de usuarios, poco. Es una herramienta muy completa.`;
+
+  const featQ = pick([
+    `¿Qué hace ${name} mejor?`,
+    `¿Qué funciones de ${name} importan de verdad?`,
+    `¿Por qué ${name} está en nuestra lista?`,
+    `¿Qué puede hacer ${name} que otras no?`
+  ], seed + 8);
+  const featA = features.length
+    ? pick([
+        `Lo que más nos destaca: ${features.slice(0, 3).join('; ')}. Por eso se ganó su hueco.`,
+        `${name} cumple de verdad en ${features.slice(0, 2).join(' y ')}. Son las funciones que más echaríamos de menos si tuviéramos que cambiarnos.`,
+        `Su ventaja viene de ${features.slice(0, 3).join('; ')}.`
+      ], seed + 9)
+    : `Es constante donde más importa para su nicho.`;
+
+  const trialQ = pick([
+    `¿Puedes probar ${name} antes de comprarla?`,
+    `¿Cómo empiezo con ${name}?`,
+    `¿Dónde puedo probar ${name}?`
+  ], seed + 10);
+  const trialA = url
+    ? pick([
+        `Sí — entra en ${url} y puedes registrarte y probarla tú mismo. Es la mejor forma de juzgarla.`,
+        `Puedes empezar ahora mismo en ${url}. Siempre recomendamos probarla antes de comprometerte.`,
+        `Solo ve a ${url}. Es la forma más rápida de ver si ${name} encaja con lo que necesitas.`
+      ], seed + 11)
+    : `Normalmente puedes empezar con una prueba gratis y ver qué tal se siente.`;
+
+  return [
+    { q: verdictQ, a: verdictA },
+    { q: bestQ, a: bestA },
+    { q: priceQ, a: priceA },
+    { q: conQ, a: conA },
+    { q: featQ, a: featA },
+    { q: trialQ, a: trialA }
+  ];
+}
+
+function faqJsonLd(cfg, tool, lang) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    'mainEntity': faqs.map(f => ({
+    'mainEntity': humanFaqs(tool, lang).map(f => ({
       '@type': 'Question',
       'name': f.q,
       'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
@@ -316,27 +505,7 @@ function faqJsonLd(cfg, tool, lang) {
 }
 
 function faqHTML(cfg, tool, lang) {
-  const url = tool.url || '';
-  const items = [
-    lang === 'en'
-      ? { q: `Is ${tool.name} worth it in 2026?`, a: `${tool.name} rates ${tool.rating} out of 5 in our review. ${tool.excerpt}` }
-      : { q: `¿Vale la pena ${tool.name} en 2026?`, a: `${tool.name} obtiene ${tool.rating} sobre 5 en nuestra reseña. ${tool.excerpt}` },
-    lang === 'en'
-      ? { q: `What is ${tool.name} best for?`, a: (tool.best_for || tool.excerpt) }
-      : { q: `¿Para qué es mejor ${tool.name}?`, a: (tool.best_for || tool.excerpt) },
-    lang === 'en'
-      ? { q: `How much does ${tool.name} cost?`, a: (tool.pricing_note || priceLabel(tool)) }
-      : { q: `¿Cuánto cuesta ${tool.name}?`, a: (tool.pricing_note || priceLabelEs(tool)) },
-    lang === 'en'
-      ? { q: `What are the pros and cons of ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Cons: ${tool.cons.slice(0, 3).join('; ')}.` }
-      : { q: `¿Cuáles son los pros y contras de ${tool.name}?`, a: `Pros: ${tool.pros.slice(0, 3).join('; ')}. Contras: ${tool.cons.slice(0, 3).join('; ')}.` }
-  ];
-  if (url) {
-    items.push(lang === 'en'
-      ? { q: `Where can I try ${tool.name}?`, a: `You can visit the official ${tool.name} website at ${url}.` }
-      : { q: `¿Dónde puedo probar ${tool.name}?`, a: `Puedes visitar el sitio web oficial de ${tool.name} en ${url}.` });
-  }
-  return items.map(f => `
+  return humanFaqs(tool, lang).map(f => `
         <div class="faq-item">
           <h3>${escapeHtml(f.q)}</h3>
           <p>${escapeHtml(f.a)}</p>
