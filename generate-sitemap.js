@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SITE = 'https://aitoolsdash.com';
+const TODAY = new Date().toISOString().slice(0, 10);
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -38,7 +39,7 @@ function urlBlock(entry) {
 }
 
 const toolBlocks = enData.map(function (t) {
-  const lastmod = t.date || '2026-06-09';
+  const lastmod = t.date || TODAY;
   return `  <url>
     <loc>${SITE}/en/${t.id}.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="${SITE}/en/${t.id}.html"/>
