@@ -293,7 +293,7 @@ function relatedHTML(cfg, lang, related) {
   const items = related.map(t => `
         <a class="related-card" href="${t.id}.html">
           <span class="related-name">${escapeHtml(t.name)}</span>
-          <span class="related-rating">${stars(t.rating)} ${t.rating}</span>
+          <span class="related-rating">${stars(t.rating)} <span class="rating-num">${t.rating}</span></span>
           <span class="related-price">${escapeHtml(lang === 'en' ? priceLabel(t) : priceLabelEs(t))}</span>
           <span class="related-cta">${cfg.relatedCta} →</span>
         </a>`).join('');
@@ -383,6 +383,8 @@ ${gaHTML()}
 .review-meta-row .meta-value { color: var(--text); font-weight: 600; }
 .stars { color: #fbbf24; }
 .related-rating .stars { color: #fbbf24; }
+.rating-num { color: var(--text); }
+.related-rating .rating-num { color: var(--text); }
 .card-logo-fallback { display: none; width: 88px; height: 88px; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 700; color: var(--accent); background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-card)); border-radius: 20px; border: 1px solid var(--border); }
 .review-article .modal-btn { display: block; text-align: center; margin: 0 auto 40px; max-width: 320px; }
 .review-section { margin: 40px 0; }
@@ -431,7 +433,7 @@ ${navHTML(cfg, lang, tool.id + '.html')}
       ${logoBlock(cfg, tool)}
       <div class="review-hero-meta">
         <div class="review-meta-row"><span class="meta-label">${cfg.catTitle}</span><span class="meta-value">${escapeHtml(catName)}</span></div>
-        <div class="review-meta-row"><span class="meta-label">${cfg.ratingTitle}</span><span class="meta-value">${stars(tool.rating)} ${tool.rating}/5</span></div>
+        <div class="review-meta-row"><span class="meta-label">${cfg.ratingTitle}</span><span class="meta-value">${stars(tool.rating)} <span class="rating-num">${tool.rating}/5</span></span></div>
         <div class="review-meta-row"><span class="meta-label">${cfg.priceTitle}</span><span class="meta-value">${escapeHtml(priceTxt)}</span></div>
       </div>
 
