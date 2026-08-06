@@ -403,14 +403,14 @@ ${gaHTML()}
 .related-section { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .related-section h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
 .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
-.related-card { display: flex; flex-direction: column; gap: 6px; padding: 18px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); text-decoration: none; color: var(--text); transition: all var(--transition); }
+.related-card { display: flex; flex-direction: column; gap: 6px; padding: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); text-decoration: none; color: var(--text); transition: all var(--transition); }
 .related-card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .related-name { font-weight: 600; }
 .related-rating { color: var(--accent); font-size: 0.8rem; }
 .related-price { color: var(--text-muted); font-size: 0.8rem; }
 .related-cta { color: var(--accent); font-size: 0.8rem; margin-top: 4px; }
 .review-back { margin-top: 40px; text-align: center; }
-.review-back a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 1.05rem; font-weight: 600; padding: 12px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg-card); transition: all var(--transition); }
+.review-back a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 1.05rem; font-weight: 600; padding: 12px 24px; border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); background: rgba(255,255,255,0.08); transition: all var(--transition); }
 .review-back a:hover { border-color: var(--accent); transform: translateY(-2px); }
 @media (max-width: 768px) {
   .review-section .pros-cons { grid-template-columns: 1fr; }
