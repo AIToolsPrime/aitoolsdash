@@ -572,6 +572,17 @@ ${footerHTML(cfg, lang)}
         localStorage.setItem('ai-reviews-theme', next);
       });
     }
+    var scrollBtn = document.getElementById('scrollTop');
+    function onScroll() {
+      if (scrollBtn) scrollBtn.classList.toggle('visible', window.scrollY > 400);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    if (scrollBtn) {
+      scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   })();
   </script>
 </body>
