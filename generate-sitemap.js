@@ -14,12 +14,6 @@ const pages = [
   { loc: '/es/', en: '/en/', es: '/es/', freq: 'weekly', pri: '0.9', lastmod: '2026-06-09' },
   { loc: '/en/comparisons.html', en: '/en/comparisons.html', es: '/es/comparaciones.html', freq: 'monthly', pri: '0.8', lastmod: '2026-06-09' },
   { loc: '/es/comparaciones.html', en: '/en/comparisons.html', es: '/es/comparaciones.html', freq: 'monthly', pri: '0.8', lastmod: '2026-06-09' },
-  { loc: '/en/privacy.html', en: '/en/privacy.html', es: '/es/privacidad.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' },
-  { loc: '/en/terms.html', en: '/en/terms.html', es: '/es/terminos.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' },
-  { loc: '/en/affiliate.html', en: '/en/affiliate.html', es: '/es/divulgacion.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' },
-  { loc: '/es/privacidad.html', en: '/en/privacy.html', es: '/es/privacidad.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' },
-  { loc: '/es/terminos.html', en: '/en/terms.html', es: '/es/terminos.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' },
-  { loc: '/es/divulgacion.html', en: '/en/affiliate.html', es: '/es/divulgacion.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' },
   { loc: '/es/404.html', en: '/404.html', es: '/es/404.html', freq: 'yearly', pri: '0.3', lastmod: '2026-05-31' }
 ];
 

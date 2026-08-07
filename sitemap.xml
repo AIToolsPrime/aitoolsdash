@@ -47,60 +47,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolsdash.com/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/privacidad.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitoolsdash.com/"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aitoolsdash.com/en/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/en/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/terminos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitoolsdash.com/"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aitoolsdash.com/en/affiliate.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/en/affiliate.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/divulgacion.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitoolsdash.com/"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aitoolsdash.com/es/privacidad.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/privacidad.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitoolsdash.com/"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aitoolsdash.com/es/terminos.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/en/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/terminos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitoolsdash.com/"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aitoolsdash.com/es/divulgacion.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/en/affiliate.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/divulgacion.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitoolsdash.com/"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://aitoolsdash.com/es/404.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://aitoolsdash.com/404.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://aitoolsdash.com/es/404.html"/>
