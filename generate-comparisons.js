@@ -58,7 +58,7 @@ const LANG = {
     proLabel: 'Pros', conLabel: 'Contras',
     faqTitle: 'Preguntas Frecuentes',
     relatedTitle: 'Comparar Más Herramientas IA',
-    backToHub: '← Volver a todas las comparativas',
+    backToHub: 'Volver a todas las comparativas',
     breadcrumbHome: 'Inicio',
     breadcrumbHomeUrl: SITE + '/es/',
     copyright: '© 2026 AI Tools Dash. Todos los derechos reservados.',
