@@ -967,6 +967,14 @@ nav.scrolled {
   border-color: var(--accent);
 }
 
+.filters-bar #filterRating {
+  color: #fbbf24;
+}
+
+.filters-bar #filterRating option {
+  color: var(--text);
+}
+
 .filters-bar .filter-label {
   font-size: 0.8rem;
   color: var(--text-muted);
