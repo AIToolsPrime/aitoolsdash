@@ -22,7 +22,7 @@ const enData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'reviews-
 const pairsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'admin', 'comparison-pairs.json'), 'utf8'));
 
 const pairBlocks = pairsData.map(function (p) {
-  const lastmod = '2026-08-06';
+  const lastmod = TODAY;
   return `  <url>
     <loc>${SITE}/en/${p.file}</loc>
     <xhtml:link rel="alternate" hreflang="en" href="${SITE}/en/${p.file}"/>
@@ -57,7 +57,7 @@ function urlBlock(entry) {
 }
 
 const toolBlocks = enData.map(function (t) {
-  const lastmod = t.date || TODAY;
+  const lastmod = TODAY;
   return `  <url>
     <loc>${SITE}/en/${t.id}.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="${SITE}/en/${t.id}.html"/>
