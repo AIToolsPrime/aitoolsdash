@@ -34,7 +34,7 @@ const LANG = {
     proLabel: 'Pros', conLabel: 'Cons',
     faqTitle: 'Frequently Asked Questions',
     relatedTitle: 'Compare More AI Tools',
-    backToHub: '← Back to all comparisons',
+    backToHub: 'Back to all comparisons',
     breadcrumbHome: 'Home',
     breadcrumbHomeUrl: SITE + '/en/',
     copyright: '© 2026 AI Tools Dash. All rights reserved.',
@@ -345,7 +345,7 @@ function relatedLinks(others, lang) {
     return `<a class="related-card" href="./${file}">
       <span class="related-name">${escapeHtml(names)}</span>
       <span class="related-cat">${escapeHtml(CATEGORIES[lang][o.slug])}</span>
-      <span class="related-cta">${lang === 'en' ? 'Read the comparison →' : 'Leer la comparativa →'}</span>
+      <span class="related-cta">${lang === 'en' ? 'Read the comparison' : 'Leer la comparativa'}</span>
     </a>`;
   }).join('');
   return `<div class="related-section">

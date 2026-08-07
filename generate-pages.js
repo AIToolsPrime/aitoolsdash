@@ -519,7 +519,7 @@ function relatedHTML(cfg, lang, related) {
           <span class="related-name">${escapeHtml(t.name)}</span>
           <span class="related-rating">${stars(t.rating)} <span class="rating-num">${t.rating}</span></span>
           <span class="related-price">${escapeHtml(lang === 'en' ? priceLabel(t) : priceLabelEs(t))}</span>
-          <span class="related-cta">${cfg.relatedCta} →</span>
+          <span class="related-cta">${cfg.relatedCta}</span>
         </a>`).join('');
   return `
       <div class="related-section">
@@ -537,8 +537,8 @@ function comparisonLink(cfg, lang, tool, allReviews) {
   const rival = top[0].id === tool.id ? top[1] : top[0];
   const file = top[0].id + '-vs-' + top[1].id + '.html';
   const label = lang === 'en'
-    ? `Compare ${tool.name} vs ${rival.name} →`
-    : `Comparar ${tool.name} vs ${rival.name} →`;
+    ? `Compare ${tool.name} vs ${rival.name}`
+    : `Comparar ${tool.name} vs ${rival.name}`;
   return `
       <p class="review-compare"><a href="./${file}">${escapeHtml(label)}</a></p>`;
 }
@@ -729,7 +729,7 @@ ${navHTML(cfg, lang, tool.id + '.html')}
 
       ${relatedHTML(cfg, lang, related)}
 
-      <p class="review-back"><a href="${cfg.home}">← ${cfg.backToReviews}</a></p>
+      <p class="review-back"><a href="${cfg.home}">${cfg.backToReviews}</a></p>
     </div>
   </section>
 
