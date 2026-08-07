@@ -80,6 +80,10 @@
     return price;
   }
 
+  function escapeAttr(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
   function logoHTML(domain, name) {
     return '<div class="card-logo">'
       + '<img src="../images/logos/' + domain + '.png" alt="' + name + '" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
@@ -107,6 +111,7 @@
         + '<span class="category-badge">' + catName + '</span>'
         + '<span class="rating-badge">' + starsHTML(r.rating) + ' ' + r.rating + '</span>'
         + '</div>'
+        + '<a class="card-visit" href="' + escapeAttr(r.affiliate_url || r.url) + '" target="_blank" rel="nofollow noopener noreferrer" onclick="event.stopPropagation();">' + (LANG === 'en' ? 'Visit' : 'Visitar') + '</a>'
         + '<div class="card-body">'
         + '<div class="tool-name">' + highlightMatch(r.name) + '</div>'
         + '<div class="tool-tagline">' + r.tagline + '</div>'
@@ -146,6 +151,7 @@
         + '<span class="category-badge">' + catName + '</span>'
         + '<span class="rating-badge">' + starsHTML(r.rating) + ' ' + r.rating + '</span>'
         + '</div>'
+        + '<a class="card-visit" href="' + escapeAttr(r.affiliate_url || r.url) + '" target="_blank" rel="nofollow noopener noreferrer" onclick="event.stopPropagation();">' + (LANG === 'en' ? 'Visit' : 'Visitar') + '</a>'
         + '<div class="card-body">'
         + '<div class="tool-name">' + highlightMatch(r.name) + '</div>'
         + '<div class="tool-tagline">' + highlightMatch(r.tagline) + '</div>'

@@ -878,6 +878,25 @@ nav.scrolled {
   transition: background var(--transition);
 }
 
+.card-visit {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--bg);
+  font-weight: 600;
+  padding: 10px 16px;
+  margin: 0 16px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2, var(--accent)));
+  text-decoration: none;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.card-visit:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
 .review-card:hover .read-more {
   background: rgba(129,140,248,0.2);
 }
