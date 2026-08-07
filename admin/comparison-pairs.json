@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "music",
+    "file": "suno-ai-vs-udio.html",
+    "a": "suno-ai",
+    "b": "udio",
+    "ratingA": 4.6,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "writing",
+    "file": "sudowrite-vs-quillbot.html",
+    "a": "sudowrite",
+    "b": "quillbot",
+    "ratingA": 4.5,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "images",
+    "file": "midjourney-vs-dall-e-3.html",
+    "a": "midjourney",
+    "b": "dall-e-3",
+    "ratingA": 4.8,
+    "ratingB": 4.6
+  },
+  {
+    "slug": "video",
+    "file": "runway-ml-vs-veo.html",
+    "a": "runway-ml",
+    "b": "veo",
+    "ratingA": 4.6,
+    "ratingB": 4.6
+  },
+  {
+    "slug": "productivity",
+    "file": "superhuman-vs-gamma-app.html",
+    "a": "superhuman",
+    "b": "gamma-app",
+    "ratingA": 4.6,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "audio",
+    "file": "elevenlabs-vs-descript.html",
+    "a": "elevenlabs",
+    "b": "descript",
+    "ratingA": 4.8,
+    "ratingB": 4.7
+  },
+  {
+    "slug": "coding",
+    "file": "cursor-vs-claude-code.html",
+    "a": "cursor",
+    "b": "claude-code",
+    "ratingA": 4.7,
+    "ratingB": 4.6
+  },
+  {
+    "slug": "marketing",
+    "file": "hubspot-ai-vs-semrush-ai.html",
+    "a": "hubspot-ai",
+    "b": "semrush-ai",
+    "ratingA": 4.6,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "assistant",
+    "file": "claude-vs-chatgpt.html",
+    "a": "claude",
+    "b": "chatgpt",
+    "ratingA": 4.7,
+    "ratingB": 4.6
+  }
+]

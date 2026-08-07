@@ -177,7 +177,14 @@
 
   function render() {
     if (reviews.length === 0) {
-      container.innerHTML = '<div class="section"><div class="no-results"><h3>' + (LANG === 'en' ? 'No reviews data found' : 'No se encontraron reseñas') + '</h3></div></div>';
+      var linksBlock = container.querySelector('.vs-links');
+      var msg = '<div class="section"><div class="no-results"><h3>' + (LANG === 'en' ? 'No reviews data found' : 'No se encontraron reseñas') + '</h3></div></div>';
+      if (linksBlock) {
+        linksBlock.remove();
+        container.innerHTML = linksBlock.outerHTML + msg;
+      } else {
+        container.innerHTML = msg;
+      }
       return;
     }
 
@@ -195,7 +202,14 @@
       html += buildVsSection(slug, tools.slice(0, 2));
     });
 
-    container.innerHTML = html;
+    // Preserve the static hub links block and move the rendered showdowns after it
+    var linksBlock = container.querySelector('.vs-links');
+    if (linksBlock) {
+      linksBlock.remove();
+      container.innerHTML = linksBlock.outerHTML + html;
+    } else {
+      container.innerHTML = html;
+    }
   }
 
   function loadReviews() {

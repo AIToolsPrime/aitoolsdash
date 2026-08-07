@@ -25,6 +25,30 @@ const pages = [
 
 const enData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'reviews-en.json'), 'utf8'));
 
+const pairsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'admin', 'comparison-pairs.json'), 'utf8'));
+
+const pairBlocks = pairsData.map(function (p) {
+  const lastmod = '2026-08-06';
+  return `  <url>
+    <loc>${SITE}/en/${p.file}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE}/en/${p.file}"/>
+    <xhtml:link rel="alternate" hreflang="es" href="${SITE}/es/${p.file}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE}/es/${p.file}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE}/en/${p.file}"/>
+    <xhtml:link rel="alternate" hreflang="es" href="${SITE}/es/${p.file}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+}).join('\n');
+
 function urlBlock(entry) {
   const loc = entry.loc;
   return `  <url>
@@ -65,8 +89,9 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${pages.map(urlBlock).join('\n')}
 ${toolBlocks}
+${pairBlocks}
 </urlset>
 `;
 
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap, 'utf8');
-console.log('sitemap.xml written with ' + (pages.length + enData.length * 2) + ' URLs');
+console.log('sitemap.xml written with ' + (pages.length + enData.length * 2 + pairsData.length * 2) + ' URLs');

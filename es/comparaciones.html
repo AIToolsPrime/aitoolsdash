@@ -94,6 +94,17 @@
 @media (max-width: 480px) { #hero.hero-short { padding: 84px 4vw 16px; } }
 @media (max-width: 360px) { #hero.hero-short { padding: 80px 3vw 16px; } }
 #hero.hero-short .hero-content h1 { margin-bottom: 8px; }
+.vs-links { margin-bottom: 40px; }
+.vs-links h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
+.vs-links > p { color: var(--text-secondary); margin-bottom: 18px; font-size: 0.92rem; }
+.vs-links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.vs-link-card { display: flex; flex-direction: column; gap: 5px; padding: 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; color: var(--text); transition: all var(--transition); }
+.vs-link-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.vs-link-name { font-weight: 600; }
+.vs-link-cat { color: var(--text-muted); font-size: 0.8rem; }
+.vs-link-rating { color: var(--accent); font-size: 0.8rem; }
+.vs-link-cta { color: var(--accent); font-size: 0.8rem; margin-top: 4px; }
+@media (max-width: 600px) { .vs-links-grid { grid-template-columns: 1fr; } }
 </style>
 
 </head>
@@ -134,6 +145,21 @@
   </section>
 
   <div class="section" id="vsContainer">
+    <div class="vs-links">
+      <h2>Explora Comparativas Individuales</h2>
+      <p>Haz clic en cualquier duelo para ver la comparativa completa: veredicto, pros y contras, precios y preguntas frecuentes.</p>
+      <div class="vs-links-grid">
+      <a class="vs-link-card" href="./suno-ai-vs-udio.html"><span class="vs-link-name">Suno AI vs Udio</span><span class="vs-link-cat">IA para Música</span><span class="vs-link-rating">4.6 vs 4.5</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./sudowrite-vs-quillbot.html"><span class="vs-link-name">Sudowrite vs QuillBot</span><span class="vs-link-cat">Escritura IA</span><span class="vs-link-rating">4.5 vs 4.5</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./midjourney-vs-dall-e-3.html"><span class="vs-link-name">Midjourney vs DALL-E 3 / GPT Image</span><span class="vs-link-cat">Imágenes IA</span><span class="vs-link-rating">4.8 vs 4.6</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./runway-ml-vs-veo.html"><span class="vs-link-name">Runway vs Google Veo 3.1</span><span class="vs-link-cat">Video IA</span><span class="vs-link-rating">4.6 vs 4.6</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./superhuman-vs-gamma-app.html"><span class="vs-link-name">Superhuman vs Gamma</span><span class="vs-link-cat">Productividad IA</span><span class="vs-link-rating">4.6 vs 4.5</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./elevenlabs-vs-descript.html"><span class="vs-link-name">ElevenLabs vs Descript</span><span class="vs-link-cat">Audio IA</span><span class="vs-link-rating">4.8 vs 4.7</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./cursor-vs-claude-code.html"><span class="vs-link-name">Cursor vs Claude Code</span><span class="vs-link-cat">Programación IA</span><span class="vs-link-rating">4.7 vs 4.6</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./hubspot-ai-vs-semrush-ai.html"><span class="vs-link-name">HubSpot AI vs Semrush AI</span><span class="vs-link-cat">Marketing IA</span><span class="vs-link-rating">4.6 vs 4.5</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      <a class="vs-link-card" href="./claude-vs-chatgpt.html"><span class="vs-link-name">Claude vs ChatGPT</span><span class="vs-link-cat">Asistente IA</span><span class="vs-link-rating">4.7 vs 4.6</span><span class="vs-link-cta">Leer la comparativa →</span></a>
+      </div>
+    </div>
     <div class="no-results">
       <h3>Cargando comparativas...</h3>
     </div>

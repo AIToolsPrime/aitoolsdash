@@ -529,6 +529,20 @@ function relatedHTML(cfg, lang, related) {
       </div>`;
 }
 
+function comparisonLink(cfg, lang, tool, allReviews) {
+  const same = allReviews.filter(r => r.category_slug === tool.category_slug);
+  if (same.length < 2) return '';
+  const top = same.slice().sort((a, b) => b.rating - a.rating).slice(0, 2);
+  if (!top.some(t => t.id === tool.id)) return '';
+  const rival = top[0].id === tool.id ? top[1] : top[0];
+  const file = top[0].id + '-vs-' + top[1].id + '.html';
+  const label = lang === 'en'
+    ? `Compare ${tool.name} vs ${rival.name} →`
+    : `Comparar ${tool.name} vs ${rival.name} →`;
+  return `
+      <p class="review-compare"><a href="./${file}">${escapeHtml(label)}</a></p>`;
+}
+
 function buildPage(cfg, lang, tool, allReviews) {
   const related = allReviews
     .filter(r => r.id !== tool.id && r.category_slug === tool.category_slug)
@@ -637,6 +651,9 @@ ${gaHTML()}
 .review-back { margin-top: 40px; text-align: center; }
 .review-back a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 1.05rem; font-weight: 600; padding: 12px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg-card); transition: all var(--transition); }
 .review-back a:hover { border-color: var(--accent); transform: translateY(-2px); }
+.review-compare { margin: 0 auto 40px; text-align: center; max-width: 320px; }
+.review-compare a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 0.95rem; font-weight: 600; padding: 11px 22px; border: 1px dashed var(--accent); border-radius: var(--radius-md); background: transparent; transition: all var(--transition); }
+.review-compare a:hover { border-color: var(--accent); border-style: solid; background: rgba(0,0,0,0.2); transform: translateY(-2px); }
 .faq-item { margin-bottom: 20px; }
 .faq-item h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; color: var(--text); }
 .faq-item p { color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; }
@@ -670,6 +687,8 @@ ${navHTML(cfg, lang, tool.id + '.html')}
       </div>
 
       <a href="${escapeAttr(tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn}</a>
+
+      ${comparisonLink(cfg, lang, tool, allReviews)}
 
       <div class="review-section">
         <h2>${escapeHtml(tool.name)} ${cfg.heroTitleSuffix}</h2>
