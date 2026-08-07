@@ -108,10 +108,10 @@
       return '<div class="review-card" data-cat="' + r.category_slug + '" data-index="' + i + '">'
         + '<div class="card-image">'
         + logoHTML(r.logo, r.name)
+        + '<a class="card-visit" href="' + escapeAttr(r.affiliate_url || r.url) + '" target="_blank" rel="nofollow noopener noreferrer" onclick="event.stopPropagation();">' + (LANG === 'en' ? 'Visit' : 'Visitar') + '</a>'
         + '<span class="category-badge">' + catName + '</span>'
         + '<span class="rating-badge">' + starsHTML(r.rating) + ' ' + r.rating + '</span>'
         + '</div>'
-        + '<a class="card-visit" href="' + escapeAttr(r.affiliate_url || r.url) + '" target="_blank" rel="nofollow noopener noreferrer" onclick="event.stopPropagation();">' + (LANG === 'en' ? 'Visit' : 'Visitar') + '</a>'
         + '<div class="card-body">'
         + '<div class="tool-name">' + highlightMatch(r.name) + '</div>'
         + '<div class="tool-tagline">' + r.tagline + '</div>'
@@ -148,10 +148,10 @@
       return '<div class="review-card" data-cat="' + r.category_slug + '" data-result-index="' + i + '">'
         + '<div class="card-image">'
         + logoHTML(r.logo, r.name)
+        + '<a class="card-visit" href="' + escapeAttr(r.affiliate_url || r.url) + '" target="_blank" rel="nofollow noopener noreferrer" onclick="event.stopPropagation();">' + (LANG === 'en' ? 'Visit' : 'Visitar') + '</a>'
         + '<span class="category-badge">' + catName + '</span>'
         + '<span class="rating-badge">' + starsHTML(r.rating) + ' ' + r.rating + '</span>'
         + '</div>'
-        + '<a class="card-visit" href="' + escapeAttr(r.affiliate_url || r.url) + '" target="_blank" rel="nofollow noopener noreferrer" onclick="event.stopPropagation();">' + (LANG === 'en' ? 'Visit' : 'Visitar') + '</a>'
         + '<div class="card-body">'
         + '<div class="tool-name">' + highlightMatch(r.name) + '</div>'
         + '<div class="tool-tagline">' + highlightMatch(r.tagline) + '</div>'
