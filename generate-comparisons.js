@@ -479,6 +479,24 @@ ${gaHTML()}
 .vs-back { margin-top: 40px; text-align: center; }
 .vs-back a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 1.05rem; font-weight: 600; padding: 12px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg-card); transition: all var(--transition); }
 .vs-back a:hover { border-color: var(--accent); transform: translateY(-2px); }
+@media (max-width: 768px) {
+  .vs-grid { grid-template-columns: 1fr 1fr !important; gap: 6px; }
+  .vs-divider { display: none !important; }
+}
+@media (max-width: 420px) {
+  .vs-grid { grid-template-columns: 1fr 1fr !important; gap: 4px; }
+  .vs-card { padding: 10px 6px; }
+  .vs-logo { width: 36px; height: 36px; }
+  .vs-logo img { width: 20px; height: 20px; }
+  .vs-card .vs-name { font-size: 0.75rem; }
+  .vs-card .vs-tagline { font-size: 0.6rem; }
+  .vs-card .vs-rating { font-size: 0.65rem; }
+  .vs-price { font-size: 0.7rem; padding: 2px 8px; }
+  .vs-type { font-size: 0.5rem; padding: 1px 6px; }
+  .vs-btn { font-size: 0.55rem; padding: 7px 8px; }
+  .vs-table-row { font-size: 0.55rem; }
+  .vs-pros-cons .pc-list { font-size: 0.55rem; }
+}
 </style>
 </head>
 <body>
