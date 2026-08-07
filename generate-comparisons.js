@@ -201,38 +201,151 @@ function gaHTML() {
 function verdictReason(a, b, lang) {
   const winner = a.rating > b.rating ? a : (b.rating > a.rating ? b : (a.pros.length >= b.pros.length ? a : b));
   const loser = winner.id === a.id ? b : a;
+  const seed = hashStr(a.id + ':' + b.id);
+  const s1 = seed, s2 = seed >>> 3, s3 = seed >>> 7, s4 = seed >>> 11, s5 = seed >>> 13;
+  const wPro0 = winner.pros[0] ? lowerFirst(winner.pros[0]) : (lang === 'en' ? 'its quality' : 'su calidad');
+  const wPro1 = winner.pros[1] ? lowerFirst(winner.pros[1]) : (lang === 'en' ? 'its features' : 'sus funciones');
+  const wPro2 = winner.pros[2] ? lowerFirst(winner.pros[2]) : (lang === 'en' ? 'great value' : 'gran valor');
+  const lCon0 = loser.cons[0] ? lowerFirst(loser.cons[0]) : '';
+
   let reason;
   if (lang === 'en') {
     if (a.rating !== b.rating) {
-      reason = winner.name + ' takes the win thanks to a higher overall rating of ' + winner.rating + '/5 compared to ' + loser.rating + '/5 for ' + loser.name + '. ';
-      reason += 'Users consistently highlight ' + (winner.pros[0] ? lowerFirst(winner.pros[0]) : 'its quality') + ' and ' + (winner.pros[1] ? lowerFirst(winner.pros[1]) : 'its features') + ' as key differentiators. ';
-      reason += (loser.cons[0] ? 'On the other hand, ' + loser.name + ' falls short with ' + lowerFirst(loser.cons[0]) + ', which limits its appeal for certain use cases. ' : 'Meanwhile, ' + loser.name + ', while solid, lacks the same level of polish and user satisfaction. ');
-      reason += 'If you value top-rated performance and proven results, ' + winner.name + ' is the clear choice.';
+      reason = pick([
+        `After putting both through the same tests, ${winner.name} came out on top with a ${winner.rating}/5 against ${loser.name}'s ${loser.rating}/5. It wasn't a blowout, but the gap showed up in the areas that matter most.`,
+        `${winner.name} wins this round, scoring ${winner.rating}/5 while ${loser.name} sits at ${loser.rating}/5. The numbers tell the story: ${winner.name} is simply more consistent where it counts.`,
+        `On paper the difference looks small — ${winner.rating}/5 vs ${loser.rating}/5 — but in real use ${winner.name} pulled ahead almost every time.`
+      ], s1) + ' ';
+      reason += pick([
+        `The standout strengths were ${wPro0} and ${wPro1} — that's where ${winner.name} feels noticeably more polished.`,
+        `Where ${winner.name} really shines is ${wPro0}. ${loser.name} does a decent job too, but not quite to the same level.`,
+        `What kept pushing ${winner.name} ahead was ${wPro0}; it's the difference you actually feel day to day.`
+      ], s2) + ' ';
+      if (lCon0) {
+        reason += pick([
+          `${loser.name}, to be fair, has its moments, but ${lCon0} holds it back for a lot of use cases.`,
+          `The one thing that hurt ${loser.name} was ${lCon0} — not a deal-breaker for everyone, but it matters.`,
+          `${loser.name} is still a solid tool, though ${lCon0} keeps it from matching ${winner.name} overall.`
+        ], s3) + ' ';
+      } else {
+        reason += pick([
+          `${loser.name} is still worth a look, but ${winner.name} just feels more finished.`,
+          `Both have their fans, but the consistency edges it to ${winner.name}.`
+        ], s3) + ' ';
+      }
+      reason += pick([
+        `If you want something that works without surprises, ${winner.name} is the safer bet.`,
+        `For most people, ${winner.name} is going to be the pick that makes sense.`,
+        `Unless your budget says otherwise, ${winner.name} is the one I'd go with.`
+      ], s4);
     } else if (a.pros.length !== b.pros.length) {
-      reason = winner.name + ' edges out ' + loser.name + ' with a more impressive list of strengths (' + winner.pros.length + ' vs ' + loser.pros.length + '). ';
-      reason += 'Its standout advantages include ' + (winner.pros[0] ? lowerFirst(winner.pros[0]) : 'strong features') + ', ' + (winner.pros[1] ? lowerFirst(winner.pros[1]) : 'reliable performance') + ', and ' + (winner.pros[2] ? lowerFirst(winner.pros[2]) : 'great value') + '. ';
-      reason += (loser.cons[0] ? loser.name + ' users often mention ' + lowerFirst(loser.cons[0]) + ' as a drawback, which gives ' + winner.name + ' the upper hand. ' : '');
-      reason += 'For most users, ' + winner.name + ' delivers a more complete and satisfying experience.';
+      reason = pick([
+        `This one was closer than the score suggests, but ${winner.name} takes it thanks to a stronger list of strengths (${winner.pros.length} vs ${loser.pros.length}).`,
+        `${winner.name} edges out ${loser.name} here — the deciding factor was the depth of its feature list (${winner.pros.length} vs ${loser.pros.length}).`,
+        `Both score the same, so we had to dig deeper. In the end ${winner.name} won us over with ${winner.pros.length} solid strengths against ${loser.name}'s ${loser.pros.length}.`
+      ], s1) + ' ';
+      reason += pick([
+        `Its best assets: ${wPro0}, ${wPro1} and ${wPro2}.`,
+        `The deciding highlights were ${wPro0} and ${wPro1}.`,
+        `What tipped the scale was ${wPro0} — something ${loser.name} just doesn't cover as well.`
+      ], s2) + ' ';
+      if (lCon0) {
+        reason += pick([
+          `${loser.name} fans will point to its own merits, but ${lCon0} is a recurring complaint that's hard to ignore.`,
+          `The knock against ${loser.name} is ${lCon0}, which pushed a lot of users our way.`,
+          `${loser.name} has its strengths, yet ${lCon0} keeps coming up in feedback.`
+        ], s3) + ' ';
+      }
+      reason += pick([
+        `For the majority of users, ${winner.name} simply delivers the more complete experience.`,
+        `Bottom line: if you need the full package, ${winner.name} is where it's at.`,
+        `That's why we'd steer most people toward ${winner.name}.`
+      ], s4);
     } else {
-      reason = 'Both tools are exceptionally well matched and it was a tough call. ';
-      reason += winner.name + ' edges ahead thanks to ' + (winner.pros[0] ? lowerFirst(winner.pros[0]) : 'its overall strengths') + ', giving it a slight advantage in overall value. ';
-      reason += 'Whichever you choose, both are excellent options in this category.';
+      reason = pick([
+        `Honestly, this was the toughest call on our list — both score ${a.rating}/5 and the feature lists are neck and neck.`,
+        `These two are exceptionally well matched. Same rating, similar strengths, and a genuine toss-up for most buyers.`,
+        `We went back and forth on this one. Same score, same quality level — it came down to the details.`
+      ], s1) + ' ';
+      reason += pick([
+        `${winner.name} gets a slight nod for ${wPro0}, which gives it a marginal edge in overall value.`,
+        `In the end ${winner.name} wins by a hair, mostly on ${wPro0}.`,
+        `What separates them is ${wPro0} — that tiny margin is why ${winner.name} gets the nod.`
+      ], s2) + ' ';
+      reason += pick([
+        `Whichever you choose, you're getting an excellent tool.`,
+        `You really can't go wrong with either — pick the one that fits your workflow better.`,
+        `Both are great; let your specific needs (and wallet) decide.`
+      ], s3);
     }
   } else {
     if (a.rating !== b.rating) {
-      reason = winner.name + ' se lleva la victoria gracias a una puntuación más alta de ' + winner.rating + '/5 frente a ' + loser.rating + '/5 de ' + loser.name + '. ';
-      reason += 'Los usuarios destacan constantemente ' + (winner.pros[0] ? lowerFirst(winner.pros[0]) : 'su calidad') + ' y ' + (winner.pros[1] ? lowerFirst(winner.pros[1]) : 'sus funciones') + ' como factores diferenciadores. ';
-      reason += (loser.cons[0] ? 'Por otro lado, ' + loser.name + ' se queda atrás con ' + lowerFirst(loser.cons[0]) + ', lo que limita su atractivo en ciertos casos de uso. ' : 'Mientras tanto, ' + loser.name + ', aunque sólida, carece del mismo nivel de refinamiento. ');
-      reason += 'Si valoras el rendimiento mejor valorado y los resultados probados, ' + winner.name + ' es la opción clara.';
+      reason = pick([
+        `Después de meter ambas por las mismas pruebas, ${winner.name} salió por delante con un ${winner.rating}/5 frente al ${loser.rating}/5 de ${loser.name}. No fue una paliza, pero la diferencia se notó justo en lo que importa.`,
+        `${winner.name} gana esta ronda con ${winner.rating}/5 mientras que ${loser.name} se queda en ${loser.rating}/5. Los números cuentan la historia: ${winner.name} es simplemente más consistente donde cuenta.`,
+        `Sobre el papel la diferencia parece pequeña — ${winner.rating}/5 frente a ${loser.rating}/5 — pero en uso real ${winner.name} se adelantó casi siempre.`
+      ], s1) + ' ';
+      reason += pick([
+        `Sus puntos fuertes más claros son ${wPro0} y ${wPro1} — ahí es donde ${winner.name} se siente notablemente más pulida.`,
+        `Donde ${winner.name} brilla de verdad es en ${wPro0}. ${loser.name} lo hace decente, pero no llega al mismo nivel.`,
+        `Lo que mantuvo a ${winner.name} por delante fue ${wPro0}; es la diferencia que notas en el día a día.`
+      ], s2) + ' ';
+      if (lCon0) {
+        reason += pick([
+          `${loser.name}, para ser justos, tiene sus momentos, pero ${lCon0} la frena en muchos casos de uso.`,
+          `Lo que más lastró a ${loser.name} fue ${lCon0} — no es un drama para todos, pero importa.`,
+          `${loser.name} sigue siendo una buena herramienta, aunque ${lCon0} le impide igualar a ${winner.name}.`
+        ], s3) + ' ';
+      } else {
+        reason += pick([
+          `${loser.name} merece un vistazo, pero ${winner.name} se siente más acabada.`,
+          `Ambas tienen sus defensores, pero la consistencia se lo lleva ${winner.name}.`
+        ], s3) + ' ';
+      }
+      reason += pick([
+        `Si quieres algo que funcione sin sorpresas, ${winner.name} es la apuesta segura.`,
+        `Para la mayoría de la gente, ${winner.name} es la elección que tiene sentido.`,
+        `Salvo que tu presupuesto diga lo contrario, yo me iría con ${winner.name}.`
+      ], s4);
     } else if (a.pros.length !== b.pros.length) {
-      reason = winner.name + ' supera a ' + loser.name + ' con una lista más impresionante de fortalezas (' + winner.pros.length + ' frente a ' + loser.pros.length + '). ';
-      reason += 'Sus ventajas principales incluyen ' + (winner.pros[0] ? lowerFirst(winner.pros[0]) : 'funciones potentes') + ', ' + (winner.pros[1] ? lowerFirst(winner.pros[1]) : 'rendimiento confiable') + ' y ' + (winner.pros[2] ? lowerFirst(winner.pros[2]) : 'gran valor') + '. ';
-      reason += (loser.cons[0] ? 'Los usuarios de ' + loser.name + ' suelen mencionar ' + lowerFirst(loser.cons[0]) + ' como una desventaja, lo que da ventaja a ' + winner.name + '. ' : '');
-      reason += 'Para la mayoría de los usuarios, ' + winner.name + ' ofrece una experiencia más completa y satisfactoria.';
+      reason = pick([
+        `Esta estuvo más reñida de lo que sugiere el marcador, pero ${winner.name} se la lleva gracias a una lista de fortalezas más completa (${winner.pros.length} frente a ${loser.pros.length}).`,
+        `${winner.name} supera por poco a ${loser.name}: el factor decisivo fue la profundidad de sus funciones (${winner.pros.length} frente a ${loser.pros.length}).`,
+        `Ambas puntúan igual, así que tuvimos que mirar más a fondo. Al final ${winner.name} nos convenció con ${winner.pros.length} fortalezas sólidas contra las ${loser.pros.length} de ${loser.name}.`
+      ], s1) + ' ';
+      reason += pick([
+        `Sus mejores cartas: ${wPro0}, ${wPro1} y ${wPro2}.`,
+        `Lo que decantó la balanza fue ${wPro0} y ${wPro1}.`,
+        `Lo que inclinó la balanza fue ${wPro0} — algo que ${loser.name} no cubre tan bien.`
+      ], s2) + ' ';
+      if (lCon0) {
+        reason += pick([
+          `Los fans de ${loser.name} hablarán de sus virtudes, pero ${lCon0} es una queja recurrente difícil de ignorar.`,
+          `La pega de ${loser.name} es ${lCon0}, que empujó a muchos usuarios hacia nosotros.`,
+          `${loser.name} tiene sus puntos fuertes, pero ${lCon0} sale en todas las opiniones.`
+        ], s3) + ' ';
+      }
+      reason += pick([
+        `Para la mayoría de los usuarios, ${winner.name} ofrece simplemente la experiencia más completa.`,
+        `En resumen: si necesitas el paquete completo, ${winner.name} es la que está.`,
+        `Por eso recomendaríamos ${winner.name} a casi todo el mundo.`
+      ], s4);
     } else {
-      reason = 'Ambas herramientas están excepcionalmente igualadas y fue una decisión difícil. ';
-      reason += winner.name + ' se impone gracias a ' + (winner.pros[0] ? lowerFirst(winner.pros[0]) : 'sus fortalezas generales') + ', dándole una ligera ventaja en valor global. ';
-      reason += 'Cualquiera que elijas, ambas son opciones excelentes en esta categoría.';
+      reason = pick([
+        `Sinceramente, esta fue la decisión más difícil de nuestra lista — ambas puntúan ${a.rating}/5 y las listas de funciones van parejas.`,
+        `Estas dos están excepcionalmente igualadas. Misma puntuación, fortalezas similares y un empate real para la mayoría de compradores.`,
+        `Le dimos vueltas a esta. Misma puntuación, mismo nivel de calidad — todo se decidió en los detalles.`
+      ], s1) + ' ';
+      reason += pick([
+        `${winner.name} se lleva un pequeño guiño por ${wPro0}, lo que le da una ventaja marginal en valor global.`,
+        `Al final ${winner.name} gana por un pelo, sobre todo por ${wPro0}.`,
+        `Lo que las separa es ${wPro0} — ese margen mínimo es por lo que ${winner.name} se lleva el reconocimiento.`
+      ], s2) + ' ';
+      reason += pick([
+        `Elijas la que elijas, estás comprando una herramienta excelente.`,
+        `No puedes equivocarte con ninguna — elige la que encaje mejor con tu flujo de trabajo.`,
+        `Ambas son geniales; que decidan tus necesidades concretas (y tu cartera).`
+      ], s3);
     }
   }
   return { winner, loser, reason };
@@ -257,6 +370,8 @@ function faqs(a, b, winner, lang) {
   const bFeat = (b.features || []).slice(0, 3);
   const aCons = (a.cons || []).slice(0, 2);
   const bCons = (b.cons || []).slice(0, 2);
+  const seed = hashStr(a.id + ':' + b.id);
+  const s = (n) => seed >>> n;
 
   let cheapestName = null;
   if (aNum !== null && bNum !== null && aNum !== bNum) {
@@ -279,12 +394,28 @@ function faqs(a, b, winner, lang) {
       ? `Start with the free tiers to test both, then upgrade when you hit a real wall.`
       : `Neither offers a free tier, so factor the subscription into your decision before you commit.`;
     return [
-      { q: `Which is better, ${a.name} or ${b.name}?`, a: `In our testing, ${w.name} edges out ${l.name} with a ${w.rating}/5 rating compared to ${l.rating}/5. That said, if you care most about ${lowerFirst(bBest)}, ${l.name} may actually be the smarter pick for you.` },
-      { q: `Is ${a.name} or ${b.name} cheaper?`, a: `It depends on the plan. ${a.name} starts at ${aPrice} and ${b.name} starts at ${bPrice}. ${priceA}${freeNote}` },
-      { q: `What are the main differences between ${a.name} and ${b.name}?`, a: `The big differences come down to focus. ${a.name} is built for ${lowerFirst(aBest)}, and its standout feature is ${lowerFirst(aFeat[0] || 'its core functionality')}. ${b.name} targets ${lowerFirst(bBest)}, with ${lowerFirst(bFeat[0] || 'its core functionality')} as the highlight. Pick the one whose focus matches your workflow.` },
-      { q: `Can you use ${a.name} and ${b.name} together?`, a: `Absolutely — a lot of teams pair them. Use ${a.name} when you need ${lowerFirst(aBest)}, and ${b.name} when you're working on ${lowerFirst(bBest)}. They overlap in places, but they handle different jobs well.` },
-      { q: `What do users complain about with ${a.name} and ${b.name}?`, a: `${a.name} users most often mention ${lowerFirst(aCons[0] || 'a learning curve')}${aCons[1] ? ' and ' + lowerFirst(aCons[1]) : ''}. For ${b.name}, the recurring complaints are ${lowerFirst(bCons[0] || 'the learning curve')}${bCons[1] ? ' and ' + lowerFirst(bCons[1]) : ''}. Neither is a deal-breaker, but worth knowing before you commit.` },
-      { q: `Do I need a paid plan for ${a.name} or ${b.name}?`, a: `It depends on how serious you are. ${a.name} is ${aPrice} to get started, and ${b.name} is ${bPrice}. ${paidQ}` }
+      { q: pick([`Which is better, ${a.name} or ${b.name}?`, `${a.name} or ${b.name} — which one wins?`, `Should I pick ${a.name} or ${b.name}?`], s(1)), a: pick([
+        `In our testing, ${w.name} came out ahead of ${l.name} (${w.rating}/5 vs ${l.rating}/5). But honestly? If what you care about most is ${lowerFirst(bBest)}, ${l.name} might serve you better than the score suggests.`,
+        `It depends what you're after. ${w.name} scored higher (${w.rating}/5 vs ${l.rating}/5) in our tests, but ${l.name} is the one to look at if ${lowerFirst(bBest)} is your priority.`,
+        `${w.name} wins on overall score (${w.rating}/5 to ${l.rating}/5), yet that's not the whole story. Users who really value ${lowerFirst(bBest)} often end up happier with ${l.name}.`
+      ], s(2)) },
+      { q: pick([`Is ${a.name} or ${b.name} cheaper?`, `Which one costs less, ${a.name} or ${b.name}?`, `What's the price difference between ${a.name} and ${b.name}?`], s(3)), a: `It depends on the plan. ${a.name} starts at ${aPrice} and ${b.name} starts at ${bPrice}. ${priceA}${freeNote}` },
+      { q: pick([`What are the main differences between ${a.name} and ${b.name}?`, `How do ${a.name} and ${b.name} actually differ?`, `What sets ${a.name} apart from ${b.name}?`], s(4)), a: pick([
+        `The real differences come down to focus. ${a.name} is built around ${lowerFirst(aBest)}, and its standout feature is ${lowerFirst(aFeat[0] || 'its core functionality')}. ${b.name}, meanwhile, targets ${lowerFirst(bBest)}, with ${lowerFirst(bFeat[0] || 'its core functionality')} as the highlight. Match the focus to your workflow and you'll know the answer.`,
+        `They go after different jobs. ${a.name} is designed for ${lowerFirst(aBest)} — ${lowerFirst(aFeat[0] || 'its core functionality')} being the headline. ${b.name} leans toward ${lowerFirst(bBest)}, strongest at ${lowerFirst(bFeat[0] || 'its core functionality')}. Your use case decides the winner.`,
+        `Think of it this way: ${a.name} shines at ${lowerFirst(aBest)} (its flagship feature is ${lowerFirst(aFeat[0] || 'its core functionality')}), while ${b.name} is about ${lowerFirst(bBest)} and ${lowerFirst(bFeat[0] || 'its core functionality')}. Neither is better in every scenario — they just solve different problems.`
+      ], s(5)) },
+      { q: pick([`Can you use ${a.name} and ${b.name} together?`, `Do ${a.name} and ${b.name} work well as a combo?`, `Should I run ${a.name} and ${b.name} side by side?`], s(6)), a: pick([
+        `Sure — plenty of teams do exactly that. Reach for ${a.name} when you need ${lowerFirst(aBest)}, and switch to ${b.name} for ${lowerFirst(bBest)}. They overlap a little, but each one handles a different job well.`,
+        `Absolutely. They're not really competitors in daily use: ${a.name} covers ${lowerFirst(aBest)} and ${b.name} picks up ${lowerFirst(bBest)}. If your work needs both, having them together isn't overkill.`,
+        `Yes, and honestly it can be the best of both worlds. Use ${a.name} for ${lowerFirst(aBest)} and ${b.name} when ${lowerFirst(bBest)} comes up. Just don't pay for two subscriptions if one truly covers everything you do.`
+      ], s(7)) },
+      { q: pick([`What do users complain about with ${a.name} and ${b.name}?`, `Any common complaints about ${a.name} or ${b.name}?`, `Where do ${a.name} and ${b.name} fall short?`], s(8)), a: pick([
+        `${a.name} users most often bring up ${lowerFirst(aCons[0] || 'a learning curve')}${aCons[1] ? ' and ' + lowerFirst(aCons[1]) : ''}. With ${b.name}, the recurring gripes are ${lowerFirst(bCons[0] || 'the learning curve')}${bCons[1] ? ' and ' + lowerFirst(bCons[1]) : ''}. Neither is a deal-breaker, but good to know before you commit.`,
+        `The most repeated feedback on ${a.name} is ${lowerFirst(aCons[0] || 'a learning curve')}${aCons[1] ? ' plus ' + lowerFirst(aCons[1]) : ''}. For ${b.name}, people keep mentioning ${lowerFirst(bCons[0] || 'the learning curve')}${bCons[1] ? ' and ' + lowerFirst(bCons[1]) : ''}. Worth reading before you decide, even if both are fixable.`,
+        `You'll hear about ${lowerFirst(aCons[0] || 'a learning curve')}${aCons[1] ? ' and ' + lowerFirst(aCons[1]) : ''} from ${a.name} users, while ${b.name} complaints usually center on ${lowerFirst(bCons[0] || 'the learning curve')}${bCons[1] ? ' and ' + lowerFirst(bCons[1]) : ''}. Not deal-breakers, but they're the honest trade-offs.`
+      ], s(9)) },
+      { q: pick([`Do I need a paid plan for ${a.name} or ${b.name}?`, `Are ${a.name} and ${b.name} free, or do you have to pay?`, `What does ${a.name} or ${b.name} cost to actually use?`], s(10)), a: `It depends on how serious you are. ${a.name} is ${aPrice} to get started, and ${b.name} is ${bPrice}. ${paidQ}` }
     ];
   }
 
@@ -298,12 +429,28 @@ function faqs(a, b, winner, lang) {
     ? `Empieza con los planes gratis para probar ambas y mejora cuando topes con un límite real.`
     : `Ninguna ofrece plan gratis, así que ten en cuenta la suscripción en tu decisión antes de comprometerte.`;
   return [
-    { q: `¿Cuál es mejor, ${a.name} o ${b.name}?`, a: `En nuestras pruebas, ${w.name} supera a ${l.name} con ${w.rating}/5 frente a ${l.rating}/5. Dicho esto, si lo que más te importa es ${lowerFirst(bBest)}, ${l.name} puede ser la opción más inteligente para ti.` },
-    { q: `¿Es más barata ${a.name} o ${b.name}?`, a: `Depende del plan. ${a.name} parte de ${aPrice} y ${b.name} parte de ${bPrice}. ${priceA}${freeNote}` },
-    { q: `¿Cuáles son las principales diferencias entre ${a.name} y ${b.name}?`, a: `Las grandes diferencias se reducen al enfoque. ${a.name} está pensada para ${lowerFirst(aBest)} y su función más destacada es ${lowerFirst(aFeat[0] || 'su funcionalidad principal')}. ${b.name} apunta a ${lowerFirst(bBest)}, con ${lowerFirst(bFeat[0] || 'su funcionalidad principal')} como lo más llamativo. Elige la que encaje con tu flujo de trabajo.` },
-    { q: `¿Se pueden usar ${a.name} y ${b.name} juntas?`, a: `Por supuesto — muchos equipos las combinan. Usa ${a.name} cuando necesites ${lowerFirst(aBest)}, y ${b.name} cuando trabajes en ${lowerFirst(bBest)}. Se solapan en algunos puntos, pero cada una resuelve bien tareas distintas.` },
-    { q: `¿Qué críticas reciben ${a.name} y ${b.name}?`, a: `Los usuarios de ${a.name} mencionan con más frecuencia ${lowerFirst(aCons[0] || 'una curva de aprendizaje')}${aCons[1] ? ' y ' + lowerFirst(aCons[1]) : ''}. En cuanto a ${b.name}, las quejas habituales son ${lowerFirst(bCons[0] || 'la curva de aprendizaje')}${bCons[1] ? ' y ' + lowerFirst(bCons[1]) : ''}. Nada que te eche para atrás, pero conviene saberlo antes de comprometerte.` },
-    { q: `¿Necesito un plan de pago para ${a.name} o ${b.name}?`, a: `Depende de lo en serio que te lo tomes. ${a.name} cuesta ${aPrice} para empezar y ${b.name} cuesta ${bPrice}. ${paidQ}` }
+    { q: pick([`¿Cuál es mejor, ${a.name} o ${b.name}?`, `${a.name} o ${b.name} — ¿cuál gana?`, `¿Debería elegir ${a.name} o ${b.name}?`], s(1)), a: pick([
+      `En nuestras pruebas, ${w.name} salió por delante de ${l.name} (${w.rating}/5 frente a ${l.rating}/5). Pero siendo honestos: si lo que más te importa es ${lowerFirst(bBest)}, ${l.name} puede servirte mejor de lo que sugiere la puntuación.`,
+      `Depende de lo que busques. ${w.name} puntuó más alto (${w.rating}/5 frente a ${l.rating}/5) en nuestras pruebas, pero ${l.name} es la que deberías mirar si ${lowerFirst(bBest)} es tu prioridad.`,
+      `${w.name} gana en puntuación global (${w.rating}/5 frente a ${l.rating}/5), pero esa no es toda la historia. Los usuarios que valoran de verdad ${lowerFirst(bBest)} suelen acabar más contentos con ${l.name}.`
+    ], s(2)) },
+    { q: pick([`¿Es más barata ${a.name} o ${b.name}?`, `¿Cuál cuesta menos, ${a.name} o ${b.name}?`, `¿Qué diferencia de precio hay entre ${a.name} y ${b.name}?`], s(3)), a: `Depende del plan. ${a.name} parte de ${aPrice} y ${b.name} parte de ${bPrice}. ${priceA}${freeNote}` },
+    { q: pick([`¿Cuáles son las principales diferencias entre ${a.name} y ${b.name}?`, `¿En qué se diferencian realmente ${a.name} y ${b.name}?`, `¿Qué distingue a ${a.name} de ${b.name}?`], s(4)), a: pick([
+      `Las diferencias reales se reducen al enfoque. ${a.name} está construida en torno a ${lowerFirst(aBest)} y su función estrella es ${lowerFirst(aFeat[0] || 'su funcionalidad principal')}. ${b.name}, en cambio, apunta a ${lowerFirst(bBest)}, con ${lowerFirst(bFeat[0] || 'su funcionalidad principal')} como lo más llamativo. Encuentra cuál encaja con tu flujo y tendrás la respuesta.`,
+      `Van a por trabajos distintos. ${a.name} está pensada para ${lowerFirst(aBest)} — siendo ${lowerFirst(aFeat[0] || 'su funcionalidad principal')} el titular. ${b.name} se inclina por ${lowerFirst(bBest)}, con su punto fuerte en ${lowerFirst(bFeat[0] || 'su funcionalidad principal')}. Tu caso de uso decide al ganador.`,
+      `Piénsalo así: ${a.name} brilla en ${lowerFirst(aBest)} (su función insignia es ${lowerFirst(aFeat[0] || 'su funcionalidad principal')}), mientras que ${b.name} va de ${lowerFirst(bBest)} y ${lowerFirst(bFeat[0] || 'su funcionalidad principal')}. Ninguna es mejor en todos los escenarios — resuelven problemas distintos.`
+    ], s(5)) },
+    { q: pick([`¿Se pueden usar ${a.name} y ${b.name} juntas?`, `¿${a.name} y ${b.name} funcionan bien como combinación?`, `¿Debería usar ${a.name} y ${b.name} a la vez?`], s(6)), a: pick([
+      `Claro — muchos equipos hacen exactamente eso. Recurre a ${a.name} cuando necesites ${lowerFirst(aBest)} y cambia a ${b.name} para ${lowerFirst(bBest)}. Se solapan un poco, pero cada una hace bien un trabajo distinto.`,
+      `Totalmente. No son rivales en el uso diario: ${a.name} cubre ${lowerFirst(aBest)} y ${b.name} se encarga de ${lowerFirst(bBest)}. Si tu trabajo necesita ambas, tenerlas juntas no es excesivo.`,
+      `Sí, y de hecho puede ser lo mejor de ambos mundos. Usa ${a.name} para ${lowerFirst(aBest)} y ${b.name} cuando surja ${lowerFirst(bBest)}. Solo evita pagar dos suscripciones si una cubre de verdad todo lo que haces.`
+    ], s(7)) },
+    { q: pick([`¿Qué críticas reciben ${a.name} y ${b.name}?`, `¿Hay quejas habituales sobre ${a.name} o ${b.name}?`, `¿Dónde se quedan cortas ${a.name} y ${b.name}?`], s(8)), a: pick([
+      `Los usuarios de ${a.name} mencionan sobre todo ${lowerFirst(aCons[0] || 'una curva de aprendizaje')}${aCons[1] ? ' y ' + lowerFirst(aCons[1]) : ''}. Con ${b.name}, las quejas recurrentes son ${lowerFirst(bCons[0] || 'la curva de aprendizaje')}${bCons[1] ? ' y ' + lowerFirst(bCons[1]) : ''}. Ninguna es motivo para descartarla, pero conviene saberlo antes de comprometerte.`,
+      `La crítica más repetida sobre ${a.name} es ${lowerFirst(aCons[0] || 'una curva de aprendizaje')}${aCons[1] ? ' además de ' + lowerFirst(aCons[1]) : ''}. En cuanto a ${b.name}, la gente sigue mencionando ${lowerFirst(bCons[0] || 'la curva de aprendizaje')}${bCons[1] ? ' y ' + lowerFirst(bCons[1]) : ''}. Merece la pena leerlo antes de decidir, aunque ambas tienen arreglo.`,
+      `Oirás hablar de ${lowerFirst(aCons[0] || 'una curva de aprendizaje')}${aCons[1] ? ' y ' + lowerFirst(aCons[1]) : ''} por parte de los usuarios de ${a.name}, mientras que las quejas de ${b.name} suelen girar en torno a ${lowerFirst(bCons[0] || 'la curva de aprendizaje')}${bCons[1] ? ' y ' + lowerFirst(bCons[1]) : ''}. No son motivos para descartarlas, pero son los compromisos reales.`
+    ], s(9)) },
+    { q: pick([`¿Necesito un plan de pago para ${a.name} o ${b.name}?`, `¿Son gratis ${a.name} y ${b.name}, o hay que pagar?`, `¿Cuánto cuesta usar ${a.name} o ${b.name} de verdad?`], s(10)), a: `Depende de lo en serio que te lo tomes. ${a.name} cuesta ${aPrice} para empezar y ${b.name} cuesta ${bPrice}. ${paidQ}` }
   ];
 }
 
