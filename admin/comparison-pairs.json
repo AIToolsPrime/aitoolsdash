@@ -70,5 +70,109 @@
     "b": "chatgpt",
     "ratingA": 4.7,
     "ratingB": 4.6
+  },
+  {
+    "slug": "music",
+    "file": "mubert-vs-suno-ai.html",
+    "a": "mubert",
+    "b": "suno-ai",
+    "ratingA": 4.1,
+    "ratingB": 4.6
+  },
+  {
+    "slug": "music",
+    "file": "soundraw-vs-udio.html",
+    "a": "soundraw",
+    "b": "udio",
+    "ratingA": 4,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "writing",
+    "file": "rytr-vs-sudowrite.html",
+    "a": "rytr",
+    "b": "sudowrite",
+    "ratingA": 3.8,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "images",
+    "file": "pixlr-ai-vs-canva-ai.html",
+    "a": "pixlr-ai",
+    "b": "canva-ai",
+    "ratingA": 3.9,
+    "ratingB": 4.1
+  },
+  {
+    "slug": "video",
+    "file": "synthesia-vs-veo.html",
+    "a": "synthesia",
+    "b": "veo",
+    "ratingA": 4.4,
+    "ratingB": 4.6
+  },
+  {
+    "slug": "video",
+    "file": "invideo-vs-capcut.html",
+    "a": "invideo",
+    "b": "capcut",
+    "ratingA": 3.9,
+    "ratingB": 4.3
+  },
+  {
+    "slug": "video",
+    "file": "wondershare-filmora-vs-veed-io.html",
+    "a": "wondershare-filmora",
+    "b": "veed-io",
+    "ratingA": 4.1,
+    "ratingB": 4.1
+  },
+  {
+    "slug": "productivity",
+    "file": "fireflies-vs-otter-ai.html",
+    "a": "fireflies",
+    "b": "otter-ai",
+    "ratingA": 4.5,
+    "ratingB": 4.3
+  },
+  {
+    "slug": "productivity",
+    "file": "todoist-vs-taskade.html",
+    "a": "todoist",
+    "b": "taskade",
+    "ratingA": 4.5,
+    "ratingB": 4.3
+  },
+  {
+    "slug": "productivity",
+    "file": "tome-vs-gamma-app.html",
+    "a": "tome",
+    "b": "gamma-app",
+    "ratingA": 4.2,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "assistant",
+    "file": "mem-vs-perplexity.html",
+    "a": "mem",
+    "b": "perplexity",
+    "ratingA": 4.1,
+    "ratingB": 4.5
+  },
+  {
+    "slug": "audio",
+    "file": "riverside-vs-podcastle.html",
+    "a": "riverside",
+    "b": "podcastle",
+    "ratingA": 4.2,
+    "ratingB": 4.3
+  },
+  {
+    "slug": "audio",
+    "file": "murf-vs-speechify.html",
+    "a": "murf",
+    "b": "speechify",
+    "ratingA": 4.1,
+    "ratingB": 4.4
   }
 ]

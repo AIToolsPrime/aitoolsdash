@@ -591,18 +591,42 @@ ${footerHTML(cfg, lang)}
 
 function main() {
   const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'reviews-en.json'), 'utf8'));
-  const grouped = {};
-  data.forEach(r => {
-    if (!grouped[r.category_slug]) grouped[r.category_slug] = [];
-    grouped[r.category_slug].push(r);
-  });
+  const byId = {};
+  data.forEach(r => { byId[r.id] = r; });
+
+  const pairDefs = [
+    { slug: 'music', a: 'suno-ai', b: 'udio' },
+    { slug: 'writing', a: 'sudowrite', b: 'quillbot' },
+    { slug: 'images', a: 'midjourney', b: 'dall-e-3' },
+    { slug: 'video', a: 'runway-ml', b: 'veo' },
+    { slug: 'productivity', a: 'superhuman', b: 'gamma-app' },
+    { slug: 'audio', a: 'elevenlabs', b: 'descript' },
+    { slug: 'coding', a: 'cursor', b: 'claude-code' },
+    { slug: 'marketing', a: 'hubspot-ai', b: 'semrush-ai' },
+    { slug: 'assistant', a: 'claude', b: 'chatgpt' },
+    { slug: 'music', a: 'mubert', b: 'suno-ai' },
+    { slug: 'music', a: 'soundraw', b: 'udio' },
+    { slug: 'writing', a: 'rytr', b: 'sudowrite' },
+    { slug: 'images', a: 'pixlr-ai', b: 'canva-ai' },
+    { slug: 'video', a: 'synthesia', b: 'veo' },
+    { slug: 'video', a: 'invideo', b: 'capcut' },
+    { slug: 'video', a: 'wondershare-filmora', b: 'veed-io' },
+    { slug: 'productivity', a: 'fireflies', b: 'otter-ai' },
+    { slug: 'productivity', a: 'todoist', b: 'taskade' },
+    { slug: 'productivity', a: 'tome', b: 'gamma-app' },
+    { slug: 'assistant', a: 'mem', b: 'perplexity' },
+    { slug: 'audio', a: 'riverside', b: 'podcastle' },
+    { slug: 'audio', a: 'murf', b: 'speechify' }
+  ];
 
   const pairs = [];
-  Object.keys(CATEGORIES.en).forEach(slug => {
-    const tools = (grouped[slug] || []).slice().sort((a, b) => b.rating - a.rating);
-    if (tools.length < 2) return;
-    const a = tools[0], b = tools[1];
-    pairs.push({ slug, a, b, file: `${a.id}-vs-${b.id}.html` });
+  pairDefs.forEach(pd => {
+    const a = byId[pd.a], b = byId[pd.b];
+    if (!a || !b) {
+      console.warn('Skipping pair: missing tool ' + (a ? pd.b : pd.a));
+      return;
+    }
+    pairs.push({ slug: pd.slug, a, b, file: `${pd.a}-vs-${pd.b}.html` });
   });
 
   Object.keys(LANG).forEach(lang => {
