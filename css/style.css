@@ -1307,11 +1307,11 @@ footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--bg-elevated);
+  border: 1px solid var(--accent);
+  background: var(--accent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  color: var(--text-secondary);
+  color: #fff;
   cursor: pointer;
   display: none;
   align-items: center;
@@ -1319,16 +1319,16 @@ footer {
   font-size: 1.1rem;
   transition: all var(--transition);
   z-index: 500;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 14px rgba(129, 140, 248, 0.35);
 }
 
 .scroll-top.visible { display: flex; }
 
 .scroll-top:hover {
-  background: var(--bg-card-hover);
-  color: var(--text);
+  background: var(--accent);
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 6px 20px rgba(129, 140, 248, 0.5);
 }
 
 /* ── Animations ── */
