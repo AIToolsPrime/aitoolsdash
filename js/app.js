@@ -87,6 +87,11 @@
       + '</div>';
   }
 
+  function currentMonthYear() {
+    var s = new Date().toLocaleDateString(LANG === 'en' ? 'en-US' : 'es-ES', { year: 'numeric', month: 'short' });
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
   function renderReviews(data) {
     if (!data || data.length === 0) {
       reviewGrid.innerHTML = '<div class="no-results"><h3>' + (LANG === 'en' ? 'No reviews found' : 'No se encontraron reseñas') + '</h3><p>' + (LANG === 'en' ? 'Try adjusting your filters' : 'Ajusta los filtros') + '</p></div>';
@@ -95,7 +100,7 @@
 
     reviewGrid.innerHTML = data.map(function (r, i) {
       var catName = CATEGORIES[r.category_slug] ? CATEGORIES[r.category_slug][LANG] || CATEGORIES[r.category_slug].en : r.category_en;
-      var dateStr = r.date ? new Date(r.date).toLocaleDateString(LANG === 'en' ? 'en-US' : 'es-ES', { year: 'numeric', month: 'short' }) : '';
+      var dateStr = currentMonthYear();
       return '<div class="review-card" data-cat="' + r.category_slug + '" data-index="' + i + '">'
         + '<div class="card-image">'
         + logoHTML(r.logo, r.name)
@@ -134,7 +139,7 @@
 
     resultsGrid.innerHTML = data.map(function (r, i) {
       var catName = CATEGORIES[r.category_slug] ? CATEGORIES[r.category_slug][LANG] || CATEGORIES[r.category_slug].en : r.category_en;
-      var dateStr = r.date ? new Date(r.date).toLocaleDateString(LANG === 'en' ? 'en-US' : 'es-ES', { year: 'numeric', month: 'short' }) : '';
+      var dateStr = currentMonthYear();
       return '<div class="review-card" data-cat="' + r.category_slug + '" data-result-index="' + i + '">'
         + '<div class="card-image">'
         + logoHTML(r.logo, r.name)
