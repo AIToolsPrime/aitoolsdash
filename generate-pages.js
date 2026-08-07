@@ -144,7 +144,7 @@ function navHTML(cfg, lang, currentFile) {
 
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="${cfg.home}" class="logo" aria-label="AI Tools Dash home"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block" role="img">
+      <a href="${cfg.home}" class="logo" aria-label="AI Tools Dash home"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:auto;display:block" role="img" aria-label="AI Tools Dash logo"><title>AI Tools Dash logo</title>
     <rect x="0" y="0" width="40" height="40" rx="8" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
     <polygon points="20,1 37,18 20,35 3,18" fill="var(--accent)" opacity="0.95"/>
     <path d="M11 23 L17 10 L23 23" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
