@@ -51,7 +51,7 @@ const LANG_CONFIG = {
     heroTitleSuffix: 'Reseña',
     metaTitleSuffix: ' - AI Tools Dash',
     metaDescTemplate: (name) => `Reseña honesta de ${name}. Probamos sus pros, contras ocultos, plan gratis y precios actualizados en 2026. Lee nuestro veredicto y compara las mejores alternativas.`,
-    titleTemplate: (name) => `${name} Reseña: Precios, Alternativas y Veredicto (2026) - AI Tools Dash`,
+    titleTemplate: (name) => `${name} — Reseña y Análisis (2026) - AI Tools Dash`,
     catTitle: 'Categoría',
     ratingTitle: 'Puntuación',
     priceTitle: 'Precio',
@@ -67,7 +67,7 @@ const LANG_CONFIG = {
     faqTitle: 'Preguntas Frecuentes',
     breadcrumbHome: 'Inicio',
     breadcrumbHomeUrl: SITE + '/es/',
-    ogTitle: (name) => `${name} Reseña: Precios, Alternativas y Veredicto (2026) - AI Tools Dash`,
+    ogTitle: (name) => `${name} — Reseña y Análisis (2026) - AI Tools Dash`,
     ogDesc: (name) => `Reseña honesta de ${name}. Probamos sus pros, contras ocultos, plan gratis y precios actualizados en 2026. Lee nuestro veredicto y compara las mejores alternativas.`,
     copyright: '© 2026 AI Tools Dash. Todos los derechos reservados.',
     affiliateNote: 'Algunos enlaces en esta página son de afiliados. Podemos ganar una comisión sin costo adicional para ti.'

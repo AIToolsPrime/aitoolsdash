@@ -737,9 +737,9 @@ ${footerHTML(cfg, lang)}
 }
 
 function main() {
-  const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'reviews-en.json'), 'utf8'));
-  const byId = {};
-  data.forEach(r => { byId[r.id] = r; });
+  const dataEn = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'reviews-en.json'), 'utf8'));
+  const byIdEn = {};
+  dataEn.forEach(r => { byIdEn[r.id] = r; });
 
   const pairDefs = [
     { slug: 'music', a: 'suno-ai', b: 'udio' },
@@ -766,17 +766,22 @@ function main() {
     { slug: 'audio', a: 'murf', b: 'speechify' }
   ];
 
-  const pairs = [];
-  pairDefs.forEach(pd => {
-    const a = byId[pd.a], b = byId[pd.b];
-    if (!a || !b) {
-      console.warn('Skipping pair: missing tool ' + (a ? pd.b : pd.a));
-      return;
-    }
-    pairs.push({ slug: pd.slug, a, b, file: `${pd.a}-vs-${pd.b}.html` });
-  });
+  const getData = (lang) => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', lang === 'en' ? 'reviews-en.json' : 'reviews-es.json'), 'utf8'));
 
   Object.keys(LANG).forEach(lang => {
+    const byId = {};
+    getData(lang).forEach(r => { byId[r.id] = r; });
+
+    const pairs = [];
+    pairDefs.forEach(pd => {
+      const a = byId[pd.a], b = byId[pd.b];
+      if (!a || !b) {
+        console.warn('Skipping pair: missing tool ' + (a ? pd.b : pd.a) + ' in ' + lang);
+        return;
+      }
+      pairs.push({ slug: pd.slug, a, b, file: `${pd.a}-vs-${pd.b}.html` });
+    });
+
     const outDir = path.join(ROOT, LANG[lang].dir);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
     pairs.forEach(p => {
@@ -786,8 +791,14 @@ function main() {
     console.log(`${lang}: generated ${pairs.length} comparison pages`);
   });
 
-  fs.writeFileSync(path.join(ROOT, 'admin', 'comparison-pairs.json'), JSON.stringify(pairs.map(p => ({ slug: p.slug, file: p.file, a: p.a.id, b: p.b.id, ratingA: p.a.rating, ratingB: p.b.rating })), null, 2), 'utf8');
-  console.log('admin/comparison-pairs.json written with ' + pairs.length + ' pairs');
+  const pairsEn = [];
+  pairDefs.forEach(pd => {
+    const a = byIdEn[pd.a], b = byIdEn[pd.b];
+    if (!a || !b) return;
+    pairsEn.push({ slug: pd.slug, a, b, file: `${pd.a}-vs-${pd.b}.html` });
+  });
+  fs.writeFileSync(path.join(ROOT, 'admin', 'comparison-pairs.json'), JSON.stringify(pairsEn.map(p => ({ slug: p.slug, file: p.file, a: p.a.id, b: p.b.id, ratingA: p.a.rating, ratingB: p.b.rating })), null, 2), 'utf8');
+  console.log('admin/comparison-pairs.json written with ' + pairsEn.length + ' pairs');
 }
 
 main();
