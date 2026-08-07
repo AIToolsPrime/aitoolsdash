@@ -33,7 +33,8 @@
       "Free tier available"
     ],
     "best_for": "Content creators, musicians, and hobbyists who want to generate original songs from text prompts",
-    "pricing_note": "Free tier available with daily credits; Pro plan at $10/mo for unlimited generations and commercial rights"
+    "pricing_note": "Free tier available with daily credits; Pro plan at $10/mo for unlimited generations and commercial rights",
+    "affiliate_url": ""
   },
   {
     "id": "udio",
@@ -69,7 +70,8 @@
       "High-quality vocal synthesis"
     ],
     "best_for": "Creators needing high-fidelity AI-generated music with realistic instrumental quality",
-    "pricing_note": "Free tier with generous daily credits; Pro plan at $10/mo for unlimited generations and priority queue"
+    "pricing_note": "Free tier with generous daily credits; Pro plan at $10/mo for unlimited generations and priority queue",
+    "affiliate_url": ""
   },
   {
     "id": "aiva",
@@ -105,7 +107,8 @@
       "Multi-track arrangement"
     ],
     "best_for": "Game developers and filmmakers seeking custom orchestral and cinematic soundtracks",
-    "pricing_note": "Free tier with limited downloads; subscription plans start at $15/mo for unlimited compositions and commercial licensing"
+    "pricing_note": "Free tier with limited downloads; subscription plans start at $15/mo for unlimited compositions and commercial licensing",
+    "affiliate_url": ""
   },
   {
     "id": "mubert",
@@ -141,7 +144,8 @@
       "Electronic genre focus"
     ],
     "best_for": "Streamers and content creators wanting endless royalty-free electronic background music",
-    "pricing_note": "Free tier with watermarked tracks; Pro plans start at $12/mo for royalty-free music and commercial use"
+    "pricing_note": "Free tier with watermarked tracks; Pro plans start at $12/mo for royalty-free music and commercial use",
+    "affiliate_url": ""
   },
   {
     "id": "soundraw",
@@ -177,7 +181,8 @@
       "Fine-grained control"
     ],
     "best_for": "Content creators who want hands-on control over AI music generation",
-    "pricing_note": "Free tier with limited downloads; Creator plan at $16.99/mo for unlimited royalty-free music"
+    "pricing_note": "Free tier with limited downloads; Creator plan at $16.99/mo for unlimited royalty-free music",
+    "affiliate_url": ""
   },
   {
     "id": "boomy",
@@ -213,7 +218,8 @@
       "No music theory needed"
     ],
     "best_for": "Complete beginners who want to create and release original music in minutes",
-    "pricing_note": "Free tier with basic features; Boomy Pro at $9.99/mo for unlimited releases and distribution"
+    "pricing_note": "Free tier with basic features; Boomy Pro at $9.99/mo for unlimited releases and distribution",
+    "affiliate_url": ""
   },
   {
     "id": "riffusion",
@@ -249,7 +255,8 @@
       "Unique sound manipulation"
     ],
     "best_for": "Tech-savvy musicians and experimenters interested in visual AI music synthesis",
-    "pricing_note": "Free for basic use on web interface; advanced features and API access available through paid plans"
+    "pricing_note": "Free for basic use on web interface; advanced features and API access available through paid plans",
+    "affiliate_url": ""
   },
   {
     "id": "beatoven",
@@ -285,7 +292,8 @@
       "Designed for video creators"
     ],
     "best_for": "YouTubers and podcasters needing adaptive mood-based background music",
-    "pricing_note": "Free tier with 15 minutes of music; paid plans start at $6/mo for more minutes and features"
+    "pricing_note": "Free tier with 15 minutes of music; paid plans start at $6/mo for more minutes and features",
+    "affiliate_url": ""
   },
   {
     "id": "landr",
@@ -321,7 +329,8 @@
       "Collaboration tools"
     ],
     "best_for": "Independent musicians looking for AI mastering, distribution, and production tools",
-    "pricing_note": "Free mastering preview; subscription plans start at $12.99/mo for unlimited mastering and distribution"
+    "pricing_note": "Free mastering preview; subscription plans start at $12.99/mo for unlimited mastering and distribution",
+    "affiliate_url": ""
   },
   {
     "id": "elevenlabs-music",
@@ -357,7 +366,8 @@
       "From leading voice AI company"
     ],
     "best_for": "Content creators needing natural-sounding AI-generated music from a trusted voice AI brand",
-    "pricing_note": "Available through ElevenLabs subscription; plans start at $5/mo for basic access to music generation"
+    "pricing_note": "Available through ElevenLabs subscription; plans start at $5/mo for basic access to music generation",
+    "affiliate_url": ""
   },
   {
     "id": "jasper-ai",
@@ -393,7 +403,8 @@
       "GPT-4 powered"
     ],
     "best_for": "Marketing teams and content professionals who need scalable, on-brand content production",
-    "pricing_note": "Creator plan at $49/mo for 1 user; Pro plan at $69/mo with brand voice and collaboration; custom Business plans available"
+    "pricing_note": "Creator plan at $49/mo for 1 user; Pro plan at $69/mo with brand voice and collaboration; custom Business plans available",
+    "affiliate_url": ""
   },
   {
     "id": "writesonic",
@@ -429,7 +440,8 @@
       "Affordable pricing tiers"
     ],
     "best_for": "Solopreneurs and small businesses wanting affordable, versatile AI writing",
-    "pricing_note": "Free tier with limited words; Individual plan at $16/mo for 50K words; Enterprise plan for teams"
+    "pricing_note": "Free tier with limited words; Individual plan at $16/mo for 50K words; Enterprise plan for teams",
+    "affiliate_url": ""
   },
   {
     "id": "copy-ai",
@@ -465,7 +477,8 @@
       "Integrations with CRM"
     ],
     "best_for": "Go-to-market teams automating content creation and sales outreach at scale",
-    "pricing_note": "Free tier with 2K words; Pro plan at $49/mo for unlimited words and workflow automation; Team plan at $249/mo"
+    "pricing_note": "Free tier with 2K words; Pro plan at $49/mo for unlimited words and workflow automation; Team plan at $249/mo",
+    "affiliate_url": ""
   },
   {
     "id": "rytr",
@@ -501,7 +514,8 @@
       "Budget-friendly pricing"
     ],
     "best_for": "Freelancers and startups needing budget-friendly AI writing across multiple languages",
-    "pricing_note": "Free plan with 10K characters/mo; Saver at $9/mo for 100K chars; Unlimited at $29/mo for unlimited generations"
+    "pricing_note": "Free plan with 10K characters/mo; Saver at $9/mo for 100K chars; Unlimited at $29/mo for unlimited generations",
+    "affiliate_url": ""
   },
   {
     "id": "sudowrite",
@@ -537,7 +551,8 @@
       "Idea brainstorming"
     ],
     "best_for": "Novelists, screenwriters, and creative writers working on long-form projects",
-    "pricing_note": "Hobby at $19/mo for 30K words; Professional at $29/mo for 50K words; Max at $59/mo for 100K words"
+    "pricing_note": "Hobby at $19/mo for 30K words; Professional at $29/mo for 50K words; Max at $59/mo for 100K words",
+    "affiliate_url": ""
   },
   {
     "id": "claude",
@@ -573,7 +588,8 @@
       "Safety-focused design"
     ],
     "best_for": "Professionals needing nuanced analysis, coding help, and thoughtful AI conversations",
-    "pricing_note": "Free tier with limited usage; Pro plan at $20/mo for expanded access; Team at $25/user/mo for organizations"
+    "pricing_note": "Free tier with limited usage; Pro plan at $20/mo for expanded access; Team at $25/user/mo for organizations",
+    "affiliate_url": ""
   },
   {
     "id": "chatgpt",
@@ -609,7 +625,8 @@
       "Massive user community"
     ],
     "best_for": "Anyone needing a versatile, all-purpose AI assistant for writing, coding, and problem-solving",
-    "pricing_note": "Free tier available; ChatGPT Plus at $20/mo for GPT-4o access, DALL-E, and advanced features; Team at $25/user/mo"
+    "pricing_note": "Free tier available; ChatGPT Plus at $20/mo for GPT-4o access, DALL-E, and advanced features; Team at $25/user/mo",
+    "affiliate_url": ""
   },
   {
     "id": "prowritingaid",
@@ -645,7 +662,8 @@
       "Integration with Word/Google Docs"
     ],
     "best_for": "Authors and editors who need deep manuscript analysis beyond basic grammar checking",
-    "pricing_note": "Free with limited reports; Premium at $30/mo for full reports and 50 summaries; Premium Pro at $42/mo"
+    "pricing_note": "Free with limited reports; Premium at $30/mo for full reports and 50 summaries; Premium Pro at $42/mo",
+    "affiliate_url": ""
   },
   {
     "id": "anyword",
@@ -681,7 +699,8 @@
       "Conversion-focused AI"
     ],
     "best_for": "Performance marketers who want data-driven copy optimized for conversions",
-    "pricing_note": "Free tier with basic scoring; Starter at $49/mo; Data-Driven at $99/mo; Business at $499/mo for teams"
+    "pricing_note": "Free tier with basic scoring; Starter at $49/mo; Data-Driven at $99/mo; Business at $499/mo for teams",
+    "affiliate_url": ""
   },
   {
     "id": "midjourney",
@@ -717,7 +736,8 @@
       "Active creative community"
     ],
     "best_for": "Artists and designers prioritizing artistic quality and visual beauty in AI imagery",
-    "pricing_note": "Basic at $10/mo for 3.3 hours GPU time; Standard at $30/mo; Pro at $60/mo; Mega at $120/mo"
+    "pricing_note": "Basic at $10/mo for 3.3 hours GPU time; Standard at $30/mo; Pro at $60/mo; Mega at $120/mo",
+    "affiliate_url": ""
   },
   {
     "id": "dall-e-3",
@@ -753,7 +773,8 @@
       "Edit with inpainting"
     ],
     "best_for": "ChatGPT users who want seamless text-to-image generation in one workflow",
-    "pricing_note": "Available through ChatGPT Plus ($20/mo) or OpenAI API with pay-per-image pricing"
+    "pricing_note": "Available through ChatGPT Plus ($20/mo) or OpenAI API with pay-per-image pricing",
+    "affiliate_url": ""
   },
   {
     "id": "adobe-firefly",
@@ -789,7 +810,8 @@
       "Professional design tools"
     ],
     "best_for": "Designers already in the Adobe ecosystem needing generative AI features",
-    "pricing_note": "Included with Creative Cloud subscription at $54.99/mo; free tier with 25 monthly generative credits"
+    "pricing_note": "Included with Creative Cloud subscription at $54.99/mo; free tier with 25 monthly generative credits",
+    "affiliate_url": ""
   },
   {
     "id": "stable-diffusion",
@@ -825,7 +847,8 @@
       "Full creative control"
     ],
     "best_for": "Developers and power users wanting full control over AI image generation without restrictions",
-    "pricing_note": "Free and open-source (local); cloud services available through Stability AI API with usage-based pricing"
+    "pricing_note": "Free and open-source (local); cloud services available through Stability AI API with usage-based pricing",
+    "affiliate_url": ""
   },
   {
     "id": "leonardo-ai",
@@ -861,7 +884,8 @@
       "Pre-built style library"
     ],
     "best_for": "Game developers and concept artists needing consistent, trainable AI image generation",
-    "pricing_note": "Free tier with daily tokens; Apprentice at $10/mo for more tokens; Artisan at $28/mo; Maestro at $59/mo"
+    "pricing_note": "Free tier with daily tokens; Apprentice at $10/mo for more tokens; Artisan at $28/mo; Maestro at $59/mo",
+    "affiliate_url": ""
   },
   {
     "id": "canva-ai",
@@ -897,7 +921,8 @@
       "Social media templates"
     ],
     "best_for": "Non-designers and social media creators who want AI design tools in a simple interface",
-    "pricing_note": "Free tier with limited AI features; Pro at $12.99/mo for full AI access, premium templates, and brand kits"
+    "pricing_note": "Free tier with limited AI features; Pro at $12.99/mo for full AI access, premium templates, and brand kits",
+    "affiliate_url": ""
   },
   {
     "id": "ideogram",
@@ -933,7 +958,8 @@
       "Consistent brand assets"
     ],
     "best_for": "Designers creating logos, posters, and graphics where text legibility is critical",
-    "pricing_note": "Free tier with limited generations; Basic at $20/mo for 2K fast gens; Advanced at $40/mo for 5K fast gens"
+    "pricing_note": "Free tier with limited generations; Basic at $20/mo for 2K fast gens; Advanced at $40/mo for 5K fast gens",
+    "affiliate_url": ""
   },
   {
     "id": "recraft",
@@ -969,7 +995,8 @@
       "Color palette control"
     ],
     "best_for": "Marketing teams producing large volumes of on-brand visual content",
-    "pricing_note": "Free tier with 200 generations; Pro at $19/mo for unlimited and custom model training; Team at custom pricing"
+    "pricing_note": "Free tier with 200 generations; Pro at $19/mo for unlimited and custom model training; Team at custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "clipdrop",
@@ -1005,7 +1032,8 @@
       "API access available"
     ],
     "best_for": "Content creators needing fast, reliable AI image cleanup and enhancement tools",
-    "pricing_note": "Free tier with basic tools; Pro at $9/mo for high-resolution output and API access"
+    "pricing_note": "Free tier with basic tools; Pro at $9/mo for high-resolution output and API access",
+    "affiliate_url": ""
   },
   {
     "id": "pixlr-ai",
@@ -1041,7 +1069,8 @@
       "Free professional editing"
     ],
     "best_for": "Anyone needing free, browser-based professional photo editing with AI features",
-    "pricing_note": "Free tier with ads and basic features; Pixlr Premium at $7.99/mo for AI tools and no ads"
+    "pricing_note": "Free tier with ads and basic features; Pixlr Premium at $7.99/mo for AI tools and no ads",
+    "affiliate_url": ""
   },
   {
     "id": "runway-ml",
@@ -1077,7 +1106,8 @@
       "Professional video tools"
     ],
     "best_for": "Professional video editors and filmmakers exploring cutting-edge AI video tools",
-    "pricing_note": "Free tier with limited exports; Standard at $15/mo for 5 exports; Pro at $35/mo; Unlimited at $95/mo"
+    "pricing_note": "Free tier with limited exports; Standard at $15/mo for 5 exports; Pro at $35/mo; Unlimited at $95/mo",
+    "affiliate_url": ""
   },
   {
     "id": "pika-labs",
@@ -1113,7 +1143,8 @@
       "Expressive animation"
     ],
     "best_for": "Content creators exploring accessible AI video generation with smooth results",
-    "pricing_note": "Free tier with limited generation; Standard at $10/mo for more credits; Unlimited at $36/mo for priority generation"
+    "pricing_note": "Free tier with limited generation; Standard at $10/mo for more credits; Unlimited at $36/mo for priority generation",
+    "affiliate_url": ""
   },
   {
     "id": "hey-gen",
@@ -1149,7 +1180,8 @@
       "Corporate video focus"
     ],
     "best_for": "Corporate teams creating professional AI avatar videos for training and marketing",
-    "pricing_note": "Free tier with 5 min video generation; Creator at $29/mo for 30 min; Business at $89/mo for 60 min"
+    "pricing_note": "Free tier with 5 min video generation; Creator at $29/mo for 30 min; Business at $89/mo for 60 min",
+    "affiliate_url": ""
   },
   {
     "id": "synthesia",
@@ -1185,7 +1217,8 @@
       "Enterprise-grade security"
     ],
     "best_for": "Enterprises needing scalable AI video production with custom avatars and multilingual support",
-    "pricing_note": "Starter at $29/mo for 10 video mins; Creator at $89/mo for 30 mins; Enterprise with custom pricing"
+    "pricing_note": "Starter at $29/mo for 10 video mins; Creator at $89/mo for 30 mins; Enterprise with custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "capcut",
@@ -1221,7 +1254,8 @@
       "Completely free"
     ],
     "best_for": "Social media creators wanting a powerful, free video editor with AI features",
-    "pricing_note": "Completely free with all AI features; Pro plan at $7.99/mo for advanced cloud features and premium assets"
+    "pricing_note": "Completely free with all AI features; Pro plan at $7.99/mo for advanced cloud features and premium assets",
+    "affiliate_url": ""
   },
   {
     "id": "veo",
@@ -1257,7 +1291,8 @@
       "Advanced motion physics"
     ],
     "best_for": "Researchers and early adopters exploring state-of-the-art AI video generation",
-    "pricing_note": "Available through Google Cloud's Vertex AI with usage-based pricing; limited public access during research phase"
+    "pricing_note": "Available through Google Cloud's Vertex AI with usage-based pricing; limited public access during research phase",
+    "affiliate_url": ""
   },
   {
     "id": "kling",
@@ -1293,7 +1328,8 @@
       "Realistic physics"
     ],
     "best_for": "Creators needing high-resolution AI video with physically accurate motion",
-    "pricing_note": "Available through Kuaishou platform with credit-based pricing; details vary by region"
+    "pricing_note": "Available through Kuaishou platform with credit-based pricing; details vary by region",
+    "affiliate_url": ""
   },
   {
     "id": "invideo",
@@ -1329,7 +1365,8 @@
       "Team collaboration"
     ],
     "best_for": "Marketers and businesses creating professional videos at scale without technical expertise",
-    "pricing_note": "Free tier with watermarked exports; Plus at $25/mo for 5 exports; Max at $60/mo for 20 exports"
+    "pricing_note": "Free tier with watermarked exports; Plus at $25/mo for 5 exports; Max at $60/mo for 20 exports",
+    "affiliate_url": ""
   },
   {
     "id": "hedra",
@@ -1337,7 +1374,7 @@
     "tagline": "AI avatars that speak with lifelike motion",
     "category": "AI Video",
     "category_slug": "video",
-    "rating": 4.0,
+    "rating": 4,
     "price": "$15/mo",
     "price_type": "freemium",
     "excerpt": "Hedra generates realistic talking avatars with full facial expressions, body motion, and voice synchronization from text or audio input.",
@@ -1365,7 +1402,8 @@
       "Fast rendering"
     ],
     "best_for": "Content creators and businesses wanting realistic AI avatars for video content at scale",
-    "pricing_note": "Free tier with watermarked exports; Pro at $15/mo for HD exports; Business at $75/mo for custom branding and team collaboration"
+    "pricing_note": "Free tier with watermarked exports; Pro at $15/mo for HD exports; Business at $75/mo for custom branding and team collaboration",
+    "affiliate_url": ""
   },
   {
     "id": "veed-io",
@@ -1401,7 +1439,8 @@
       "No download required"
     ],
     "best_for": "Social media creators and educators needing quick, browser-based video editing",
-    "pricing_note": "Free tier with watermarked exports; Basic at $18/mo for 30 min export; Pro at $30/mo; Business at $59/mo"
+    "pricing_note": "Free tier with watermarked exports; Basic at $18/mo for 30 min export; Pro at $30/mo; Business at $59/mo",
+    "affiliate_url": ""
   },
   {
     "id": "wondershare-filmora",
@@ -1437,7 +1476,8 @@
       "Beginner-friendly UI"
     ],
     "best_for": "YouTubers and content creators wanting powerful editing without professional complexity",
-    "pricing_note": "One-time purchase at $49.99; Annual plan at $49.99/yr; Perpetual plan at $79.99 with updates"
+    "pricing_note": "One-time purchase at $49.99; Annual plan at $49.99/yr; Perpetual plan at $79.99 with updates",
+    "affiliate_url": ""
   },
   {
     "id": "gamma-app",
@@ -1473,7 +1513,8 @@
       "Collaboration ready"
     ],
     "best_for": "Professionals who want beautiful, interactive presentations created in minutes",
-    "pricing_note": "Free tier with limited cards; Pro at $10/mo for unlimited; Team at $20/mo for collaboration features"
+    "pricing_note": "Free tier with limited cards; Pro at $10/mo for unlimited; Team at $20/mo for collaboration features",
+    "affiliate_url": ""
   },
   {
     "id": "otter-ai",
@@ -1509,7 +1550,8 @@
       "Searchable transcripts"
     ],
     "best_for": "Teams wanting automated meeting notes, transcripts, and action item extraction",
-    "pricing_note": "Free tier with 300 min/mo; Pro at $16.99/mo for 1,200 min; Business at $30/user/mo for advanced features"
+    "pricing_note": "Free tier with 300 min/mo; Pro at $16.99/mo for 1,200 min; Business at $30/user/mo for advanced features",
+    "affiliate_url": ""
   },
   {
     "id": "motion",
@@ -1545,7 +1587,8 @@
       "Team calendar sync"
     ],
     "best_for": "Busy professionals who need AI-optimized scheduling and task prioritization",
-    "pricing_note": "Free tier with basic AI scheduling; Pro at $19/mo for individuals; Team at custom pricing"
+    "pricing_note": "Free tier with basic AI scheduling; Pro at $19/mo for individuals; Team at custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "fireflies",
@@ -1581,7 +1624,8 @@
       "Meeting analytics"
     ],
     "best_for": "Sales teams and managers who need to capture and analyze meeting conversations",
-    "pricing_note": "Free tier with 800 min storage; Pro at $18/mo for 8,000 min; Business at $29/mo; Enterprise at custom"
+    "pricing_note": "Free tier with 800 min storage; Pro at $18/mo for 8,000 min; Business at $29/mo; Enterprise at custom",
+    "affiliate_url": ""
   },
   {
     "id": "krisp",
@@ -1617,7 +1661,8 @@
       "Real-time processing"
     ],
     "best_for": "Remote workers and professionals who take calls from noisy environments",
-    "pricing_note": "Free tier with 60 min/day; Pro at $10/mo for unlimited; Team at $15/user/mo with management features"
+    "pricing_note": "Free tier with 60 min/day; Pro at $10/mo for unlimited; Team at $15/user/mo with management features",
+    "affiliate_url": ""
   },
   {
     "id": "perplexity",
@@ -1653,7 +1698,8 @@
       "Research-focused AI"
     ],
     "best_for": "Researchers and professionals needing cited, real-time answers to complex questions",
-    "pricing_note": "Free tier with limited searches; Pro at $20/mo for unlimited, file uploads, and API access"
+    "pricing_note": "Free tier with limited searches; Pro at $20/mo for unlimited, file uploads, and API access",
+    "affiliate_url": ""
   },
   {
     "id": "reclaim",
@@ -1689,7 +1735,8 @@
       "Team availability"
     ],
     "best_for": "Busy professionals wanting AI-optimized calendar scheduling and habit tracking",
-    "pricing_note": "Free tier with basic scheduling; Lite at $10/mo; Pro at $15/mo; Business at $25/user/mo"
+    "pricing_note": "Free tier with basic scheduling; Lite at $10/mo; Pro at $15/mo; Business at $25/user/mo",
+    "affiliate_url": ""
   },
   {
     "id": "mem",
@@ -1725,7 +1772,8 @@
       "Workspace integration"
     ],
     "best_for": "Knowledge workers who accumulate large amounts of information needing smart retrieval",
-    "pricing_note": "Free tier with limited notes; Pro at $14.99/mo for 10K notes and AI features; Team at $25/user/mo"
+    "pricing_note": "Free tier with limited notes; Pro at $14.99/mo for 10K notes and AI features; Team at $25/user/mo",
+    "affiliate_url": ""
   },
   {
     "id": "tome",
@@ -1761,7 +1809,8 @@
       "Collaboration tools"
     ],
     "best_for": "Consultants and analysts building data-driven, narrative presentations",
-    "pricing_note": "Free tier with limited presentations; Pro at $16/mo for unlimited and advanced AI features"
+    "pricing_note": "Free tier with limited presentations; Pro at $16/mo for unlimited and advanced AI features",
+    "affiliate_url": ""
   },
   {
     "id": "descript",
@@ -1797,7 +1846,8 @@
       "Multi-track editing"
     ],
     "best_for": "Podcasters and video creators wanting text-based editing and AI-powered production",
-    "pricing_note": "Free tier with limited exports; Hobbyist at $24/mo for 10 hrs transcription; Pro at $40/mo for 30 hrs"
+    "pricing_note": "Free tier with limited exports; Hobbyist at $24/mo for 10 hrs transcription; Pro at $40/mo for 30 hrs",
+    "affiliate_url": ""
   },
   {
     "id": "cleanvoice",
@@ -1833,7 +1883,8 @@
       "Podcast optimization"
     ],
     "best_for": "Podcasters wanting automated audio cleanup without manual editing",
-    "pricing_note": "Pay-as-you-go: $0.10/min; Monthly plans start at $10/mo for 100 min of processing"
+    "pricing_note": "Pay-as-you-go: $0.10/min; Monthly plans start at $10/mo for 100 min of processing",
+    "affiliate_url": ""
   },
   {
     "id": "podcastle",
@@ -1869,7 +1920,8 @@
       "Publishing tools"
     ],
     "best_for": "Podcasters wanting an all-in-one platform from recording to publishing",
-    "pricing_note": "Free tier with basic features; Storyteller at $14.99/mo for 5 hrs recording; Pro at $29.99/mo for 20 hrs"
+    "pricing_note": "Free tier with basic features; Storyteller at $14.99/mo for 5 hrs recording; Pro at $29.99/mo for 20 hrs",
+    "affiliate_url": ""
   },
   {
     "id": "riverside",
@@ -1905,7 +1957,8 @@
       "Studio-quality remote recording"
     ],
     "best_for": "Podcasters and content creators needing studio-quality remote recordings",
-    "pricing_note": "Free tier available; Pro at $29/mo for 8 hrs; Business at $39/mo for 16 hrs"
+    "pricing_note": "Free tier available; Pro at $29/mo for 8 hrs; Business at $39/mo for 16 hrs",
+    "affiliate_url": ""
   },
   {
     "id": "adobe-podcast",
@@ -1941,7 +1994,8 @@
       "Adobe quality"
     ],
     "best_for": "Beginner podcasters wanting free, one-click audio enhancement",
-    "pricing_note": "Completely free web-based tool; requires Adobe account but no Creative Cloud subscription needed"
+    "pricing_note": "Completely free web-based tool; requires Adobe account but no Creative Cloud subscription needed",
+    "affiliate_url": ""
   },
   {
     "id": "elevenlabs",
@@ -1977,7 +2031,8 @@
       "Emotional range control"
     ],
     "best_for": "Content creators, game developers, and enterprises needing professional-grade AI voice synthesis",
-    "pricing_note": "Free tier with 10K chars/mo; Starter at $5/mo for 30K; Creator at $22/mo for 100K; Pro at $99/mo"
+    "pricing_note": "Free tier with 10K chars/mo; Starter at $5/mo for 30K; Creator at $22/mo for 100K; Pro at $99/mo",
+    "affiliate_url": ""
   },
   {
     "id": "murf",
@@ -2013,7 +2068,8 @@
       "Pitch & speed control"
     ],
     "best_for": "E-learning creators and marketers needing natural AI voiceovers for videos",
-    "pricing_note": "Free tier with limited voiceovers; Creator at $29/mo for 24 hrs; Business at $79/mo for 48 hrs"
+    "pricing_note": "Free tier with limited voiceovers; Creator at $29/mo for 24 hrs; Business at $79/mo for 48 hrs",
+    "affiliate_url": ""
   },
   {
     "id": "respeecher",
@@ -2049,7 +2105,8 @@
       "Professional audio quality"
     ],
     "best_for": "Film and TV studios needing Hollywood-grade voice cloning and dubbing",
-    "pricing_note": "Custom pricing based on project scope and volume; primarily serves enterprise and entertainment clients"
+    "pricing_note": "Custom pricing based on project scope and volume; primarily serves enterprise and entertainment clients",
+    "affiliate_url": ""
   },
   {
     "id": "speechify",
@@ -2085,7 +2142,8 @@
       "Offline listening"
     ],
     "best_for": "Students and professionals wanting to consume written content hands-free",
-    "pricing_note": "Free tier with limited voices; Premium at $11.58/mo for 20+ voices and 4x speed; Audiobook plans available"
+    "pricing_note": "Free tier with limited voices; Premium at $11.58/mo for 20+ voices and 4x speed; Audiobook plans available",
+    "affiliate_url": ""
   },
   {
     "id": "cursor",
@@ -2121,7 +2179,8 @@
       "VS Code compatible"
     ],
     "best_for": "Developers who want deep AI integration in their code editor",
-    "pricing_note": "Free tier with limited AI usage; Pro at $20/mo for 500 fast requests; Business at $40/user/mo"
+    "pricing_note": "Free tier with limited AI usage; Pro at $20/mo for 500 fast requests; Business at $40/user/mo",
+    "affiliate_url": ""
   },
   {
     "id": "claude-code",
@@ -2157,7 +2216,8 @@
       "Complex engineering tasks"
     ],
     "best_for": "Developers preferring terminal-based AI coding assistance for complex projects",
-    "pricing_note": "Included with Claude Pro ($20/mo) or Team ($25/user/mo); usage limits based on subscription tier"
+    "pricing_note": "Included with Claude Pro ($20/mo) or Team ($25/user/mo); usage limits based on subscription tier",
+    "affiliate_url": ""
   },
   {
     "id": "github-copilot",
@@ -2193,7 +2253,8 @@
       "Millions of users"
     ],
     "best_for": "Developers of all levels wanting real-time AI code suggestions in their IDE",
-    "pricing_note": "Free tier with limited completions; Teams at $4/user/mo; Enterprise at $21/user/mo"
+    "pricing_note": "Free tier with limited completions; Teams at $4/user/mo; Enterprise at $21/user/mo",
+    "affiliate_url": ""
   },
   {
     "id": "windsurf",
@@ -2229,7 +2290,8 @@
       "Developer workflow focused"
     ],
     "best_for": "Developers wanting a modern AI-powered IDE with deep context awareness",
-    "pricing_note": "Free tier with basic AI features; Windsurf Pro at $15/mo for unlimited AI commands and flow mode"
+    "pricing_note": "Free tier with basic AI features; Windsurf Pro at $15/mo for unlimited AI commands and flow mode",
+    "affiliate_url": ""
   },
   {
     "id": "replit-agent",
@@ -2265,7 +2327,8 @@
       "Beginner accessible"
     ],
     "best_for": "Beginners and rapid prototypers who want to build apps through conversation",
-    "pricing_note": "Free tier with limited cycles; Core at $25/mo for more compute; Teams with custom pricing"
+    "pricing_note": "Free tier with limited cycles; Core at $25/mo for more compute; Teams with custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "amazon-q",
@@ -2301,7 +2364,8 @@
       "Cloud-native focus"
     ],
     "best_for": "AWS developers needing AI assistance optimized for cloud-native development",
-    "pricing_note": "Free tier with basic features; Pro at $19/user/mo for advanced capabilities and AWS expertise"
+    "pricing_note": "Free tier with basic features; Pro at $19/user/mo for advanced capabilities and AWS expertise",
+    "affiliate_url": ""
   },
   {
     "id": "sourcegraph-cody",
@@ -2337,7 +2401,8 @@
       "Enterprise team support"
     ],
     "best_for": "Development teams working with large, multi-repository codebases",
-    "pricing_note": "Free tier with limited requests; Pro at $9/mo for unlimited; Enterprise with custom pricing"
+    "pricing_note": "Free tier with limited requests; Pro at $9/mo for unlimited; Enterprise with custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "tabnine",
@@ -2373,7 +2438,8 @@
       "IDE integration"
     ],
     "best_for": "Enterprise teams needing private, offline AI code completion with security compliance",
-    "pricing_note": "Free tier with basic completions; Pro at $12/mo for whole-line; Enterprise at custom pricing for private deployment"
+    "pricing_note": "Free tier with basic completions; Pro at $12/mo for whole-line; Enterprise at custom pricing for private deployment",
+    "affiliate_url": ""
   },
   {
     "id": "devin",
@@ -2410,7 +2476,8 @@
       "Project planning"
     ],
     "best_for": "Teams wanting autonomous AI software engineering for end-to-end feature development",
-    "pricing_note": "Available through subscription; pricing details through Cognition Labs for team and enterprise plans"
+    "pricing_note": "Available through subscription; pricing details through Cognition Labs for team and enterprise plans",
+    "affiliate_url": ""
   },
   {
     "id": "bolt-new",
@@ -2446,7 +2513,8 @@
       "No local setup needed"
     ],
     "best_for": "Non-developers and rapid prototypers wanting to build web apps without local setup",
-    "pricing_note": "Free tier with limited tokens; Pro at $20/mo for more usage; Teams with custom pricing"
+    "pricing_note": "Free tier with limited tokens; Pro at $20/mo for more usage; Teams with custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "hubspot-ai",
@@ -2482,7 +2550,8 @@
       "Conversational AI"
     ],
     "best_for": "Businesses using HubSpot who want AI embedded throughout their CRM",
-    "pricing_note": "AI features included with HubSpot subscriptions; Free CRM with limited AI; paid plans start at $45/mo"
+    "pricing_note": "AI features included with HubSpot subscriptions; Free CRM with limited AI; paid plans start at $45/mo",
+    "affiliate_url": ""
   },
   {
     "id": "semrush-ai",
@@ -2518,7 +2587,8 @@
       "Search intelligence"
     ],
     "best_for": "SEO professionals and marketers needing AI-enhanced search marketing insights",
-    "pricing_note": "Pro at $139.95/mo for SEO toolkit; Guru at $249.95/mo; Business at $499.95/mo; AI features included in plans"
+    "pricing_note": "Pro at $139.95/mo for SEO toolkit; Guru at $249.95/mo; Business at $499.95/mo; AI features included in plans",
+    "affiliate_url": ""
   },
   {
     "id": "surfer-seo",
@@ -2554,7 +2624,8 @@
       "Data-driven SEO writing"
     ],
     "best_for": "Content creators focused on data-driven SEO writing and SERP optimization",
-    "pricing_note": "Essential at $89/mo for 10 articles; Advanced at $159/mo for 20; Max at $279/mo for 40 articles"
+    "pricing_note": "Essential at $89/mo for 10 articles; Advanced at $159/mo for 20; Max at $279/mo for 40 articles",
+    "affiliate_url": ""
   },
   {
     "id": "frase",
@@ -2590,7 +2661,8 @@
       "Multi-search monitoring"
     ],
     "best_for": "SEO content teams wanting AI-powered research, writing, and visibility tracking",
-    "pricing_note": "Free tier with 1 article/mo; Basic at $14.99/mo for 4 articles; Team at $49.99/mo for 20 articles"
+    "pricing_note": "Free tier with 1 article/mo; Basic at $14.99/mo for 4 articles; Team at $49.99/mo for 20 articles",
+    "affiliate_url": ""
   },
   {
     "id": "lindy",
@@ -2626,7 +2698,8 @@
       "Business process AI"
     ],
     "best_for": "Teams wanting to automate business workflows with custom no-code AI assistants",
-    "pricing_note": "Free tier with basic automations; Pro at $15/mo for more workflows; Team at $30/mo for collaboration"
+    "pricing_note": "Free tier with basic automations; Pro at $15/mo for more workflows; Team at $30/mo for collaboration",
+    "affiliate_url": ""
   },
   {
     "id": "marketmuse",
@@ -2662,7 +2735,8 @@
       "SEO content scoring"
     ],
     "best_for": "Enterprise content teams needing AI-driven content strategy and competitive analysis",
-    "pricing_note": "Custom pricing based on content volume and team size; typically starts at several hundred dollars per month"
+    "pricing_note": "Custom pricing based on content volume and team size; typically starts at several hundred dollars per month",
+    "affiliate_url": ""
   },
   {
     "id": "activecampaign",
@@ -2698,7 +2772,8 @@
       "Behavioral segmentation"
     ],
     "best_for": "Businesses wanting sophisticated marketing automation without enterprise complexity",
-    "pricing_note": "Starts at $15/mo for email marketing; Plus at $49/mo for automation; Professional at $79/mo for advanced features"
+    "pricing_note": "Starts at $15/mo for email marketing; Plus at $49/mo for automation; Professional at $79/mo for advanced features",
+    "affiliate_url": ""
   },
   {
     "id": "mailchimp-ai",
@@ -2734,7 +2809,8 @@
       "Small business friendly"
     ],
     "best_for": "Small businesses wanting accessible AI-powered email marketing automation",
-    "pricing_note": "Free tier for up to 500 contacts; Essentials at $13/mo; Standard at $20/mo; Premium at $350/mo"
+    "pricing_note": "Free tier for up to 500 contacts; Essentials at $13/mo; Standard at $20/mo; Premium at $350/mo",
+    "affiliate_url": ""
   },
   {
     "id": "lately-ai",
@@ -2770,7 +2846,8 @@
       "Analytics dashboard"
     ],
     "best_for": "Marketers managing multiple social channels who want automated content repurposing",
-    "pricing_note": "Free tier with limited posts; Pro at $39/mo for more content; Business at $79/mo for teams"
+    "pricing_note": "Free tier with limited posts; Pro at $39/mo for more content; Business at $79/mo for teams",
+    "affiliate_url": ""
   },
   {
     "id": "quillbot",
@@ -2806,7 +2883,8 @@
       "Summarizer tool"
     ],
     "best_for": "Students and ESL professionals needing paraphrasing, grammar, and plagiarism tools",
-    "pricing_note": "Free tier with limited words; Premium at $8.33/mo (billed annually) for unlimited words and all modes"
+    "pricing_note": "Free tier with limited words; Premium at $8.33/mo (billed annually) for unlimited words and all modes",
+    "affiliate_url": ""
   },
   {
     "id": "wordtune",
@@ -2842,7 +2920,8 @@
       "Browser extension"
     ],
     "best_for": "Writers wanting to refine and improve existing text with smart rephrasing",
-    "pricing_note": "Free tier with limited rewrites; Premium at $9.99/mo for unlimited; Unlimited at $14.99/mo for advanced AI"
+    "pricing_note": "Free tier with limited rewrites; Premium at $9.99/mo for unlimited; Unlimited at $14.99/mo for advanced AI",
+    "affiliate_url": ""
   },
   {
     "id": "hemingway",
@@ -2878,7 +2957,8 @@
       "Writing clarity focus"
     ],
     "best_for": "Writers focused on making their prose clearer, simpler, and more readable",
-    "pricing_note": "Free web version; Desktop app at $19.99 one-time purchase for offline use"
+    "pricing_note": "Free web version; Desktop app at $19.99 one-time purchase for offline use",
+    "affiliate_url": ""
   },
   {
     "id": "scalenut",
@@ -2914,7 +2994,8 @@
       "Multi-search engine ready"
     ],
     "best_for": "Content teams creating data-driven SEO strategies at scale",
-    "pricing_note": "Essential at $39/mo for 10 articles; Growth at $79/mo for 30; Pro at $149/mo for 80 articles"
+    "pricing_note": "Essential at $39/mo for 10 articles; Growth at $79/mo for 30; Pro at $149/mo for 80 articles",
+    "affiliate_url": ""
   },
   {
     "id": "shortly-ai",
@@ -2950,7 +3031,8 @@
       "Long-form focus"
     ],
     "best_for": "Writers wanting a minimalist, distraction-free AI writing environment for long-form content",
-    "pricing_note": "Monthly plan at $11/mo for unlimited writing; Annual plan at $65/yr for discounted rate"
+    "pricing_note": "Monthly plan at $11/mo for unlimited writing; Annual plan at $65/yr for discounted rate",
+    "affiliate_url": ""
   },
   {
     "id": "taskade",
@@ -2986,7 +3068,8 @@
       "Unified workspace"
     ],
     "best_for": "Remote teams wanting an all-in-one workspace with AI-powered productivity tools",
-    "pricing_note": "Free tier with basic features; Pro at $8/mo for AI features; Business at $16/mo for team collaboration"
+    "pricing_note": "Free tier with basic features; Pro at $8/mo for AI features; Business at $16/mo for team collaboration",
+    "affiliate_url": ""
   },
   {
     "id": "clockwise",
@@ -3022,7 +3105,8 @@
       "Calendar integration"
     ],
     "best_for": "Teams wanting to reduce meeting overload and protect deep work time",
-    "pricing_note": "Free tier with basic features; Pro at $12.50/mo for unlimited; Enterprise at custom pricing"
+    "pricing_note": "Free tier with basic features; Pro at $12.50/mo for unlimited; Enterprise at custom pricing",
+    "affiliate_url": ""
   },
   {
     "id": "todoist",
@@ -3058,7 +3142,8 @@
       "Cross-platform sync"
     ],
     "best_for": "Individuals wanting smarter task management with natural language and AI prioritization",
-    "pricing_note": "Free tier with basic features; Pro at $5/mo for AI features and productivity insights"
+    "pricing_note": "Free tier with basic features; Pro at $5/mo for AI features and productivity insights",
+    "affiliate_url": ""
   },
   {
     "id": "superhuman",
@@ -3094,7 +3179,8 @@
       "Instant search"
     ],
     "best_for": "Executives and professionals who process high volumes of email daily and need maximum speed",
-    "pricing_note": "Monthly subscription at $30/mo for full features with no free tier available"
+    "pricing_note": "Monthly subscription at $30/mo for full features with no free tier available",
+    "affiliate_url": ""
   },
   {
     "id": "chatbase",
@@ -3130,7 +3216,8 @@
       "Easy website embedding"
     ],
     "best_for": "Businesses and creators wanting custom AI chatbots without coding for customer support or knowledge sharing",
-    "pricing_note": "Free tier with 1 chatbot and 30 messages/mo; Hobby at $19/mo; Standard at $99/mo; Pro at $399/mo"
+    "pricing_note": "Free tier with 1 chatbot and 30 messages/mo; Hobby at $19/mo; Standard at $99/mo; Pro at $399/mo",
+    "affiliate_url": ""
   },
   {
     "id": "brevo",
@@ -3166,7 +3253,8 @@
       "Affordable pricing"
     ],
     "best_for": "Growing businesses wanting affordable, comprehensive AI-powered marketing",
-    "pricing_note": "Free tier with 300 emails/day; Starter at $9/mo for 20K emails; Business at $25/mo for unlimited contacts"
+    "pricing_note": "Free tier with 300 emails/day; Starter at $9/mo for 20K emails; Business at $25/mo for unlimited contacts",
+    "affiliate_url": ""
   },
   {
     "id": "buffer",
@@ -3202,7 +3290,8 @@
       "Simple interface"
     ],
     "best_for": "Solopreneurs and small businesses wanting simple AI-powered social media scheduling",
-    "pricing_note": "Free tier with 3 channels; Essentials at $6/mo per channel; Team at $12/mo per channel for collaboration"
+    "pricing_note": "Free tier with 3 channels; Essentials at $6/mo per channel; Team at $12/mo per channel for collaboration",
+    "affiliate_url": ""
   },
   {
     "id": "beehiiv",
@@ -3238,6 +3327,7 @@
       "Analytics dashboard"
     ],
     "best_for": "Newsletter creators and publishers wanting end-to-end platform with AI tools for writing, growth, and monetization",
-    "pricing_note": "Free tier with basic features; Grow at $15/mo for growth tools; Scale at $49/mo for monetization and advanced features"
+    "pricing_note": "Free tier with basic features; Grow at $15/mo for growth tools; Scale at $49/mo for monetization and advanced features",
+    "affiliate_url": ""
   }
 ]

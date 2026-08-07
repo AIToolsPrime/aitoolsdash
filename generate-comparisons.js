@@ -332,7 +332,7 @@ function cardHTML(tool, rank, slug, winner, lang) {
     </div>
     <div class="vs-actions">
       <a href="./${tool.id}.html" class="vs-btn vs-btn-review">${cfg.readReview}</a>
-      <a href="${escapeAttr(tool.url)}" class="vs-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visit} ${escapeHtml(tool.name)}</a>
+      <a href="${escapeAttr(tool.affiliate_url || tool.url)}" class="vs-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visit} ${escapeHtml(tool.name)}</a>
     </div>
   </div>`;
 }

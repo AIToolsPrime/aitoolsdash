@@ -686,7 +686,7 @@ ${navHTML(cfg, lang, tool.id + '.html')}
         <div class="review-meta-row"><span class="meta-label">${cfg.priceTitle}</span><span class="meta-value">${escapeHtml(priceTxt)}</span></div>
       </div>
 
-      <a href="${escapeAttr(tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn}</a>
+      <a href="${escapeAttr(tool.affiliate_url || tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn}</a>
 
       ${comparisonLink(cfg, lang, tool, allReviews)}
 
@@ -725,7 +725,7 @@ ${navHTML(cfg, lang, tool.id + '.html')}
         ${faqHTML(cfg, tool, lang)}
       </div>
 
-      <a href="${escapeAttr(tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn} ${escapeHtml(tool.name)}</a>
+      <a href="${escapeAttr(tool.affiliate_url || tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn} ${escapeHtml(tool.name)}</a>
 
       ${relatedHTML(cfg, lang, related)}
 

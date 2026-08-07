@@ -33,7 +33,8 @@
       "Nivel gratuito disponible"
     ],
     "best_for": "Creadores de contenido y músicos que quieren generar canciones originales desde texto",
-    "pricing_note": "Nivel gratuito con créditos diarios; Plan Pro a $10/mes para generaciones ilimitadas y derechos comerciales"
+    "pricing_note": "Nivel gratuito con créditos diarios; Plan Pro a $10/mes para generaciones ilimitadas y derechos comerciales",
+    "affiliate_url": ""
   },
   {
     "id": "udio",
@@ -69,7 +70,8 @@
       "Síntesis vocal de alta calidad"
     ],
     "best_for": "Creadores que necesitan música generada por IA de alta fidelidad con calidad instrumental realista",
-    "pricing_note": "Nivel gratuito con créditos diarios generosos; Plan Pro a $10/mes para generaciones ilimitadas"
+    "pricing_note": "Nivel gratuito con créditos diarios generosos; Plan Pro a $10/mes para generaciones ilimitadas",
+    "affiliate_url": ""
   },
   {
     "id": "aiva",
@@ -105,7 +107,8 @@
       "Arreglo multipista"
     ],
     "best_for": "Desarrolladores de juegos y cineastas que buscan bandas sonoras orquestales personalizadas",
-    "pricing_note": "Nivel gratuito con descargas limitadas; Planes desde $15/mes para composiciones ilimitadas y licencia comercial"
+    "pricing_note": "Nivel gratuito con descargas limitadas; Planes desde $15/mes para composiciones ilimitadas y licencia comercial",
+    "affiliate_url": ""
   },
   {
     "id": "mubert",
@@ -141,7 +144,8 @@
       "Enfoque en música electrónica"
     ],
     "best_for": "Streamers y creadores que quieren música electrónica de fondo libre de regalías",
-    "pricing_note": "Nivel gratuito con marcas de agua; Planes Pro desde $12/mes para música libre de regalías"
+    "pricing_note": "Nivel gratuito con marcas de agua; Planes Pro desde $12/mes para música libre de regalías",
+    "affiliate_url": ""
   },
   {
     "id": "soundraw",
@@ -177,7 +181,8 @@
       "Control detallado"
     ],
     "best_for": "Creadores que quieren control práctico sobre la generación musical con IA",
-    "pricing_note": "Nivel gratuito con descargas limitadas; Plan Creator a $16.99/mes para música ilimitada libre de regalías"
+    "pricing_note": "Nivel gratuito con descargas limitadas; Plan Creator a $16.99/mes para música ilimitada libre de regalías",
+    "affiliate_url": ""
   },
   {
     "id": "boomy",
@@ -213,7 +218,8 @@
       "Sin necesidad de teoría musical"
     ],
     "best_for": "Principiantes que quieren crear y lanzar música original en minutos",
-    "pricing_note": "Nivel gratuito con funciones básicas; Boomy Pro a $9.99/mes para lanzamientos ilimitados"
+    "pricing_note": "Nivel gratuito con funciones básicas; Boomy Pro a $9.99/mes para lanzamientos ilimitados",
+    "affiliate_url": ""
   },
   {
     "id": "riffusion",
@@ -249,7 +255,8 @@
       "Manipulación de sonido única"
     ],
     "best_for": "Músicos con conocimientos técnicos interesados en síntesis musical visual con IA",
-    "pricing_note": "Gratuito para uso básico en web; funciones avanzadas disponibles en planes de pago"
+    "pricing_note": "Gratuito para uso básico en web; funciones avanzadas disponibles en planes de pago",
+    "affiliate_url": ""
   },
   {
     "id": "beatoven",
@@ -285,7 +292,8 @@
       "Diseñado para creadores de video"
     ],
     "best_for": "YouTubers y podcasters que necesitan música de fondo adaptable basada en estado de ánimo",
-    "pricing_note": "Nivel gratuito con 15 minutos de música; planes desde $6/mes para más minutos"
+    "pricing_note": "Nivel gratuito con 15 minutos de música; planes desde $6/mes para más minutos",
+    "affiliate_url": ""
   },
   {
     "id": "landr",
@@ -321,7 +329,8 @@
       "Herramientas de colaboración"
     ],
     "best_for": "Músicos independientes que buscan masterización, distribución y producción musical con IA",
-    "pricing_note": "Vista previa de masterización gratuita; planes desde $12.99/mes para masterización y distribución ilimitadas"
+    "pricing_note": "Vista previa de masterización gratuita; planes desde $12.99/mes para masterización y distribución ilimitadas",
+    "affiliate_url": ""
   },
   {
     "id": "elevenlabs-music",
@@ -357,7 +366,8 @@
       "De la empresa líder en voz IA"
     ],
     "best_for": "Creadores que necesitan música generada por IA con sonido natural de una marca confiable",
-    "pricing_note": "Disponible con suscripción a ElevenLabs; planes desde $5/mes para acceso básico"
+    "pricing_note": "Disponible con suscripción a ElevenLabs; planes desde $5/mes para acceso básico",
+    "affiliate_url": ""
   },
   {
     "id": "jasper-ai",
@@ -393,7 +403,8 @@
       "Potenciado por GPT-4"
     ],
     "best_for": "Equipos de marketing y profesionales del contenido que necesitan producción escalable",
-    "pricing_note": "Plan Creator a $49/mes; Plan Pro a $69/mes con voz de marca; Planes Business personalizados"
+    "pricing_note": "Plan Creator a $49/mes; Plan Pro a $69/mes con voz de marca; Planes Business personalizados",
+    "affiliate_url": ""
   },
   {
     "id": "writesonic",
@@ -429,7 +440,8 @@
       "Precios accesibles"
     ],
     "best_for": "Autónomos y pequeñas empresas que quieren redacción IA versátil y asequible",
-    "pricing_note": "Nivel gratuito con palabras limitadas; Plan Individual a $16/mes para 50K palabras"
+    "pricing_note": "Nivel gratuito con palabras limitadas; Plan Individual a $16/mes para 50K palabras",
+    "affiliate_url": ""
   },
   {
     "id": "copy-ai",
@@ -465,7 +477,8 @@
       "Integraciones con CRM"
     ],
     "best_for": "Equipos GTM que automatizan creación de contenido y prospección de ventas a escala",
-    "pricing_note": "Nivel gratuito con 2K palabras; Plan Pro a $49/mes; Plan Team a $249/mes"
+    "pricing_note": "Nivel gratuito con 2K palabras; Plan Pro a $49/mes; Plan Team a $249/mes",
+    "affiliate_url": ""
   },
   {
     "id": "rytr",
@@ -501,7 +514,8 @@
       "Precio económico"
     ],
     "best_for": "Autónomos y startups que necesitan redacción IA económica en múltiples idiomas",
-    "pricing_note": "Plan gratuito con 10K caracteres/mes; Saver a $9/mes; Unlimited a $29/mes"
+    "pricing_note": "Plan gratuito con 10K caracteres/mes; Saver a $9/mes; Unlimited a $29/mes",
+    "affiliate_url": ""
   },
   {
     "id": "sudowrite",
@@ -537,7 +551,8 @@
       "Lluvia de ideas creativas"
     ],
     "best_for": "Novelistas, guionistas y escritores creativos que trabajan en proyectos de formato largo",
-    "pricing_note": "Hobby a $19/mes por 30K palabras; Professional a $29/mes; Max a $59/mes"
+    "pricing_note": "Hobby a $19/mes por 30K palabras; Professional a $29/mes; Max a $59/mes",
+    "affiliate_url": ""
   },
   {
     "id": "claude",
@@ -573,7 +588,8 @@
       "Diseño centrado en seguridad"
     ],
     "best_for": "Profesionales que necesitan análisis matizados, ayuda con código y conversaciones IA reflexivas",
-    "pricing_note": "Nivel gratuito; Plan Pro a $20/mes; Team a $25/usuario/mes para organizaciones"
+    "pricing_note": "Nivel gratuito; Plan Pro a $20/mes; Team a $25/usuario/mes para organizaciones",
+    "affiliate_url": ""
   },
   {
     "id": "chatgpt",
@@ -609,7 +625,8 @@
       "Comunidad masiva de usuarios"
     ],
     "best_for": "Cualquiera que necesite un asistente IA versátil para escribir, programar y resolver problemas",
-    "pricing_note": "Nivel gratuito disponible; ChatGPT Plus a $20/mes con GPT-4o; Team a $25/usuario/mes"
+    "pricing_note": "Nivel gratuito disponible; ChatGPT Plus a $20/mes con GPT-4o; Team a $25/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "prowritingaid",
@@ -645,7 +662,8 @@
       "Integración con Word/Google Docs"
     ],
     "best_for": "Autores y editores que necesitan análisis profundo de manuscritos más allá de la gramática",
-    "pricing_note": "Gratuito con informes limitados; Premium a $30/mes; Premium Pro a $42/mes"
+    "pricing_note": "Gratuito con informes limitados; Premium a $30/mes; Premium Pro a $42/mes",
+    "affiliate_url": ""
   },
   {
     "id": "anyword",
@@ -681,7 +699,8 @@
       "IA enfocada en conversión"
     ],
     "best_for": "Especialistas en marketing de rendimiento que quieren copy optimizado para conversiones",
-    "pricing_note": "Nivel gratuito; Starter a $49/mes; Data-Driven a $99/mes; Business a $499/mes"
+    "pricing_note": "Nivel gratuito; Starter a $49/mes; Data-Driven a $99/mes; Business a $499/mes",
+    "affiliate_url": ""
   },
   {
     "id": "midjourney",
@@ -717,7 +736,8 @@
       "Comunidad creativa activa"
     ],
     "best_for": "Artistas y diseñadores que priorizan la calidad artística en imágenes generadas por IA",
-    "pricing_note": "Basic a $10/mes; Standard a $30/mes; Pro a $60/mes; Mega a $120/mes"
+    "pricing_note": "Basic a $10/mes; Standard a $30/mes; Pro a $60/mes; Mega a $120/mes",
+    "affiliate_url": ""
   },
   {
     "id": "dall-e-3",
@@ -753,7 +773,8 @@
       "Edición con inpainting"
     ],
     "best_for": "Usuarios de ChatGPT que quieren generación de imágenes integrada en un solo flujo",
-    "pricing_note": "Disponible con ChatGPT Plus ($20/mes) o API de OpenAI con pago por imagen"
+    "pricing_note": "Disponible con ChatGPT Plus ($20/mes) o API de OpenAI con pago por imagen",
+    "affiliate_url": ""
   },
   {
     "id": "adobe-firefly",
@@ -789,7 +810,8 @@
       "Herramientas de diseño profesionales"
     ],
     "best_for": "Diseñadores en el ecosistema Adobe que necesitan funciones de IA generativa",
-    "pricing_note": "Incluido con Creative Cloud ($54.99/mes); nivel gratuito con 25 créditos mensuales"
+    "pricing_note": "Incluido con Creative Cloud ($54.99/mes); nivel gratuito con 25 créditos mensuales",
+    "affiliate_url": ""
   },
   {
     "id": "stable-diffusion",
@@ -825,7 +847,8 @@
       "Control creativo total"
     ],
     "best_for": "Desarrolladores y usuarios avanzados que quieren control total sobre generación de imágenes",
-    "pricing_note": "Gratuito y de código abierto (local); servicios cloud disponibles con API de Stability AI"
+    "pricing_note": "Gratuito y de código abierto (local); servicios cloud disponibles con API de Stability AI",
+    "affiliate_url": ""
   },
   {
     "id": "leonardo-ai",
@@ -861,7 +884,8 @@
       "Biblioteca de estilos predefinidos"
     ],
     "best_for": "Desarrolladores de juegos y artistas conceptuales que necesitan generación de imágenes consistente",
-    "pricing_note": "Nivel gratuito con tokens diarios; Apprentice a $10/mes; Artisan a $28/mes; Maestro a $59/mes"
+    "pricing_note": "Nivel gratuito con tokens diarios; Apprentice a $10/mes; Artisan a $28/mes; Maestro a $59/mes",
+    "affiliate_url": ""
   },
   {
     "id": "canva-ai",
@@ -897,7 +921,8 @@
       "Plantillas para redes sociales"
     ],
     "best_for": "No diseñadores y creadores de redes sociales que quieren herramientas de IA en una interfaz simple",
-    "pricing_note": "Nivel gratuito con funciones IA limitadas; Pro a $12.99/mes para acceso completo"
+    "pricing_note": "Nivel gratuito con funciones IA limitadas; Pro a $12.99/mes para acceso completo",
+    "affiliate_url": ""
   },
   {
     "id": "ideogram",
@@ -933,7 +958,8 @@
       "Activos de marca consistentes"
     ],
     "best_for": "Diseñadores que crean logotipos y gráficos donde la legibilidad del texto es crítica",
-    "pricing_note": "Nivel gratuito; Basic a $20/mes; Advanced a $40/mes para más generaciones rápidas"
+    "pricing_note": "Nivel gratuito; Basic a $20/mes; Advanced a $40/mes para más generaciones rápidas",
+    "affiliate_url": ""
   },
   {
     "id": "recraft",
@@ -969,7 +995,8 @@
       "Control de paleta de colores"
     ],
     "best_for": "Equipos de marketing que producen grandes volúmenes de contenido visual de marca",
-    "pricing_note": "Nivel gratuito con 200 generaciones; Pro a $19/mes para ilimitado; Team con precio personalizado"
+    "pricing_note": "Nivel gratuito con 200 generaciones; Pro a $19/mes para ilimitado; Team con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "clipdrop",
@@ -1005,7 +1032,8 @@
       "API disponible"
     ],
     "best_for": "Creadores que necesitan herramientas rápidas y confiables de limpieza y mejora de imágenes",
-    "pricing_note": "Nivel gratuito; Pro a $9/mes para alta resolución y acceso API"
+    "pricing_note": "Nivel gratuito; Pro a $9/mes para alta resolución y acceso API",
+    "affiliate_url": ""
   },
   {
     "id": "pixlr-ai",
@@ -1041,7 +1069,8 @@
       "Edición profesional gratuita"
     ],
     "best_for": "Cualquiera que necesite edición de fotos profesional gratuita en navegador con funciones IA",
-    "pricing_note": "Nivel gratuito con anuncios; Pixlr Premium a $7.99/mes sin anuncios y herramientas IA"
+    "pricing_note": "Nivel gratuito con anuncios; Pixlr Premium a $7.99/mes sin anuncios y herramientas IA",
+    "affiliate_url": ""
   },
   {
     "id": "runway-ml",
@@ -1077,7 +1106,8 @@
       "Herramientas de video profesionales"
     ],
     "best_for": "Editores de video profesionales que exploran herramientas de video con IA de vanguardia",
-    "pricing_note": "Nivel gratuito; Standard a $15/mes; Pro a $35/mes; Unlimited a $95/mes"
+    "pricing_note": "Nivel gratuito; Standard a $15/mes; Pro a $35/mes; Unlimited a $95/mes",
+    "affiliate_url": ""
   },
   {
     "id": "pika-labs",
@@ -1113,7 +1143,8 @@
       "Animación expresiva"
     ],
     "best_for": "Creadores que exploran generación de video con IA accesible con resultados suaves",
-    "pricing_note": "Nivel gratuito; Standard a $10/mes; Unlimited a $36/mes para generación prioritaria"
+    "pricing_note": "Nivel gratuito; Standard a $10/mes; Unlimited a $36/mes para generación prioritaria",
+    "affiliate_url": ""
   },
   {
     "id": "hey-gen",
@@ -1149,7 +1180,8 @@
       "Enfoque en video corporativo"
     ],
     "best_for": "Equipos corporativos que crean videos profesionales con avatares IA para capacitación y marketing",
-    "pricing_note": "Nivel gratuito con 5 min de video; Creator a $29/mes; Business a $89/mes"
+    "pricing_note": "Nivel gratuito con 5 min de video; Creator a $29/mes; Business a $89/mes",
+    "affiliate_url": ""
   },
   {
     "id": "synthesia",
@@ -1185,7 +1217,8 @@
       "Seguridad de nivel empresarial"
     ],
     "best_for": "Empresas que necesitan producción de video IA escalable con avatares personalizados",
-    "pricing_note": "Starter a $29/mes por 10 min; Creator a $89/mes por 30 min; Enterprise con precio personalizado"
+    "pricing_note": "Starter a $29/mes por 10 min; Creator a $89/mes por 30 min; Enterprise con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "capcut",
@@ -1221,7 +1254,8 @@
       "Completamente gratuito"
     ],
     "best_for": "Creadores de redes sociales que quieren un editor de video potente y gratuito con IA",
-    "pricing_note": "Completamente gratuito; Plan Pro a $7.99/mes para funciones cloud avanzadas"
+    "pricing_note": "Completamente gratuito; Plan Pro a $7.99/mes para funciones cloud avanzadas",
+    "affiliate_url": ""
   },
   {
     "id": "veo",
@@ -1257,7 +1291,8 @@
       "Física de movimiento avanzada"
     ],
     "best_for": "Investigadores y early adopters que exploran generación de video con IA de vanguardia",
-    "pricing_note": "Disponible a través de Google Cloud Vertex AI; acceso público limitado durante investigación"
+    "pricing_note": "Disponible a través de Google Cloud Vertex AI; acceso público limitado durante investigación",
+    "affiliate_url": ""
   },
   {
     "id": "kling",
@@ -1293,7 +1328,8 @@
       "Física realista"
     ],
     "best_for": "Creadores que necesitan video IA de alta resolución con movimiento físicamente preciso",
-    "pricing_note": "Disponible en plataforma Kuaishou con precios basados en créditos; varía por región"
+    "pricing_note": "Disponible en plataforma Kuaishou con precios basados en créditos; varía por región",
+    "affiliate_url": ""
   },
   {
     "id": "invideo",
@@ -1329,7 +1365,8 @@
       "Colaboración en equipo"
     ],
     "best_for": "Profesionales del marketing que crean videos profesionales a escala sin experiencia técnica",
-    "pricing_note": "Nivel gratuito con marca de agua; Plus a $25/mes; Max a $60/mes"
+    "pricing_note": "Nivel gratuito con marca de agua; Plus a $25/mes; Max a $60/mes",
+    "affiliate_url": ""
   },
   {
     "id": "hedra",
@@ -1337,7 +1374,7 @@
     "tagline": "Avatares con IA que hablan con movimiento realista",
     "category": "Vídeo con IA",
     "category_slug": "video",
-    "rating": 4.0,
+    "rating": 4,
     "price": "$15/mo",
     "price_type": "freemium",
     "excerpt": "Hedra genera avatares parlantes realistas con expresiones faciales completas, movimiento corporal y sincronización de voz a partir de texto o audio.",
@@ -1365,7 +1402,8 @@
       "Renderizado rápido"
     ],
     "best_for": "Creadores de contenido y empresas que quieren avatares realistas con IA para video a escala",
-    "pricing_note": "Nivel gratuito con marca de agua; Pro a $15/mes para exportaciones HD; Business a $75/mes para branding personalizado"
+    "pricing_note": "Nivel gratuito con marca de agua; Pro a $15/mes para exportaciones HD; Business a $75/mes para branding personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "veed-io",
@@ -1401,7 +1439,8 @@
       "Sin descarga necesaria"
     ],
     "best_for": "Creadores de redes sociales y educadores que necesitan edición de video rápida en navegador",
-    "pricing_note": "Nivel gratuito; Basic a $18/mes; Pro a $30/mes; Business a $59/mes"
+    "pricing_note": "Nivel gratuito; Basic a $18/mes; Pro a $30/mes; Business a $59/mes",
+    "affiliate_url": ""
   },
   {
     "id": "wondershare-filmora",
@@ -1437,7 +1476,8 @@
       "Interfaz para principiantes"
     ],
     "best_for": "YouTubers que quieren edición potente sin complejidad profesional",
-    "pricing_note": "Compra única a $49.99; Plan anual a $49.99/año; Plan perpetuo a $79.99"
+    "pricing_note": "Compra única a $49.99; Plan anual a $49.99/año; Plan perpetuo a $79.99",
+    "affiliate_url": ""
   },
   {
     "id": "gamma-app",
@@ -1473,7 +1513,8 @@
       "Listo para colaboración"
     ],
     "best_for": "Profesionales que quieren presentaciones interactivas hermosas creadas en minutos",
-    "pricing_note": "Nivel gratuito; Pro a $10/mes; Team a $20/mes para colaboración"
+    "pricing_note": "Nivel gratuito; Pro a $10/mes; Team a $20/mes para colaboración",
+    "affiliate_url": ""
   },
   {
     "id": "otter-ai",
@@ -1509,7 +1550,8 @@
       "Transcripciones buscables"
     ],
     "best_for": "Equipos que quieren notas de reuniones y transcripciones automáticas",
-    "pricing_note": "Nivel gratuito con 300 min/mes; Pro a $16.99/mes; Business a $30/usuario/mes"
+    "pricing_note": "Nivel gratuito con 300 min/mes; Pro a $16.99/mes; Business a $30/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "motion",
@@ -1545,7 +1587,8 @@
       "Sincronización de calendario del equipo"
     ],
     "best_for": "Profesionales ocupados que necesitan programación optimizada y priorización de tareas con IA",
-    "pricing_note": "Nivel gratuito; Pro a $19/mes para individuos; Team con precio personalizado"
+    "pricing_note": "Nivel gratuito; Pro a $19/mes para individuos; Team con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "fireflies",
@@ -1581,7 +1624,8 @@
       "Analíticas de reuniones"
     ],
     "best_for": "Equipos de ventas que necesitan capturar y analizar conversaciones de reuniones",
-    "pricing_note": "Nivel gratuito con 800 min; Pro a $18/mes; Business a $29/mes; Enterprise personalizado"
+    "pricing_note": "Nivel gratuito con 800 min; Pro a $18/mes; Business a $29/mes; Enterprise personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "krisp",
@@ -1617,7 +1661,8 @@
       "Procesamiento en tiempo real"
     ],
     "best_for": "Trabajadores remotos que toman llamadas desde entornos ruidosos",
-    "pricing_note": "Nivel gratuito con 60 min/día; Pro a $10/mes; Team a $15/usuario/mes"
+    "pricing_note": "Nivel gratuito con 60 min/día; Pro a $10/mes; Team a $15/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "perplexity",
@@ -1653,7 +1698,8 @@
       "IA enfocada en investigación"
     ],
     "best_for": "Investigadores y profesionales que necesitan respuestas citadas a preguntas complejas",
-    "pricing_note": "Nivel gratuito; Pro a $20/mes para ilimitado, carga de archivos y acceso API"
+    "pricing_note": "Nivel gratuito; Pro a $20/mes para ilimitado, carga de archivos y acceso API",
+    "affiliate_url": ""
   },
   {
     "id": "reclaim",
@@ -1689,7 +1735,8 @@
       "Disponibilidad del equipo"
     ],
     "best_for": "Profesionales ocupados que quieren optimización de calendario y seguimiento de hábitos con IA",
-    "pricing_note": "Nivel gratuito; Lite a $10/mes; Pro a $15/mes; Business a $25/usuario/mes"
+    "pricing_note": "Nivel gratuito; Lite a $10/mes; Pro a $15/mes; Business a $25/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "mem",
@@ -1725,7 +1772,8 @@
       "Integración con espacio de trabajo"
     ],
     "best_for": "Trabajadores del conocimiento que acumulan información y necesitan recuperación inteligente",
-    "pricing_note": "Nivel gratuito; Pro a $14.99/mes; Team a $25/usuario/mes"
+    "pricing_note": "Nivel gratuito; Pro a $14.99/mes; Team a $25/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "tome",
@@ -1761,7 +1809,8 @@
       "Herramientas de colaboración"
     ],
     "best_for": "Consultores y analistas que crean presentaciones narrativas basadas en datos",
-    "pricing_note": "Nivel gratuito; Pro a $16/mes para ilimitado y funciones IA avanzadas"
+    "pricing_note": "Nivel gratuito; Pro a $16/mes para ilimitado y funciones IA avanzadas",
+    "affiliate_url": ""
   },
   {
     "id": "descript",
@@ -1797,7 +1846,8 @@
       "Edición multipista"
     ],
     "best_for": "Podcasters y creadores de video que quieren edición basada en texto y producción con IA",
-    "pricing_note": "Nivel gratuito; Hobbyist a $24/mes; Pro a $40/mes para más horas de transcripción"
+    "pricing_note": "Nivel gratuito; Hobbyist a $24/mes; Pro a $40/mes para más horas de transcripción",
+    "affiliate_url": ""
   },
   {
     "id": "cleanvoice",
@@ -1833,7 +1883,8 @@
       "Optimización para podcasts"
     ],
     "best_for": "Podcasters que quieren limpieza de audio automatizada sin edición manual",
-    "pricing_note": "Pago por uso: $0.10/min; Planes mensuales desde $10/mes por 100 min"
+    "pricing_note": "Pago por uso: $0.10/min; Planes mensuales desde $10/mes por 100 min",
+    "affiliate_url": ""
   },
   {
     "id": "podcastle",
@@ -1869,7 +1920,8 @@
       "Herramientas de publicación"
     ],
     "best_for": "Podcasters que quieren una plataforma integral desde grabación hasta publicación",
-    "pricing_note": "Nivel gratuito; Storyteller a $14.99/mes; Pro a $29.99/mes"
+    "pricing_note": "Nivel gratuito; Storyteller a $14.99/mes; Pro a $29.99/mes",
+    "affiliate_url": ""
   },
   {
     "id": "riverside",
@@ -1905,7 +1957,8 @@
       "Grabación remota con calidad de estudio"
     ],
     "best_for": "Podcasters que necesitan grabaciones remotas con calidad de estudio",
-    "pricing_note": "Nivel gratuito disponible; Pro a $29/mes para 8 hrs; Business a $39/mes para 16 hrs"
+    "pricing_note": "Nivel gratuito disponible; Pro a $29/mes para 8 hrs; Business a $39/mes para 16 hrs",
+    "affiliate_url": ""
   },
   {
     "id": "adobe-podcast",
@@ -1941,7 +1994,8 @@
       "Calidad Adobe"
     ],
     "best_for": "Podcasters principiantes que quieren mejora de audio gratuita con un clic",
-    "pricing_note": "Completamente gratuito; solo requiere cuenta Adobe sin suscripción a Creative Cloud"
+    "pricing_note": "Completamente gratuito; solo requiere cuenta Adobe sin suscripción a Creative Cloud",
+    "affiliate_url": ""
   },
   {
     "id": "elevenlabs",
@@ -1977,7 +2031,8 @@
       "Control de rango emocional"
     ],
     "best_for": "Creadores y empresas que necesitan síntesis de voz IA de grado profesional",
-    "pricing_note": "Nivel gratuito con 10K chars/mes; Starter a $5/mes; Creator a $22/mes; Pro a $99/mes"
+    "pricing_note": "Nivel gratuito con 10K chars/mes; Starter a $5/mes; Creator a $22/mes; Pro a $99/mes",
+    "affiliate_url": ""
   },
   {
     "id": "murf",
@@ -2013,7 +2068,8 @@
       "Control de tono y velocidad"
     ],
     "best_for": "Creadores de e-learning y especialistas en marketing que necesitan locuciones IA naturales",
-    "pricing_note": "Nivel gratuito; Creator a $29/mes; Business a $79/mes"
+    "pricing_note": "Nivel gratuito; Creator a $29/mes; Business a $79/mes",
+    "affiliate_url": ""
   },
   {
     "id": "respeecher",
@@ -2049,7 +2105,8 @@
       "Calidad de audio profesional"
     ],
     "best_for": "Estudios de cine y TV que necesitan clonación de voz y doblaje de grado profesional",
-    "pricing_note": "Precio personalizado según proyecto; principalmente para clientes empresariales y de entretenimiento"
+    "pricing_note": "Precio personalizado según proyecto; principalmente para clientes empresariales y de entretenimiento",
+    "affiliate_url": ""
   },
   {
     "id": "speechify",
@@ -2085,7 +2142,8 @@
       "Escucha sin conexión"
     ],
     "best_for": "Estudiantes y profesionales que quieren consumir contenido escrito sin usar las manos",
-    "pricing_note": "Nivel gratuito; Premium a $11.58/mes para 20+ voces; Planes de audiolibros disponibles"
+    "pricing_note": "Nivel gratuito; Premium a $11.58/mes para 20+ voces; Planes de audiolibros disponibles",
+    "affiliate_url": ""
   },
   {
     "id": "cursor",
@@ -2121,7 +2179,8 @@
       "Compatible con VS Code"
     ],
     "best_for": "Desarrolladores que quieren integración profunda de IA en su editor de código",
-    "pricing_note": "Nivel gratuito; Pro a $20/mes; Business a $40/usuario/mes"
+    "pricing_note": "Nivel gratuito; Pro a $20/mes; Business a $40/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "claude-code",
@@ -2157,7 +2216,8 @@
       "Tareas complejas de ingeniería"
     ],
     "best_for": "Desarrolladores que prefieren asistencia de codificación IA en terminal para proyectos complejos",
-    "pricing_note": "Incluido con Claude Pro ($20/mes) o Team ($25/usuario/mes)"
+    "pricing_note": "Incluido con Claude Pro ($20/mes) o Team ($25/usuario/mes)",
+    "affiliate_url": ""
   },
   {
     "id": "github-copilot",
@@ -2193,7 +2253,8 @@
       "Millones de usuarios"
     ],
     "best_for": "Desarrolladores de todos los niveles que quieren sugerencias de código IA en tiempo real",
-    "pricing_note": "Nivel gratuito; Teams a $4/usuario/mes; Enterprise a $21/usuario/mes"
+    "pricing_note": "Nivel gratuito; Teams a $4/usuario/mes; Enterprise a $21/usuario/mes",
+    "affiliate_url": ""
   },
   {
     "id": "windsurf",
@@ -2229,7 +2290,8 @@
       "Enfoque en flujo de trabajo"
     ],
     "best_for": "Desarrolladores que quieren un IDE moderno con IA y comprensión profunda del contexto",
-    "pricing_note": "Nivel gratuito; Windsurf Pro a $15/mes para comandos IA ilimitados"
+    "pricing_note": "Nivel gratuito; Windsurf Pro a $15/mes para comandos IA ilimitados",
+    "affiliate_url": ""
   },
   {
     "id": "replit-agent",
@@ -2265,7 +2327,8 @@
       "Accesible para principiantes"
     ],
     "best_for": "Principiantes y prototipadores rápidos que quieren crear apps mediante conversación",
-    "pricing_note": "Nivel gratuito; Core a $25/mes; Teams con precio personalizado"
+    "pricing_note": "Nivel gratuito; Core a $25/mes; Teams con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "amazon-q",
@@ -2301,7 +2364,8 @@
       "Enfoque cloud-native"
     ],
     "best_for": "Desarrolladores AWS que necesitan asistencia IA optimizada para desarrollo cloud-native",
-    "pricing_note": "Nivel gratuito; Pro a $19/usuario/mes para funciones avanzadas"
+    "pricing_note": "Nivel gratuito; Pro a $19/usuario/mes para funciones avanzadas",
+    "affiliate_url": ""
   },
   {
     "id": "sourcegraph-cody",
@@ -2337,7 +2401,8 @@
       "Soporte para equipos empresariales"
     ],
     "best_for": "Equipos de desarrollo que trabajan con bases de código grandes y multi-repositorio",
-    "pricing_note": "Nivel gratuito; Pro a $9/mes; Enterprise con precio personalizado"
+    "pricing_note": "Nivel gratuito; Pro a $9/mes; Enterprise con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "tabnine",
@@ -2373,7 +2438,8 @@
       "Integración con IDE"
     ],
     "best_for": "Equipos empresariales que necesitan finalización de código IA privada y sin conexión",
-    "pricing_note": "Nivel gratuito; Pro a $12/mes; Enterprise con precio personalizado para despliegue privado"
+    "pricing_note": "Nivel gratuito; Pro a $12/mes; Enterprise con precio personalizado para despliegue privado",
+    "affiliate_url": ""
   },
   {
     "id": "devin",
@@ -2410,7 +2476,8 @@
       "Planificación de proyectos"
     ],
     "best_for": "Equipos que quieren ingeniería de software autónoma para desarrollo de funciones completas",
-    "pricing_note": "Disponible por suscripción; precios a través de Cognition Labs para equipos y empresas"
+    "pricing_note": "Disponible por suscripción; precios a través de Cognition Labs para equipos y empresas",
+    "affiliate_url": ""
   },
   {
     "id": "bolt-new",
@@ -2446,7 +2513,8 @@
       "Sin configuración local"
     ],
     "best_for": "No desarrolladores y prototipadores que quieren crear apps web sin configuración local",
-    "pricing_note": "Nivel gratuito; Pro a $20/mes; Teams con precio personalizado"
+    "pricing_note": "Nivel gratuito; Pro a $20/mes; Teams con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "hubspot-ai",
@@ -2482,7 +2550,8 @@
       "IA conversacional"
     ],
     "best_for": "Empresas que usan HubSpot y quieren IA integrada en todo su CRM",
-    "pricing_note": "Funciones IA incluidas con suscripciones HubSpot; CRM gratuito con IA limitada; planes desde $45/mes"
+    "pricing_note": "Funciones IA incluidas con suscripciones HubSpot; CRM gratuito con IA limitada; planes desde $45/mes",
+    "affiliate_url": ""
   },
   {
     "id": "semrush-ai",
@@ -2518,7 +2587,8 @@
       "Inteligencia de búsqueda"
     ],
     "best_for": "Profesionales SEO que necesitan información mejorada por IA para marketing de búsqueda",
-    "pricing_note": "Pro a $139.95/mes; Guru a $249.95/mes; Business a $499.95/mes; IA incluida en todos los planes"
+    "pricing_note": "Pro a $139.95/mes; Guru a $249.95/mes; Business a $499.95/mes; IA incluida en todos los planes",
+    "affiliate_url": ""
   },
   {
     "id": "surfer-seo",
@@ -2554,7 +2624,8 @@
       "Redacción SEO basada en datos"
     ],
     "best_for": "Creadores de contenido enfocados en redacción SEO basada en datos y optimización SERP",
-    "pricing_note": "Essential a $89/mes; Advanced a $159/mes; Max a $279/mes"
+    "pricing_note": "Essential a $89/mes; Advanced a $159/mes; Max a $279/mes",
+    "affiliate_url": ""
   },
   {
     "id": "frase",
@@ -2590,7 +2661,8 @@
       "Seguimiento multi-buscador"
     ],
     "best_for": "Equipos de contenido SEO que quieren investigación, redacción y monitoreo con IA",
-    "pricing_note": "Nivel gratuito con 1 artículo/mes; Basic a $14.99/mes; Team a $49.99/mes"
+    "pricing_note": "Nivel gratuito con 1 artículo/mes; Basic a $14.99/mes; Team a $49.99/mes",
+    "affiliate_url": ""
   },
   {
     "id": "lindy",
@@ -2626,7 +2698,8 @@
       "IA para procesos de negocio"
     ],
     "best_for": "Equipos que quieren automatizar flujos de trabajo con asistentes IA sin código",
-    "pricing_note": "Nivel gratuito; Pro a $15/mes; Team a $30/mes para colaboración"
+    "pricing_note": "Nivel gratuito; Pro a $15/mes; Team a $30/mes para colaboración",
+    "affiliate_url": ""
   },
   {
     "id": "marketmuse",
@@ -2662,7 +2735,8 @@
       "Puntuación de contenido SEO"
     ],
     "best_for": "Equipos de contenido empresarial que necesitan estrategia de contenido con IA",
-    "pricing_note": "Precio personalizado según volumen de contenido; típicamente desde varios cientos de dólares al mes"
+    "pricing_note": "Precio personalizado según volumen de contenido; típicamente desde varios cientos de dólares al mes",
+    "affiliate_url": ""
   },
   {
     "id": "activecampaign",
@@ -2698,7 +2772,8 @@
       "Segmentación conductual"
     ],
     "best_for": "Empresas que quieren automatización de marketing sofisticada sin complejidad empresarial",
-    "pricing_note": "Desde $15/mes para email marketing; Plus a $49/mes; Professional a $79/mes"
+    "pricing_note": "Desde $15/mes para email marketing; Plus a $49/mes; Professional a $79/mes",
+    "affiliate_url": ""
   },
   {
     "id": "mailchimp-ai",
@@ -2734,7 +2809,8 @@
       "Amigable para pequeñas empresas"
     ],
     "best_for": "Pequeñas empresas que quieren automatización de email marketing con IA accesible",
-    "pricing_note": "Nivel gratuito hasta 500 contactos; Essentials a $13/mes; Standard a $20/mes"
+    "pricing_note": "Nivel gratuito hasta 500 contactos; Essentials a $13/mes; Standard a $20/mes",
+    "affiliate_url": ""
   },
   {
     "id": "lately-ai",
@@ -2770,7 +2846,8 @@
       "Panel de analíticas"
     ],
     "best_for": "Especialistas en marketing que gestionan múltiples canales sociales y quieren reutilización automatizada",
-    "pricing_note": "Nivel gratuito; Pro a $39/mes; Business a $79/mes para equipos"
+    "pricing_note": "Nivel gratuito; Pro a $39/mes; Business a $79/mes para equipos",
+    "affiliate_url": ""
   },
   {
     "id": "quillbot",
@@ -2806,7 +2883,8 @@
       "Herramienta de resumen"
     ],
     "best_for": "Estudiantes y profesionales ESL que necesitan paráfrasis, gramática y detección de plagio",
-    "pricing_note": "Nivel gratuito; Premium a $8.33/mes (facturado anual) para palabras ilimitadas"
+    "pricing_note": "Nivel gratuito; Premium a $8.33/mes (facturado anual) para palabras ilimitadas",
+    "affiliate_url": ""
   },
   {
     "id": "wordtune",
@@ -2842,7 +2920,8 @@
       "Extensión de navegador"
     ],
     "best_for": "Escritores que quieren refinar texto existente con reformulación inteligente",
-    "pricing_note": "Nivel gratuito; Premium a $9.99/mes; Unlimited a $14.99/mes con IA avanzada"
+    "pricing_note": "Nivel gratuito; Premium a $9.99/mes; Unlimited a $14.99/mes con IA avanzada",
+    "affiliate_url": ""
   },
   {
     "id": "hemingway",
@@ -2878,7 +2957,8 @@
       "Enfoque en claridad"
     ],
     "best_for": "Escritores enfocados en hacer su prosa más clara, simple y legible",
-    "pricing_note": "Versión web gratuita; App de escritorio a $19.99 (compra única)"
+    "pricing_note": "Versión web gratuita; App de escritorio a $19.99 (compra única)",
+    "affiliate_url": ""
   },
   {
     "id": "scalenut",
@@ -2914,7 +2994,8 @@
       "Listo para multi-buscador"
     ],
     "best_for": "Equipos de contenido que crean estrategias SEO basadas en datos a escala",
-    "pricing_note": "Essential a $39/mes; Growth a $79/mes; Pro a $149/mes"
+    "pricing_note": "Essential a $39/mes; Growth a $79/mes; Pro a $149/mes",
+    "affiliate_url": ""
   },
   {
     "id": "shortly-ai",
@@ -2950,7 +3031,8 @@
       "Enfoque en formato largo"
     ],
     "best_for": "Escritores que quieren un entorno minimalista sin distracciones para contenido de formato largo",
-    "pricing_note": "Plan mensual a $11/mes; Plan anual a $65/año"
+    "pricing_note": "Plan mensual a $11/mes; Plan anual a $65/año",
+    "affiliate_url": ""
   },
   {
     "id": "taskade",
@@ -2986,7 +3068,8 @@
       "Espacio de trabajo unificado"
     ],
     "best_for": "Equipos remotos que quieren un espacio de trabajo integral con herramientas de productividad IA",
-    "pricing_note": "Nivel gratuito; Pro a $8/mes con funciones IA; Business a $16/mes"
+    "pricing_note": "Nivel gratuito; Pro a $8/mes con funciones IA; Business a $16/mes",
+    "affiliate_url": ""
   },
   {
     "id": "clockwise",
@@ -3022,7 +3105,8 @@
       "Integración de calendario"
     ],
     "best_for": "Equipos que quieren reducir la sobrecarga de reuniones y proteger el tiempo de trabajo profundo",
-    "pricing_note": "Nivel gratuito; Pro a $12.50/mes; Enterprise con precio personalizado"
+    "pricing_note": "Nivel gratuito; Pro a $12.50/mes; Enterprise con precio personalizado",
+    "affiliate_url": ""
   },
   {
     "id": "todoist",
@@ -3058,7 +3142,8 @@
       "Sincronización multiplataforma"
     ],
     "best_for": "Personas que quieren gestión de tareas más inteligente con lenguaje natural y priorización IA",
-    "pricing_note": "Nivel gratuito; Pro a $5/mes para funciones IA"
+    "pricing_note": "Nivel gratuito; Pro a $5/mes para funciones IA",
+    "affiliate_url": ""
   },
   {
     "id": "superhuman",
@@ -3094,7 +3179,8 @@
       "Búsqueda instantánea"
     ],
     "best_for": "Ejecutivos que procesan altos volúmenes de email diariamente y necesitan máxima velocidad",
-    "pricing_note": "Suscripción mensual a $30/mes con todas las funciones"
+    "pricing_note": "Suscripción mensual a $30/mes con todas las funciones",
+    "affiliate_url": ""
   },
   {
     "id": "chatbase",
@@ -3130,7 +3216,8 @@
       "Inserción sencilla en web"
     ],
     "best_for": "Empresas y creadores que quieren chatbots con IA personalizados sin programación para soporte al cliente",
-    "pricing_note": "Nivel gratuito con 1 chatbot y 30 mensajes/mes; Hobby a $19/mes; Standard a $99/mes; Pro a $399/mes"
+    "pricing_note": "Nivel gratuito con 1 chatbot y 30 mensajes/mes; Hobby a $19/mes; Standard a $99/mes; Pro a $399/mes",
+    "affiliate_url": ""
   },
   {
     "id": "brevo",
@@ -3166,7 +3253,8 @@
       "Precios asequibles"
     ],
     "best_for": "Empresas en crecimiento que quieren marketing integral con IA a precio asequible",
-    "pricing_note": "Nivel gratuito con 300 emails/día; Starter a $9/mes; Business a $25/mes"
+    "pricing_note": "Nivel gratuito con 300 emails/día; Starter a $9/mes; Business a $25/mes",
+    "affiliate_url": ""
   },
   {
     "id": "buffer",
@@ -3202,7 +3290,8 @@
       "Interfaz simple"
     ],
     "best_for": "Autónomos y pequeñas empresas que quieren programación de redes sociales simple con IA",
-    "pricing_note": "Nivel gratuito con 3 canales; Essentials a $6/mes por canal; Team a $12/mes por canal"
+    "pricing_note": "Nivel gratuito con 3 canales; Essentials a $6/mes por canal; Team a $12/mes por canal",
+    "affiliate_url": ""
   },
   {
     "id": "beehiiv",
@@ -3238,6 +3327,7 @@
       "Panel de analíticas"
     ],
     "best_for": "Creadores de newsletters que quieren una plataforma integral con IA para escribir, crecer y monetizar",
-    "pricing_note": "Nivel gratuito con funciones básicas; Grow a $15/mes para herramientas de crecimiento; Scale a $49/mes para monetización"
+    "pricing_note": "Nivel gratuito con funciones básicas; Grow a $15/mes para herramientas de crecimiento; Scale a $49/mes para monetización",
+    "affiliate_url": ""
   }
 ]
