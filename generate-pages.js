@@ -529,6 +529,25 @@ function relatedHTML(cfg, lang, related) {
       </div>`;
 }
 
+function categoryLinksHTML(cfg, lang, tool, allReviews) {
+  const catName = CATEGORIES[lang][tool.category_slug] || tool.category;
+  const same = allReviews
+    .filter(r => r.category_slug === tool.category_slug)
+    .sort((a, b) => b.rating - a.rating);
+  const title = lang === 'en'
+    ? `More ${catName} AI Tools`
+    : `Más herramientas de ${catName}`;
+  const items = same.map(t =>
+    `<a class="cat-chip" href="${t.id}.html">${escapeHtml(t.name)}</a>`
+  ).join('');
+  return `
+      <div class="category-links-section">
+        <h3>${title}</h3>
+        <div class="cat-chips">${items}
+        </div>
+      </div>`;
+}
+
 function comparisonLink(cfg, lang, tool, allReviews) {
   const same = allReviews.filter(r => r.category_slug === tool.category_slug);
   if (same.length < 2) return '';
@@ -648,6 +667,11 @@ ${gaHTML()}
 .related-rating { color: var(--accent); font-size: 0.8rem; }
 .related-price { color: var(--text-muted); font-size: 0.8rem; }
 .related-cta { color: var(--accent); font-size: 0.8rem; margin-top: 4px; }
+.category-links-section { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--border); }
+.category-links-section h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
+.cat-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.cat-chip { display: inline-block; padding: 6px 14px; font-size: 0.82rem; color: var(--text); background: var(--bg-card); border: 1px solid var(--border); border-radius: 999px; text-decoration: none; transition: all var(--transition); }
+.cat-chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 .review-back { margin-top: 40px; text-align: center; }
 .review-back a { display: inline-block; color: var(--accent); text-decoration: none; font-size: 1.05rem; font-weight: 600; padding: 12px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg-card); transition: all var(--transition); }
 .review-back a:hover { border-color: var(--accent); transform: translateY(-2px); }
@@ -728,6 +752,8 @@ ${navHTML(cfg, lang, tool.id + '.html')}
       <a href="${escapeAttr(tool.affiliate_url || tool.url)}" class="modal-btn" target="_blank" rel="nofollow noopener noreferrer">${cfg.visitBtn} ${escapeHtml(tool.name)}</a>
 
       ${relatedHTML(cfg, lang, related)}
+
+      ${categoryLinksHTML(cfg, lang, tool, allReviews)}
 
       <p class="review-back"><a href="${cfg.home}">${cfg.backToReviews}</a></p>
     </div>
